@@ -9,7 +9,10 @@
 import UIKit
 
 class RestPasswordViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var emailTF: TextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +21,11 @@ class RestPasswordViewController: UIViewController {
   
     
 
-  
-
+    @IBAction func sendEmailBtn(_ sender: Any) {
+    }
+    
+    @IBAction func backBtn(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0448D4A920C1708900D2CE67 /* URLS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448D4A820C1708900D2CE67 /* URLS.swift */; };
+		0448D4AB20C1711200D2CE67 /* Authontication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448D4AA20C1711200D2CE67 /* Authontication.swift */; };
+		0448D4AD20C171A300D2CE67 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448D4AC20C171A300D2CE67 /* User.swift */; };
+		0448D4AF20C172C100D2CE67 /* Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448D4AE20C172C100D2CE67 /* Validate.swift */; };
+		0448D4B120C17AA300D2CE67 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448D4B020C17AA300D2CE67 /* FirstViewController.swift */; };
+		0448D4B320C17D4A00D2CE67 /* ChangeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448D4B220C17D4A00D2CE67 /* ChangeImage.swift */; };
+		0448D4B720C1E2C200D2CE67 /* TextFieldPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448D4B620C1E2C200D2CE67 /* TextFieldPadding.swift */; };
 		044E280120C0B3010069196D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044E280020C0B3010069196D /* AppDelegate.swift */; };
 		044E280620C0B3010069196D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044E280420C0B3010069196D /* Main.storyboard */; };
 		044E280820C0B3010069196D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044E280720C0B3010069196D /* Assets.xcassets */; };
@@ -14,9 +21,18 @@
 		044E281820C0B3B30069196D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044E281720C0B3B30069196D /* LoginViewController.swift */; };
 		044E281A20C0B3C30069196D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044E281920C0B3C30069196D /* RegisterViewController.swift */; };
 		044E281C20C0B3D90069196D /* RestPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044E281B20C0B3D90069196D /* RestPasswordViewController.swift */; };
+		FFE460DE4BBEBA286FD6CA89 /* Pods_Makani.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB18CF28C474596F24DFE861 /* Pods_Makani.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0448D4A820C1708900D2CE67 /* URLS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLS.swift; sourceTree = "<group>"; };
+		0448D4AA20C1711200D2CE67 /* Authontication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authontication.swift; sourceTree = "<group>"; };
+		0448D4AC20C171A300D2CE67 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0448D4AE20C172C100D2CE67 /* Validate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validate.swift; sourceTree = "<group>"; };
+		0448D4B020C17AA300D2CE67 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		0448D4B220C17D4A00D2CE67 /* ChangeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeImage.swift; sourceTree = "<group>"; };
+		0448D4B420C1D09900D2CE67 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		0448D4B620C1E2C200D2CE67 /* TextFieldPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldPadding.swift; sourceTree = "<group>"; };
 		044E27FD20C0B3010069196D /* Makani.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makani.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044E280020C0B3010069196D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		044E280520C0B3010069196D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,6 +42,9 @@
 		044E281720C0B3B30069196D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		044E281920C0B3C30069196D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		044E281B20C0B3D90069196D /* RestPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestPasswordViewController.swift; sourceTree = "<group>"; };
+		0B257BB7B784B4A545A3E4E5 /* Pods-Makani.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makani.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makani/Pods-Makani.debug.xcconfig"; sourceTree = "<group>"; };
+		74BF757181DCAFC1FFBD30B0 /* Pods-Makani.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makani.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makani/Pods-Makani.release.xcconfig"; sourceTree = "<group>"; };
+		BB18CF28C474596F24DFE861 /* Pods_Makani.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makani.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +52,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFE460DE4BBEBA286FD6CA89 /* Pods_Makani.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0448D4B520C1D0A200D2CE67 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0448D4B420C1D09900D2CE67 /* Roboto-Regular.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		044E27F420C0B3010069196D = {
 			isa = PBXGroup;
 			children = (
 				044E27FF20C0B3010069196D /* Makani */,
 				044E27FE20C0B3010069196D /* Products */,
+				78B230A5D086C07AA827C127 /* Pods */,
+				901674713856C857C0C6BC34 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +88,7 @@
 		044E27FF20C0B3010069196D /* Makani */ = {
 			isa = PBXGroup;
 			children = (
+				0448D4B520C1D0A200D2CE67 /* fonts */,
 				044E281220C0B3180069196D /* Model */,
 				044E281320C0B3280069196D /* View */,
 				044E281420C0B3320069196D /* Controllers */,
@@ -70,6 +101,7 @@
 		044E281220C0B3180069196D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0448D4AC20C171A300D2CE67 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -89,6 +121,7 @@
 				044E281720C0B3B30069196D /* LoginViewController.swift */,
 				044E281920C0B3C30069196D /* RegisterViewController.swift */,
 				044E281B20C0B3D90069196D /* RestPasswordViewController.swift */,
+				0448D4B020C17AA300D2CE67 /* FirstViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -99,6 +132,9 @@
 				044E280020C0B3010069196D /* AppDelegate.swift */,
 				044E280720C0B3010069196D /* Assets.xcassets */,
 				044E280C20C0B3010069196D /* Info.plist */,
+				0448D4AE20C172C100D2CE67 /* Validate.swift */,
+				0448D4B220C17D4A00D2CE67 /* ChangeImage.swift */,
+				0448D4B620C1E2C200D2CE67 /* TextFieldPadding.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -106,8 +142,27 @@
 		044E281620C0B3480069196D /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				0448D4A820C1708900D2CE67 /* URLS.swift */,
+				0448D4AA20C1711200D2CE67 /* Authontication.swift */,
 			);
 			path = Api;
+			sourceTree = "<group>";
+		};
+		78B230A5D086C07AA827C127 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B257BB7B784B4A545A3E4E5 /* Pods-Makani.debug.xcconfig */,
+				74BF757181DCAFC1FFBD30B0 /* Pods-Makani.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		901674713856C857C0C6BC34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB18CF28C474596F24DFE861 /* Pods_Makani.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 044E280F20C0B3010069196D /* Build configuration list for PBXNativeTarget "Makani" */;
 			buildPhases = (
+				3DE4F2D861762A80419C2D69 /* [CP] Check Pods Manifest.lock */,
 				044E27F920C0B3010069196D /* Sources */,
 				044E27FA20C0B3010069196D /* Frameworks */,
 				044E27FB20C0B3010069196D /* Resources */,
+				26A4DEABABE0D4CA50E72A30 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -177,15 +234,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26A4DEABABE0D4CA50E72A30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Makani/Pods-Makani-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Makani/Pods-Makani-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DE4F2D861762A80419C2D69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Makani-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		044E27F920C0B3010069196D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0448D4B120C17AA300D2CE67 /* FirstViewController.swift in Sources */,
+				0448D4A920C1708900D2CE67 /* URLS.swift in Sources */,
 				044E281A20C0B3C30069196D /* RegisterViewController.swift in Sources */,
+				0448D4B320C17D4A00D2CE67 /* ChangeImage.swift in Sources */,
 				044E281820C0B3B30069196D /* LoginViewController.swift in Sources */,
+				0448D4AF20C172C100D2CE67 /* Validate.swift in Sources */,
+				0448D4B720C1E2C200D2CE67 /* TextFieldPadding.swift in Sources */,
 				044E281C20C0B3D90069196D /* RestPasswordViewController.swift in Sources */,
 				044E280120C0B3010069196D /* AppDelegate.swift in Sources */,
+				0448D4AB20C1711200D2CE67 /* Authontication.swift in Sources */,
+				0448D4AD20C171A300D2CE67 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +427,7 @@
 		};
 		044E281020C0B3010069196D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B257BB7B784B4A545A3E4E5 /* Pods-Makani.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -334,6 +442,7 @@
 		};
 		044E281120C0B3010069196D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74BF757181DCAFC1FFBD30B0 /* Pods-Makani.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
