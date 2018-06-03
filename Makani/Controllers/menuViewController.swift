@@ -32,6 +32,13 @@ class MenuViewController: UIViewController {
         print("sdfsd")
     }
     
+    
+    @IBAction func aboutBtn(_ sender: Any) {
+        
+        let aboutVc = storyboard?.instantiateViewController(withIdentifier: "AboutViewController") as! AboutViewController
+        self.present(aboutVc, animated: true, completion: nil)
+    }
+    
   
     @IBAction func logoutBtn(_ sender: Any) {
         
