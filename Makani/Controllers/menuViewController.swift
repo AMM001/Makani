@@ -15,7 +15,15 @@ class MenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       // imageview = UIImageView(frame: CGRectMake(0, 0, 100, 100))
         imageview.layer.cornerRadius = imageview.frame.height/2
+        imageview.clipsToBounds = true
+        
+        imageview.layer.borderWidth = 1.0
+      //  imageview.layer.masksToBounds = false
+        imageview.layer.borderColor = UIColor.white.cgColor
+        
     }
 
   
@@ -27,8 +35,23 @@ class MenuViewController: UIViewController {
   
     @IBAction func logoutBtn(_ sender: Any) {
         
-        let fVc = storyboard?.instantiateViewController(withIdentifier: "FirstViewController") as! FirstViewController
-        self.present(fVc, animated: true, completion: nil)
+        let Alert = UIAlertController(title: "", message: "If you want confirm Logout Press Ok", preferredStyle: UIAlertControllerStyle.alert)
+        
+        Alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+            
+          
+            let fVc = self.storyboard?.instantiateViewController(withIdentifier: "SplashViewController") as! SplashScreenViewController
+            self.present(fVc, animated: true, completion: nil)
+            
+        }))
+        
+        Alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
+            
+        }))
+        
+        self.present(Alert, animated: true, completion: nil)
+        
+   
     }
     
     

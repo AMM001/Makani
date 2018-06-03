@@ -28,7 +28,7 @@ class SplashScreenViewController: UIViewController {
         activityIndicatorView.startAnimating()
         
         
-        perform(#selector(self.Start), with: nil, afterDelay: 5)
+        perform(#selector(self.Start), with: nil, afterDelay: 10)
     }
     
     

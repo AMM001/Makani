@@ -58,6 +58,10 @@ class HomeUserViewController: UIViewController {
     }
     
     @IBAction func searchBtn(_ sender: Any) {
+        
+        let searchVc = storyboard?.instantiateViewController(withIdentifier: "SearchViewController") as! SearchViewController
+        
+        self.present(searchVc, animated: true, completion: nil)
     }
     
 }
