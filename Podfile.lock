@@ -1,24 +1,40 @@
 PODS:
   - Alamofire (4.7.2)
+  - BTNavigationDropdownMenu (0.4.1)
+  - SlideMenuControllerSwift (4.0.0)
   - SwiftyJSON (4.1.0)
   - Toast-Swift (3.0.1)
 
 DEPENDENCIES:
   - Alamofire
+  - BTNavigationDropdownMenu (from `https://github.com/zkrige/BTNavigationDropdownMenu.git`)
+  - SlideMenuControllerSwift
   - SwiftyJSON (~> 4.0)
   - Toast-Swift (~> 3.0.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - SlideMenuControllerSwift
     - SwiftyJSON
     - Toast-Swift
 
+EXTERNAL SOURCES:
+  BTNavigationDropdownMenu:
+    :git: https://github.com/zkrige/BTNavigationDropdownMenu.git
+
+CHECKOUT OPTIONS:
+  BTNavigationDropdownMenu:
+    :commit: 0e1bd3a84079f1bdec8bffc4db0f383bd9ee7523
+    :git: https://github.com/zkrige/BTNavigationDropdownMenu.git
+
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  BTNavigationDropdownMenu: 4a88996ad514f2feff98481eb2d6a5cb7520f76c
+  SlideMenuControllerSwift: 021d6318201c53d4d4d3710517d43d6c556c7dd0
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
   Toast-Swift: ba0b01b095aada709d915f9beb1d38184a2721c3
 
-PODFILE CHECKSUM: 62abc40c8da11cd3f6c61cbe1ac51e35ac4bc38d
+PODFILE CHECKSUM: 5341d556479a57f3c7a32d5d34b5da8f3f2161b9
 
 COCOAPODS: 1.5.2

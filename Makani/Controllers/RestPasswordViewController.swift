@@ -22,6 +22,20 @@ class RestPasswordViewController: UIViewController {
     
 
     @IBAction func sendEmailBtn(_ sender: Any) {
+        
+        guard let email = emailTF.text, !email.isEmpty else{
+            
+            self.view.makeToast("enter your email", duration: 3.0, position: .bottom)
+            return
+        }
+        
+        guard Vladiate.isValidEmail(testStr: email) == true else{
+            self.view.makeToast("Enter valid Email", duration: 3.0, position: .bottom)
+            
+            return
+        }
+        
+        
     }
     
     @IBAction func backBtn(_ sender: Any) {

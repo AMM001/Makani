@@ -8,6 +8,12 @@ target 'Makani' do
   pod 'Alamofire'
   pod 'Toast-Swift', '~> 3.0.1'
   pod 'SwiftyJSON', '~> 4.0'
+  pod 'SlideMenuControllerSwift'
+  pod 'BTNavigationDropdownMenu', :git => 'https://github.com/zkrige/BTNavigationDropdownMenu.git'
+  
+
+
+
 
 
 end

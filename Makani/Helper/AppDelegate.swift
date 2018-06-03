@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SlideMenuControllerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.lightContent, animated: true)
+
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+         let mainViewController = storyboard.instantiateViewController(withIdentifier: "FirstViewController") as!  FirstViewController
+         let sideMvc = storyboard.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+        
+        let slideMenuController = SlideMenuController(mainViewController: mainViewController, leftMenuViewController: sideMvc)
+        
+        self.window?.rootViewController = slideMenuController
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 
