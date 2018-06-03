@@ -10,7 +10,10 @@ target 'Makani' do
   pod 'SwiftyJSON', '~> 4.0'
   pod 'SlideMenuControllerSwift'
   pod 'BTNavigationDropdownMenu', :git => 'https://github.com/zkrige/BTNavigationDropdownMenu.git'
-  
+  pod 'ImageSlideshow'
+  pod "ImageSlideshow/SDWebImage"
+  pod 'NVActivityIndicatorView'
+
 
 
 

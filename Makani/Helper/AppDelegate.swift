@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-         let mainViewController = storyboard.instantiateViewController(withIdentifier: "FirstViewController") as!  FirstViewController
+         let mainViewController = storyboard.instantiateViewController(withIdentifier: "SplashViewController") as!  SplashScreenViewController
          let sideMvc = storyboard.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
         
         let slideMenuController = SlideMenuController(mainViewController: mainViewController, leftMenuViewController: sideMvc)

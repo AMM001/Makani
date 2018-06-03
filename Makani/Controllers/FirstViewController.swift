@@ -16,6 +16,8 @@ class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        UILabel.appearance().font = UIFont(name: "Tale of Hawks.ttf", size: 50)
+
 
     }
     

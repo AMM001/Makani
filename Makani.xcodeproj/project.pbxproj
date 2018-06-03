@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0443A73220C40E860003526D /* SpacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443A73120C40E860003526D /* SpacesTableViewCell.swift */; };
+		0443A73420C41D100003526D /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443A73320C41D100003526D /* SplashScreenViewController.swift */; };
 		0448D4A920C1708900D2CE67 /* URLS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448D4A820C1708900D2CE67 /* URLS.swift */; };
 		0448D4AB20C1711200D2CE67 /* Authontication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448D4AA20C1711200D2CE67 /* Authontication.swift */; };
 		0448D4AD20C171A300D2CE67 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448D4AC20C171A300D2CE67 /* User.swift */; };
@@ -33,6 +35,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0443A72B20C3F7480003526D /* Tale of Hawks.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tale of Hawks.ttf"; sourceTree = "<group>"; };
+		0443A72C20C3F8450003526D /* PG_Roof Runners_active_bold-it.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PG_Roof Runners_active_bold-it.ttf"; sourceTree = "<group>"; };
+		0443A72D20C3F8450003526D /* PG_Roof Runners_active_it.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PG_Roof Runners_active_it.ttf"; sourceTree = "<group>"; };
+		0443A72E20C3F8450003526D /* PG_Roof Runners_active.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PG_Roof Runners_active.ttf"; sourceTree = "<group>"; };
+		0443A72F20C3F8450003526D /* PG_Roof Runners_active_b.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PG_Roof Runners_active_b.ttf"; sourceTree = "<group>"; };
+		0443A73020C3F86B0003526D /* induction.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = induction.ttf; sourceTree = "<group>"; };
+		0443A73120C40E860003526D /* SpacesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacesTableViewCell.swift; sourceTree = "<group>"; };
+		0443A73320C41D100003526D /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		0448D4A820C1708900D2CE67 /* URLS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLS.swift; sourceTree = "<group>"; };
 		0448D4AA20C1711200D2CE67 /* Authontication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authontication.swift; sourceTree = "<group>"; };
 		0448D4AC20C171A300D2CE67 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -79,6 +89,12 @@
 			isa = PBXGroup;
 			children = (
 				0448D4B420C1D09900D2CE67 /* Roboto-Regular.ttf */,
+				0443A72B20C3F7480003526D /* Tale of Hawks.ttf */,
+				0443A72F20C3F8450003526D /* PG_Roof Runners_active_b.ttf */,
+				0443A72C20C3F8450003526D /* PG_Roof Runners_active_bold-it.ttf */,
+				0443A72D20C3F8450003526D /* PG_Roof Runners_active_it.ttf */,
+				0443A72E20C3F8450003526D /* PG_Roof Runners_active.ttf */,
+				0443A73020C3F86B0003526D /* induction.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -127,6 +143,7 @@
 			children = (
 				044E280420C0B3010069196D /* Main.storyboard */,
 				044E280920C0B3010069196D /* LaunchScreen.storyboard */,
+				0443A73120C40E860003526D /* SpacesTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -146,6 +163,7 @@
 				0448D4C720C34D2600D2CE67 /* AboutViewController.swift */,
 				0448D4C920C34D3900D2CE67 /* SettingsViewController.swift */,
 				0448D4CB20C34D5000D2CE67 /* BookingHistoryViewController.swift */,
+				0443A73320C41D100003526D /* SplashScreenViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -268,6 +286,9 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Makani/Pods-Makani-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/BTNavigationDropdownMenu/BTNavigationDropdownMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
@@ -276,6 +297,9 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BTNavigationDropdownMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
@@ -312,6 +336,8 @@
 			files = (
 				0448D4C620C34D0C00D2CE67 /* FavouritesViewController.swift in Sources */,
 				0448D4B120C17AA300D2CE67 /* FirstViewController.swift in Sources */,
+				0443A73420C41D100003526D /* SplashScreenViewController.swift in Sources */,
+				0443A73220C40E860003526D /* SpacesTableViewCell.swift in Sources */,
 				0448D4A920C1708900D2CE67 /* URLS.swift in Sources */,
 				0448D4B920C2C7EA00D2CE67 /* HomeUserViewController.swift in Sources */,
 				044E281A20C0B3C30069196D /* RegisterViewController.swift in Sources */,
