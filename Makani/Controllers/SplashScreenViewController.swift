@@ -18,6 +18,7 @@ class SplashScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
         let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         let activityIndicatorView = NVActivityIndicatorView(frame: frame,
@@ -28,7 +29,7 @@ class SplashScreenViewController: UIViewController {
         activityIndicatorView.startAnimating()
         
         
-        perform(#selector(self.Start), with: nil, afterDelay: 10)
+        perform(#selector(self.Start), with: nil, afterDelay:5)
     }
     
     

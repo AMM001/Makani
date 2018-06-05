@@ -25,6 +25,8 @@ class SearchViewController: UIViewController {
         segment.setTitle("Event", forSegmentAt: 1)
        // self.searchbar.tintColor = UIColor.white
        // self.searchbar.barStyle = UIBarStyle.black
+        
+
 
     }
 

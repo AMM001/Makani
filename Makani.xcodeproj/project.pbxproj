@@ -32,6 +32,7 @@
 		044E281820C0B3B30069196D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044E281720C0B3B30069196D /* LoginViewController.swift */; };
 		044E281A20C0B3C30069196D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044E281920C0B3C30069196D /* RegisterViewController.swift */; };
 		044E281C20C0B3D90069196D /* RestPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044E281B20C0B3D90069196D /* RestPasswordViewController.swift */; };
+		0491E1E920C4A3AB0060C4BD /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0491E1E820C4A3AB0060C4BD /* File.swift */; };
 		FFE460DE4BBEBA286FD6CA89 /* Pods_Makani.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB18CF28C474596F24DFE861 /* Pods_Makani.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		044E281720C0B3B30069196D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		044E281920C0B3C30069196D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		044E281B20C0B3D90069196D /* RestPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestPasswordViewController.swift; sourceTree = "<group>"; };
+		0491E1E820C4A3AB0060C4BD /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		0B257BB7B784B4A545A3E4E5 /* Pods-Makani.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makani.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makani/Pods-Makani.debug.xcconfig"; sourceTree = "<group>"; };
 		74BF757181DCAFC1FFBD30B0 /* Pods-Makani.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makani.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makani/Pods-Makani.release.xcconfig"; sourceTree = "<group>"; };
 		BB18CF28C474596F24DFE861 /* Pods_Makani.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makani.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +106,7 @@
 		044E27F420C0B3010069196D = {
 			isa = PBXGroup;
 			children = (
+				0491E1E720C4A37B0060C4BD /* Extentions */,
 				044E27FF20C0B3010069196D /* Makani */,
 				044E27FE20C0B3010069196D /* Products */,
 				78B230A5D086C07AA827C127 /* Pods */,
@@ -191,6 +194,14 @@
 				0448D4AA20C1711200D2CE67 /* Authontication.swift */,
 			);
 			path = Api;
+			sourceTree = "<group>";
+		};
+		0491E1E720C4A37B0060C4BD /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				0491E1E820C4A3AB0060C4BD /* File.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 		78B230A5D086C07AA827C127 /* Pods */ = {
@@ -343,6 +354,7 @@
 				0443A73220C40E860003526D /* SpacesTableViewCell.swift in Sources */,
 				0448D4A920C1708900D2CE67 /* URLS.swift in Sources */,
 				0448D4B920C2C7EA00D2CE67 /* HomeUserViewController.swift in Sources */,
+				0491E1E920C4A3AB0060C4BD /* File.swift in Sources */,
 				044E281A20C0B3C30069196D /* RegisterViewController.swift in Sources */,
 				0448D4BE20C3179A00D2CE67 /* ProfileViewController.swift in Sources */,
 				0448D4B320C17D4A00D2CE67 /* ChangeImage.swift in Sources */,

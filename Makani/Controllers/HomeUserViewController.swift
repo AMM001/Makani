@@ -34,7 +34,7 @@ class HomeUserViewController: UIViewController {
         custimzeSlideImage()
         tableview.delegate   = self
         tableview.dataSource = self
-        
+
         
     
         

@@ -16,20 +16,20 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       // imageview = UIImageView(frame: CGRectMake(0, 0, 100, 100))
         imageview.layer.cornerRadius = imageview.frame.height/2
         imageview.clipsToBounds = true
-        
         imageview.layer.borderWidth = 1.0
-      //  imageview.layer.masksToBounds = false
         imageview.layer.borderColor = UIColor.white.cgColor
         
+
     }
 
   
     @IBAction func profileBtn(_ sender: Any) {
         
-        print("sdfsd")
+        let profileVc = storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
+        self.present(profileVc, animated: true, completion: nil)
+        
     }
     
     
@@ -42,9 +42,15 @@ class MenuViewController: UIViewController {
   
     @IBAction func logoutBtn(_ sender: Any) {
         
-        let Alert = UIAlertController(title: "", message: "If you want confirm Logout Press Ok", preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "", message: "If you want confirm Logout Press Ok", preferredStyle: UIAlertControllerStyle.alert)
+        let subview = (alert.view.subviews.first?.subviews.first?.subviews.first!)! as UIView
         
-        Alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+        subview.backgroundColor = UIColor(red: (86/255.0), green: (204/255.0), blue: (242/255.0), alpha: 1.0)
+        
+        alert.view.tintColor = UIColor.white
+
+        
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
             
           
             let fVc = self.storyboard?.instantiateViewController(withIdentifier: "SplashViewController") as! SplashScreenViewController
@@ -52,11 +58,11 @@ class MenuViewController: UIViewController {
             
         }))
         
-        Alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
             
         }))
         
-        self.present(Alert, animated: true, completion: nil)
+        self.present(alert, animated: true, completion: nil)
         
    
     }

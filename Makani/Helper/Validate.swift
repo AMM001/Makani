@@ -21,6 +21,11 @@ class Vladiate: NSObject {
     static func showAlert(withTitle:String, message:String, viewController:UIViewController) {
         let alertController = UIAlertController(title: withTitle, message: message, preferredStyle: UIAlertControllerStyle.alert)
         
+        let subview = (alertController.view.subviews.first?.subviews.first?.subviews.first!)! as UIView
+        subview.backgroundColor = UIColor(red: (86/255.0), green: (204/255.0), blue: (242/255.0), alpha: 1.0)
+        
+        alertController.view.tintColor = UIColor.white
+        
         let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
             (result : UIAlertAction) -> Void in
 
