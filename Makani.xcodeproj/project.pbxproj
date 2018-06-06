@@ -37,6 +37,8 @@
 		04505F0220C7E5B1001A7E93 /* ContainerOwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04505F0120C7E5B1001A7E93 /* ContainerOwnerViewController.swift */; };
 		04505F0420C7E61C001A7E93 /* HomeOwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04505F0320C7E61C001A7E93 /* HomeOwnerViewController.swift */; };
 		04505F0620C7E7D6001A7E93 /* MenuOwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04505F0520C7E7D6001A7E93 /* MenuOwnerViewController.swift */; };
+		04505F0820C8052D001A7E93 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04505F0720C8052D001A7E93 /* NotificationViewController.swift */; };
+		04505F0A20C80863001A7E93 /* NotificationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04505F0920C80863001A7E93 /* NotificationCollectionViewCell.swift */; };
 		0491E1E920C4A3AB0060C4BD /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0491E1E820C4A3AB0060C4BD /* File.swift */; };
 		FFE460DE4BBEBA286FD6CA89 /* Pods_Makani.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB18CF28C474596F24DFE861 /* Pods_Makani.framework */; };
 /* End PBXBuildFile section */
@@ -81,6 +83,8 @@
 		04505F0120C7E5B1001A7E93 /* ContainerOwnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerOwnerViewController.swift; sourceTree = "<group>"; };
 		04505F0320C7E61C001A7E93 /* HomeOwnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeOwnerViewController.swift; sourceTree = "<group>"; };
 		04505F0520C7E7D6001A7E93 /* MenuOwnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOwnerViewController.swift; sourceTree = "<group>"; };
+		04505F0720C8052D001A7E93 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		04505F0920C80863001A7E93 /* NotificationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCollectionViewCell.swift; sourceTree = "<group>"; };
 		0491E1E820C4A3AB0060C4BD /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		0B257BB7B784B4A545A3E4E5 /* Pods-Makani.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makani.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makani/Pods-Makani.debug.xcconfig"; sourceTree = "<group>"; };
 		74BF757181DCAFC1FFBD30B0 /* Pods-Makani.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makani.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makani/Pods-Makani.release.xcconfig"; sourceTree = "<group>"; };
@@ -160,6 +164,7 @@
 				044E280920C0B3010069196D /* LaunchScreen.storyboard */,
 				0443A73120C40E860003526D /* SpacesTableViewCell.swift */,
 				04505EFF20C6E9B0001A7E93 /* InterestCollectionViewCell.swift */,
+				04505F0920C80863001A7E93 /* NotificationCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 				04505F0120C7E5B1001A7E93 /* ContainerOwnerViewController.swift */,
 				04505F0320C7E61C001A7E93 /* HomeOwnerViewController.swift */,
 				04505F0520C7E7D6001A7E93 /* MenuOwnerViewController.swift */,
+				04505F0720C8052D001A7E93 /* NotificationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -315,6 +321,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Makani/Pods-Makani-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/BTNavigationDropdownMenu/BTNavigationDropdownMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
 				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
@@ -326,6 +333,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BTNavigationDropdownMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
@@ -364,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0448D4C620C34D0C00D2CE67 /* FavouritesViewController.swift in Sources */,
+				04505F0A20C80863001A7E93 /* NotificationCollectionViewCell.swift in Sources */,
 				0448D4B120C17AA300D2CE67 /* FirstViewController.swift in Sources */,
 				04505F0420C7E61C001A7E93 /* HomeOwnerViewController.swift in Sources */,
 				0443A73420C41D100003526D /* SplashScreenViewController.swift in Sources */,
@@ -389,6 +398,7 @@
 				0448D4C220C3387900D2CE67 /* menuViewController.swift in Sources */,
 				0448D4AB20C1711200D2CE67 /* Authontication.swift in Sources */,
 				0448D4AD20C171A300D2CE67 /* User.swift in Sources */,
+				04505F0820C8052D001A7E93 /* NotificationViewController.swift in Sources */,
 				0448D4CA20C34D3900D2CE67 /* SettingsViewController.swift in Sources */,
 				0448D4CC20C34D5000D2CE67 /* BookingHistoryViewController.swift in Sources */,
 			);

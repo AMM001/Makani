@@ -13,6 +13,7 @@ target 'Makani' do
   pod 'ImageSlideshow'
   pod "ImageSlideshow/SDWebImage"
   pod 'NVActivityIndicatorView'
+  pod "Floaty"
 
 
 

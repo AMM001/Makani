@@ -55,6 +55,9 @@ class HomeUserViewController: UIViewController {
     }
     
     @IBAction func notificationBtn(_ sender: Any) {
+        
+        let notificationVC = storyboard?.instantiateViewController(withIdentifier: "NotificationViewController") as! NotificationViewController
+        self.present(notificationVC, animated: true, completion: nil)
     }
     
     @IBAction func searchBtn(_ sender: Any) {
