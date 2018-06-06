@@ -34,6 +34,9 @@
 		044E281C20C0B3D90069196D /* RestPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044E281B20C0B3D90069196D /* RestPasswordViewController.swift */; };
 		04505EFC20C6B4B5001A7E93 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04505EFB20C6B4B5001A7E93 /* EditProfileViewController.swift */; };
 		04505F0020C6E9B0001A7E93 /* InterestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04505EFF20C6E9B0001A7E93 /* InterestCollectionViewCell.swift */; };
+		04505F0220C7E5B1001A7E93 /* ContainerOwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04505F0120C7E5B1001A7E93 /* ContainerOwnerViewController.swift */; };
+		04505F0420C7E61C001A7E93 /* HomeOwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04505F0320C7E61C001A7E93 /* HomeOwnerViewController.swift */; };
+		04505F0620C7E7D6001A7E93 /* MenuOwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04505F0520C7E7D6001A7E93 /* MenuOwnerViewController.swift */; };
 		0491E1E920C4A3AB0060C4BD /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0491E1E820C4A3AB0060C4BD /* File.swift */; };
 		FFE460DE4BBEBA286FD6CA89 /* Pods_Makani.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB18CF28C474596F24DFE861 /* Pods_Makani.framework */; };
 /* End PBXBuildFile section */
@@ -75,6 +78,9 @@
 		044E281B20C0B3D90069196D /* RestPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestPasswordViewController.swift; sourceTree = "<group>"; };
 		04505EFB20C6B4B5001A7E93 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		04505EFF20C6E9B0001A7E93 /* InterestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestCollectionViewCell.swift; sourceTree = "<group>"; };
+		04505F0120C7E5B1001A7E93 /* ContainerOwnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerOwnerViewController.swift; sourceTree = "<group>"; };
+		04505F0320C7E61C001A7E93 /* HomeOwnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeOwnerViewController.swift; sourceTree = "<group>"; };
+		04505F0520C7E7D6001A7E93 /* MenuOwnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOwnerViewController.swift; sourceTree = "<group>"; };
 		0491E1E820C4A3AB0060C4BD /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		0B257BB7B784B4A545A3E4E5 /* Pods-Makani.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makani.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makani/Pods-Makani.debug.xcconfig"; sourceTree = "<group>"; };
 		74BF757181DCAFC1FFBD30B0 /* Pods-Makani.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makani.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makani/Pods-Makani.release.xcconfig"; sourceTree = "<group>"; };
@@ -176,6 +182,9 @@
 				0443A73320C41D100003526D /* SplashScreenViewController.swift */,
 				0443A73520C428AC0003526D /* SearchViewController.swift */,
 				04505EFB20C6B4B5001A7E93 /* EditProfileViewController.swift */,
+				04505F0120C7E5B1001A7E93 /* ContainerOwnerViewController.swift */,
+				04505F0320C7E61C001A7E93 /* HomeOwnerViewController.swift */,
+				04505F0520C7E7D6001A7E93 /* MenuOwnerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -356,17 +365,20 @@
 			files = (
 				0448D4C620C34D0C00D2CE67 /* FavouritesViewController.swift in Sources */,
 				0448D4B120C17AA300D2CE67 /* FirstViewController.swift in Sources */,
+				04505F0420C7E61C001A7E93 /* HomeOwnerViewController.swift in Sources */,
 				0443A73420C41D100003526D /* SplashScreenViewController.swift in Sources */,
 				0443A73220C40E860003526D /* SpacesTableViewCell.swift in Sources */,
 				0448D4A920C1708900D2CE67 /* URLS.swift in Sources */,
 				0448D4B920C2C7EA00D2CE67 /* HomeUserViewController.swift in Sources */,
 				0491E1E920C4A3AB0060C4BD /* File.swift in Sources */,
 				044E281A20C0B3C30069196D /* RegisterViewController.swift in Sources */,
+				04505F0220C7E5B1001A7E93 /* ContainerOwnerViewController.swift in Sources */,
 				04505EFC20C6B4B5001A7E93 /* EditProfileViewController.swift in Sources */,
 				0448D4BE20C3179A00D2CE67 /* ProfileViewController.swift in Sources */,
 				0448D4B320C17D4A00D2CE67 /* ChangeImage.swift in Sources */,
 				044E281820C0B3B30069196D /* LoginViewController.swift in Sources */,
 				0448D4C420C33DC300D2CE67 /* ContainerViewController.swift in Sources */,
+				04505F0620C7E7D6001A7E93 /* MenuOwnerViewController.swift in Sources */,
 				0448D4C820C34D2600D2CE67 /* AboutViewController.swift in Sources */,
 				0443A73620C428AC0003526D /* SearchViewController.swift in Sources */,
 				04505F0020C6E9B0001A7E93 /* InterestCollectionViewCell.swift in Sources */,

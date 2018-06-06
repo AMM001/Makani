@@ -38,13 +38,15 @@ class FirstViewController: UIViewController {
     @IBAction func submitBtn(_ sender: Any) {
         if (userTF.isChecked == false && owerTF.isChecked == false){
             self.view.makeToast("you should choice from this !", duration: 3.0, position: .bottom)
-        }else {
-            let vc = storyboard?.instantiateViewController(withIdentifier: "ContainerViewController")as! ContainerViewController
-            self.present(vc, animated: true, completion: nil)
+        }else if(userTF.isChecked == true && owerTF.isChecked == false){
+            let homeUservc = storyboard?.instantiateViewController(withIdentifier: "ContainerViewController")as! ContainerViewController
+            self.present(homeUservc, animated: true, completion: nil)
             
+        }else if (userTF.isChecked == false && owerTF.isChecked == true){
+        
+            let homeownervc = storyboard?.instantiateViewController(withIdentifier: "ContainerOwnerViewController") as! ContainerOwnerViewController
+            self.present(homeownervc, animated: true, completion: nil)
         }
-        
-        
     }
     
   
