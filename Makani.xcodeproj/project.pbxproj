@@ -39,6 +39,9 @@
 		04505F0620C7E7D6001A7E93 /* MenuOwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04505F0520C7E7D6001A7E93 /* MenuOwnerViewController.swift */; };
 		04505F0820C8052D001A7E93 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04505F0720C8052D001A7E93 /* NotificationViewController.swift */; };
 		04505F0A20C80863001A7E93 /* NotificationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04505F0920C80863001A7E93 /* NotificationCollectionViewCell.swift */; };
+		045C8AE020CC155E009B00BB /* AddSpaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C8ADF20CC155D009B00BB /* AddSpaceViewController.swift */; };
+		045C8AE220CC221B009B00BB /* AddSpaceTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C8AE120CC221B009B00BB /* AddSpaceTextField.swift */; };
+		045C8AE420CC80DD009B00BB /* AddSpaceSecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C8AE320CC80DD009B00BB /* AddSpaceSecondScreenViewController.swift */; };
 		0491E1E920C4A3AB0060C4BD /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0491E1E820C4A3AB0060C4BD /* File.swift */; };
 		FFE460DE4BBEBA286FD6CA89 /* Pods_Makani.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB18CF28C474596F24DFE861 /* Pods_Makani.framework */; };
 /* End PBXBuildFile section */
@@ -85,6 +88,9 @@
 		04505F0520C7E7D6001A7E93 /* MenuOwnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOwnerViewController.swift; sourceTree = "<group>"; };
 		04505F0720C8052D001A7E93 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		04505F0920C80863001A7E93 /* NotificationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCollectionViewCell.swift; sourceTree = "<group>"; };
+		045C8ADF20CC155D009B00BB /* AddSpaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpaceViewController.swift; sourceTree = "<group>"; };
+		045C8AE120CC221B009B00BB /* AddSpaceTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpaceTextField.swift; sourceTree = "<group>"; };
+		045C8AE320CC80DD009B00BB /* AddSpaceSecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpaceSecondScreenViewController.swift; sourceTree = "<group>"; };
 		0491E1E820C4A3AB0060C4BD /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		0B257BB7B784B4A545A3E4E5 /* Pods-Makani.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makani.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makani/Pods-Makani.debug.xcconfig"; sourceTree = "<group>"; };
 		74BF757181DCAFC1FFBD30B0 /* Pods-Makani.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makani.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makani/Pods-Makani.release.xcconfig"; sourceTree = "<group>"; };
@@ -191,6 +197,8 @@
 				04505F0320C7E61C001A7E93 /* HomeOwnerViewController.swift */,
 				04505F0520C7E7D6001A7E93 /* MenuOwnerViewController.swift */,
 				04505F0720C8052D001A7E93 /* NotificationViewController.swift */,
+				045C8ADF20CC155D009B00BB /* AddSpaceViewController.swift */,
+				045C8AE320CC80DD009B00BB /* AddSpaceSecondScreenViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -204,6 +212,7 @@
 				0448D4AE20C172C100D2CE67 /* Validate.swift */,
 				0448D4B220C17D4A00D2CE67 /* ChangeImage.swift */,
 				0448D4B620C1E2C200D2CE67 /* TextFieldPadding.swift */,
+				045C8AE120CC221B009B00BB /* AddSpaceTextField.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -387,15 +396,18 @@
 				0448D4B320C17D4A00D2CE67 /* ChangeImage.swift in Sources */,
 				044E281820C0B3B30069196D /* LoginViewController.swift in Sources */,
 				0448D4C420C33DC300D2CE67 /* ContainerViewController.swift in Sources */,
+				045C8AE220CC221B009B00BB /* AddSpaceTextField.swift in Sources */,
 				04505F0620C7E7D6001A7E93 /* MenuOwnerViewController.swift in Sources */,
 				0448D4C820C34D2600D2CE67 /* AboutViewController.swift in Sources */,
 				0443A73620C428AC0003526D /* SearchViewController.swift in Sources */,
+				045C8AE420CC80DD009B00BB /* AddSpaceSecondScreenViewController.swift in Sources */,
 				04505F0020C6E9B0001A7E93 /* InterestCollectionViewCell.swift in Sources */,
 				0448D4AF20C172C100D2CE67 /* Validate.swift in Sources */,
 				0448D4B720C1E2C200D2CE67 /* TextFieldPadding.swift in Sources */,
 				044E281C20C0B3D90069196D /* RestPasswordViewController.swift in Sources */,
 				044E280120C0B3010069196D /* AppDelegate.swift in Sources */,
 				0448D4C220C3387900D2CE67 /* menuViewController.swift in Sources */,
+				045C8AE020CC155E009B00BB /* AddSpaceViewController.swift in Sources */,
 				0448D4AB20C1711200D2CE67 /* Authontication.swift in Sources */,
 				0448D4AD20C171A300D2CE67 /* User.swift in Sources */,
 				04505F0820C8052D001A7E93 /* NotificationViewController.swift in Sources */,
