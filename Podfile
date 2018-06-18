@@ -14,6 +14,8 @@ target 'Makani' do
   pod "ImageSlideshow/SDWebImage"
   pod 'NVActivityIndicatorView'
   pod "Floaty"
+  pod 'DropDown'
+
 
 
 

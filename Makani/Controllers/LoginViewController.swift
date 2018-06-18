@@ -61,6 +61,10 @@ class LoginViewController: UIViewController {
     
     @IBAction func registerBtn(_ sender: Any) {
         
+        let registerVc = storyboard?.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
+        
+        self.present(registerVc, animated: true, completion: nil)
+        
     }
     
     

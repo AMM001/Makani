@@ -7,8 +7,18 @@
 //
 
 import UIKit
+import Toast_Swift
 
 class RegisterViewController: UIViewController {
+    
+    @IBOutlet weak var nameTF: TextField!
+    @IBOutlet weak var emailTF: TextField!
+    @IBOutlet weak var passwordTF: TextField!
+    @IBOutlet weak var confirmTF: TextField!
+    @IBOutlet weak var countryTF: TextField!
+    @IBOutlet weak var phoneNubmerTF: TextField!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +26,61 @@ class RegisterViewController: UIViewController {
 
     }
 
-  
+    @IBAction func backBtn(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func nextBtn(_ sender: Any) {
+        
+        guard let name = nameTF.text, !name.isEmpty else{
+            
+            self.view.makeToast("enter your Name", duration: 3.0, position: .bottom)
+            return
+        }
+        guard let email = emailTF.text, !email.isEmpty else{
+            
+            self.view.makeToast("enter your Email", duration: 3.0, position: .bottom)
+            return
+        }
+        
+        guard let password = passwordTF.text, !password.isEmpty else{
+            
+            self.view.makeToast("enter your password", duration: 3.0, position: .bottom)
+            return
+        }
+        
+        guard let confirmpassword = confirmTF.text , confirmpassword == password  else{
+            
+            self.view.makeToast("password not matched", duration: 3.0, position: .bottom)
+            
+           return
+        }
+            
+            guard let country = countryTF.text, !country.isEmpty else{
+                
+                self.view.makeToast("enter your country", duration: 3.0, position: .bottom)
+                return
+            }
+            
+            guard let phone = phoneNubmerTF.text, !phone.isEmpty else{
+                
+                self.view.makeToast("enter your phone number", duration: 3.0, position: .bottom)
+                return
+            }
+        
+        
+        let secondRegisterVc = storyboard?.instantiateViewController(withIdentifier: "RegisterSecondScreenViewController") as! RegisterSecondScreenViewController
+            secondRegisterVc.name  = name
+            secondRegisterVc.email = email
+            secondRegisterVc.password = password
+            secondRegisterVc.country = country
+            secondRegisterVc.phone   = phone
+        
+        self.present(secondRegisterVc, animated: true, completion: nil)
+        
+    }
+    
+    
     
 
  

@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (4.7.2)
   - BTNavigationDropdownMenu (0.4.1)
+  - DropDown (2.3.2)
   - Floaty (4.0.1)
   - ImageSlideshow (1.5.3):
     - ImageSlideshow/Core (= 1.5.3)
@@ -21,6 +22,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - BTNavigationDropdownMenu (from `https://github.com/zkrige/BTNavigationDropdownMenu.git`)
+  - DropDown
   - Floaty
   - ImageSlideshow
   - ImageSlideshow/SDWebImage
@@ -32,6 +34,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - DropDown
     - Floaty
     - ImageSlideshow
     - NVActivityIndicatorView
@@ -52,6 +55,7 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   BTNavigationDropdownMenu: 4a88996ad514f2feff98481eb2d6a5cb7520f76c
+  DropDown: 7f87abecc28f9b4edad810fe1211c5c018c257e5
   Floaty: 82854e1a5ef4fa208281ebd4da2f3d1e51ba67a6
   ImageSlideshow: 24a1184909f589379ba2527ebcc77996881bb1f2
   NVActivityIndicatorView: 8068ba3ad39cb44cbaab25d89ff2546b3f092681
@@ -60,6 +64,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
   Toast-Swift: ba0b01b095aada709d915f9beb1d38184a2721c3
 
-PODFILE CHECKSUM: 2c0ed329e93564bef1b45b4a085343bc41a0e6a9
+PODFILE CHECKSUM: 5a08a5613ed741ff628ca1e03e07066aa5873fd1
 
 COCOAPODS: 1.5.2

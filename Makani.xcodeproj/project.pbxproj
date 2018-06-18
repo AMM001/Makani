@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041C099320D54F63003581FB /* AddSpaceFourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C099220D54F63003581FB /* AddSpaceFourthViewController.swift */; };
 		0443A73220C40E860003526D /* SpacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443A73120C40E860003526D /* SpacesTableViewCell.swift */; };
 		0443A73420C41D100003526D /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443A73320C41D100003526D /* SplashScreenViewController.swift */; };
 		0443A73620C428AC0003526D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443A73520C428AC0003526D /* SearchViewController.swift */; };
@@ -39,14 +40,21 @@
 		04505F0620C7E7D6001A7E93 /* MenuOwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04505F0520C7E7D6001A7E93 /* MenuOwnerViewController.swift */; };
 		04505F0820C8052D001A7E93 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04505F0720C8052D001A7E93 /* NotificationViewController.swift */; };
 		04505F0A20C80863001A7E93 /* NotificationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04505F0920C80863001A7E93 /* NotificationCollectionViewCell.swift */; };
+		04516B2720D7C2410003F8E2 /* RegisterSecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04516B2620D7C2410003F8E2 /* RegisterSecondScreenViewController.swift */; };
 		045C8AE020CC155E009B00BB /* AddSpaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C8ADF20CC155D009B00BB /* AddSpaceViewController.swift */; };
 		045C8AE220CC221B009B00BB /* AddSpaceTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C8AE120CC221B009B00BB /* AddSpaceTextField.swift */; };
 		045C8AE420CC80DD009B00BB /* AddSpaceSecondScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C8AE320CC80DD009B00BB /* AddSpaceSecondScreenViewController.swift */; };
+		0484E84120D2923C00EB94B5 /* OpenCloseTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484E84020D2923B00EB94B5 /* OpenCloseTF.swift */; };
+		0484E84320D2B66900EB94B5 /* AddSpaceThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484E84220D2B66900EB94B5 /* AddSpaceThirdViewController.swift */; };
 		0491E1E920C4A3AB0060C4BD /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0491E1E820C4A3AB0060C4BD /* File.swift */; };
+		049256AA20D5704200E71C88 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049256A920D5704200E71C88 /* CustomAlertViewController.swift */; };
+		049256AC20D5755A00E71C88 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049256AB20D5755A00E71C88 /* PopUpViewController.swift */; };
+		049256AE20D5AFFD00E71C88 /* SelectFacilitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049256AD20D5AFFD00E71C88 /* SelectFacilitiesViewController.swift */; };
 		FFE460DE4BBEBA286FD6CA89 /* Pods_Makani.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB18CF28C474596F24DFE861 /* Pods_Makani.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041C099220D54F63003581FB /* AddSpaceFourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpaceFourthViewController.swift; sourceTree = "<group>"; };
 		0443A72B20C3F7480003526D /* Tale of Hawks.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tale of Hawks.ttf"; sourceTree = "<group>"; };
 		0443A72C20C3F8450003526D /* PG_Roof Runners_active_bold-it.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PG_Roof Runners_active_bold-it.ttf"; sourceTree = "<group>"; };
 		0443A72D20C3F8450003526D /* PG_Roof Runners_active_it.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PG_Roof Runners_active_it.ttf"; sourceTree = "<group>"; };
@@ -88,10 +96,16 @@
 		04505F0520C7E7D6001A7E93 /* MenuOwnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOwnerViewController.swift; sourceTree = "<group>"; };
 		04505F0720C8052D001A7E93 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		04505F0920C80863001A7E93 /* NotificationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCollectionViewCell.swift; sourceTree = "<group>"; };
+		04516B2620D7C2410003F8E2 /* RegisterSecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterSecondScreenViewController.swift; sourceTree = "<group>"; };
 		045C8ADF20CC155D009B00BB /* AddSpaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpaceViewController.swift; sourceTree = "<group>"; };
 		045C8AE120CC221B009B00BB /* AddSpaceTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpaceTextField.swift; sourceTree = "<group>"; };
 		045C8AE320CC80DD009B00BB /* AddSpaceSecondScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpaceSecondScreenViewController.swift; sourceTree = "<group>"; };
+		0484E84020D2923B00EB94B5 /* OpenCloseTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCloseTF.swift; sourceTree = "<group>"; };
+		0484E84220D2B66900EB94B5 /* AddSpaceThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpaceThirdViewController.swift; sourceTree = "<group>"; };
 		0491E1E820C4A3AB0060C4BD /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		049256A920D5704200E71C88 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
+		049256AB20D5755A00E71C88 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		049256AD20D5AFFD00E71C88 /* SelectFacilitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFacilitiesViewController.swift; sourceTree = "<group>"; };
 		0B257BB7B784B4A545A3E4E5 /* Pods-Makani.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makani.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makani/Pods-Makani.debug.xcconfig"; sourceTree = "<group>"; };
 		74BF757181DCAFC1FFBD30B0 /* Pods-Makani.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makani.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makani/Pods-Makani.release.xcconfig"; sourceTree = "<group>"; };
 		BB18CF28C474596F24DFE861 /* Pods_Makani.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makani.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +123,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041C099420D55B7A003581FB /* AddCo-Working Spaces */ = {
+			isa = PBXGroup;
+			children = (
+				045C8ADF20CC155D009B00BB /* AddSpaceViewController.swift */,
+				045C8AE320CC80DD009B00BB /* AddSpaceSecondScreenViewController.swift */,
+				0484E84220D2B66900EB94B5 /* AddSpaceThirdViewController.swift */,
+				041C099220D54F63003581FB /* AddSpaceFourthViewController.swift */,
+			);
+			path = "AddCo-Working Spaces";
+			sourceTree = "<group>";
+		};
 		0448D4B520C1D0A200D2CE67 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +196,7 @@
 				0443A73120C40E860003526D /* SpacesTableViewCell.swift */,
 				04505EFF20C6E9B0001A7E93 /* InterestCollectionViewCell.swift */,
 				04505F0920C80863001A7E93 /* NotificationCollectionViewCell.swift */,
+				049256AB20D5755A00E71C88 /* PopUpViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,8 +204,10 @@
 		044E281420C0B3320069196D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				041C099420D55B7A003581FB /* AddCo-Working Spaces */,
 				044E281720C0B3B30069196D /* LoginViewController.swift */,
 				044E281920C0B3C30069196D /* RegisterViewController.swift */,
+				04516B2620D7C2410003F8E2 /* RegisterSecondScreenViewController.swift */,
 				044E281B20C0B3D90069196D /* RestPasswordViewController.swift */,
 				0448D4B020C17AA300D2CE67 /* FirstViewController.swift */,
 				0448D4B820C2C7EA00D2CE67 /* HomeUserViewController.swift */,
@@ -197,8 +225,7 @@
 				04505F0320C7E61C001A7E93 /* HomeOwnerViewController.swift */,
 				04505F0520C7E7D6001A7E93 /* MenuOwnerViewController.swift */,
 				04505F0720C8052D001A7E93 /* NotificationViewController.swift */,
-				045C8ADF20CC155D009B00BB /* AddSpaceViewController.swift */,
-				045C8AE320CC80DD009B00BB /* AddSpaceSecondScreenViewController.swift */,
+				049256A920D5704200E71C88 /* CustomAlertViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -213,6 +240,8 @@
 				0448D4B220C17D4A00D2CE67 /* ChangeImage.swift */,
 				0448D4B620C1E2C200D2CE67 /* TextFieldPadding.swift */,
 				045C8AE120CC221B009B00BB /* AddSpaceTextField.swift */,
+				0484E84020D2923B00EB94B5 /* OpenCloseTF.swift */,
+				049256AD20D5AFFD00E71C88 /* SelectFacilitiesViewController.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -330,6 +359,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Makani/Pods-Makani-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/BTNavigationDropdownMenu/BTNavigationDropdownMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
 				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
 				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
@@ -342,6 +372,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BTNavigationDropdownMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
@@ -383,8 +414,10 @@
 				0448D4C620C34D0C00D2CE67 /* FavouritesViewController.swift in Sources */,
 				04505F0A20C80863001A7E93 /* NotificationCollectionViewCell.swift in Sources */,
 				0448D4B120C17AA300D2CE67 /* FirstViewController.swift in Sources */,
+				04516B2720D7C2410003F8E2 /* RegisterSecondScreenViewController.swift in Sources */,
 				04505F0420C7E61C001A7E93 /* HomeOwnerViewController.swift in Sources */,
 				0443A73420C41D100003526D /* SplashScreenViewController.swift in Sources */,
+				041C099320D54F63003581FB /* AddSpaceFourthViewController.swift in Sources */,
 				0443A73220C40E860003526D /* SpacesTableViewCell.swift in Sources */,
 				0448D4A920C1708900D2CE67 /* URLS.swift in Sources */,
 				0448D4B920C2C7EA00D2CE67 /* HomeUserViewController.swift in Sources */,
@@ -393,15 +426,18 @@
 				04505F0220C7E5B1001A7E93 /* ContainerOwnerViewController.swift in Sources */,
 				04505EFC20C6B4B5001A7E93 /* EditProfileViewController.swift in Sources */,
 				0448D4BE20C3179A00D2CE67 /* ProfileViewController.swift in Sources */,
+				0484E84320D2B66900EB94B5 /* AddSpaceThirdViewController.swift in Sources */,
 				0448D4B320C17D4A00D2CE67 /* ChangeImage.swift in Sources */,
 				044E281820C0B3B30069196D /* LoginViewController.swift in Sources */,
 				0448D4C420C33DC300D2CE67 /* ContainerViewController.swift in Sources */,
 				045C8AE220CC221B009B00BB /* AddSpaceTextField.swift in Sources */,
 				04505F0620C7E7D6001A7E93 /* MenuOwnerViewController.swift in Sources */,
 				0448D4C820C34D2600D2CE67 /* AboutViewController.swift in Sources */,
+				049256AA20D5704200E71C88 /* CustomAlertViewController.swift in Sources */,
 				0443A73620C428AC0003526D /* SearchViewController.swift in Sources */,
 				045C8AE420CC80DD009B00BB /* AddSpaceSecondScreenViewController.swift in Sources */,
 				04505F0020C6E9B0001A7E93 /* InterestCollectionViewCell.swift in Sources */,
+				049256AE20D5AFFD00E71C88 /* SelectFacilitiesViewController.swift in Sources */,
 				0448D4AF20C172C100D2CE67 /* Validate.swift in Sources */,
 				0448D4B720C1E2C200D2CE67 /* TextFieldPadding.swift in Sources */,
 				044E281C20C0B3D90069196D /* RestPasswordViewController.swift in Sources */,
@@ -410,6 +446,8 @@
 				045C8AE020CC155E009B00BB /* AddSpaceViewController.swift in Sources */,
 				0448D4AB20C1711200D2CE67 /* Authontication.swift in Sources */,
 				0448D4AD20C171A300D2CE67 /* User.swift in Sources */,
+				049256AC20D5755A00E71C88 /* PopUpViewController.swift in Sources */,
+				0484E84120D2923C00EB94B5 /* OpenCloseTF.swift in Sources */,
 				04505F0820C8052D001A7E93 /* NotificationViewController.swift in Sources */,
 				0448D4CA20C34D3900D2CE67 /* SettingsViewController.swift in Sources */,
 				0448D4CC20C34D5000D2CE67 /* BookingHistoryViewController.swift in Sources */,
