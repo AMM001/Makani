@@ -50,6 +50,7 @@
 		049256AA20D5704200E71C88 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049256A920D5704200E71C88 /* CustomAlertViewController.swift */; };
 		049256AC20D5755A00E71C88 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049256AB20D5755A00E71C88 /* PopUpViewController.swift */; };
 		049256AE20D5AFFD00E71C88 /* SelectFacilitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049256AD20D5AFFD00E71C88 /* SelectFacilitiesViewController.swift */; };
+		BB2B942C20D2943D003D0BD5 /* Stars.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2B942B20D2943D003D0BD5 /* Stars.xib */; };
 		FFE460DE4BBEBA286FD6CA89 /* Pods_Makani.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB18CF28C474596F24DFE861 /* Pods_Makani.framework */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +110,7 @@
 		0B257BB7B784B4A545A3E4E5 /* Pods-Makani.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makani.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makani/Pods-Makani.debug.xcconfig"; sourceTree = "<group>"; };
 		74BF757181DCAFC1FFBD30B0 /* Pods-Makani.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makani.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makani/Pods-Makani.release.xcconfig"; sourceTree = "<group>"; };
 		BB18CF28C474596F24DFE861 /* Pods_Makani.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makani.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB2B942B20D2943D003D0BD5 /* Stars.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Stars.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 				04505EFF20C6E9B0001A7E93 /* InterestCollectionViewCell.swift */,
 				04505F0920C80863001A7E93 /* NotificationCollectionViewCell.swift */,
 				049256AB20D5755A00E71C88 /* PopUpViewController.swift */,
+				BB2B942B20D2943D003D0BD5 /* Stars.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				044E280B20C0B3010069196D /* LaunchScreen.storyboard in Resources */,
 				044E280820C0B3010069196D /* Assets.xcassets in Resources */,
 				044E280620C0B3010069196D /* Main.storyboard in Resources */,
+				BB2B942C20D2943D003D0BD5 /* Stars.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
