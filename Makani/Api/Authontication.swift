@@ -10,17 +10,12 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-class Api:NSObject {
+class Authontication:NSObject {
     
-    
-    static func login(userName:String,password:String,language:Int,completion:@escaping (_ error:String?,_ result:Any?)->Void){
-        
+    static func login(email:String,password:String,completion:@escaping (_ error:String?,_ result:Any?)->Void){
         let url = URL.loginUrl
-        
-        let paramaters = ["username":userName ,"password":password] as [String : Any]
-        
+        let paramaters = ["email":email ,"password":password] as [String : Any]
         Alamofire.request(url, method: .post, parameters: paramaters, encoding: JSONEncoding.default, headers: nil)
-            
             .responseJSON { response in
                 switch response.result{
                 case .failure:
@@ -29,22 +24,14 @@ class Api:NSObject {
                     let json = JSON(response.value!)
                     let status = json["errorDesc"].string
                     if status == "Success" {
-                        
                         let loggedUser = User()
-                        
-                      
                         completion(nil,loggedUser)
-                        
                     }else{
-                        
                         let errorMessage = json["errorDesc"].string
                         completion(errorMessage,nil)
                     }
-                    
                 }
         }
     }
-    
-    
     
 }

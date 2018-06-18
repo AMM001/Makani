@@ -9,11 +9,10 @@
 import Foundation
 import UIKit
 
-class Vladiate: NSObject {
+class Validate: NSObject {
     
     class func isValidEmail(testStr:String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
-        
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: testStr)
     }
@@ -28,12 +27,12 @@ class Vladiate: NSObject {
         
         let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
             (result : UIAlertAction) -> Void in
-
+            
         }
         
         alertController.addAction(okAction)
         viewController.present(alertController, animated: true, completion: nil)
-      
+        
     }
     
 }

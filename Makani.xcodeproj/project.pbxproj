@@ -51,6 +51,10 @@
 		049256AC20D5755A00E71C88 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049256AB20D5755A00E71C88 /* PopUpViewController.swift */; };
 		049256AE20D5AFFD00E71C88 /* SelectFacilitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049256AD20D5AFFD00E71C88 /* SelectFacilitiesViewController.swift */; };
 		BB2B942C20D2943D003D0BD5 /* Stars.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2B942B20D2943D003D0BD5 /* Stars.xib */; };
+		BB7DF9DB20D832F600ADC6C4 /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DF9DA20D832F600ADC6C4 /* RoomCell.swift */; };
+		BB7DF9DD20D8334000ADC6C4 /* SpaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DF9DC20D8334000ADC6C4 /* SpaceDetailsViewController.swift */; };
+		BB7DF9E020D85C0F00ADC6C4 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DF9DF20D85C0F00ADC6C4 /* Space.swift */; };
+		BB7DF9E220D85EB900ADC6C4 /* Addspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DF9E120D85EB900ADC6C4 /* Addspace.swift */; };
 		FFE460DE4BBEBA286FD6CA89 /* Pods_Makani.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB18CF28C474596F24DFE861 /* Pods_Makani.framework */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +115,10 @@
 		74BF757181DCAFC1FFBD30B0 /* Pods-Makani.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makani.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makani/Pods-Makani.release.xcconfig"; sourceTree = "<group>"; };
 		BB18CF28C474596F24DFE861 /* Pods_Makani.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makani.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2B942B20D2943D003D0BD5 /* Stars.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Stars.xib; sourceTree = "<group>"; };
+		BB7DF9DA20D832F600ADC6C4 /* RoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCell.swift; sourceTree = "<group>"; };
+		BB7DF9DC20D8334000ADC6C4 /* SpaceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceDetailsViewController.swift; sourceTree = "<group>"; };
+		BB7DF9DF20D85C0F00ADC6C4 /* Space.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
+		BB7DF9E120D85EB900ADC6C4 /* Addspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Addspace.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +180,7 @@
 		044E27FF20C0B3010069196D /* Makani */ = {
 			isa = PBXGroup;
 			children = (
+				BB7DF9DE20D8448D00ADC6C4 /* Utilities */,
 				0448D4B520C1D0A200D2CE67 /* fonts */,
 				044E281220C0B3180069196D /* Model */,
 				044E281320C0B3280069196D /* View */,
@@ -186,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				0448D4AC20C171A300D2CE67 /* User.swift */,
+				BB7DF9DF20D85C0F00ADC6C4 /* Space.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -207,6 +217,7 @@
 		044E281420C0B3320069196D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BB7DF9D920D8325D00ADC6C4 /* SpaceDetails */,
 				041C099420D55B7A003581FB /* AddCo-Working Spaces */,
 				044E281720C0B3B30069196D /* LoginViewController.swift */,
 				044E281920C0B3C30069196D /* RegisterViewController.swift */,
@@ -254,6 +265,7 @@
 			children = (
 				0448D4A820C1708900D2CE67 /* URLS.swift */,
 				0448D4AA20C1711200D2CE67 /* Authontication.swift */,
+				BB7DF9E120D85EB900ADC6C4 /* Addspace.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -281,6 +293,22 @@
 				BB18CF28C474596F24DFE861 /* Pods_Makani.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB7DF9D920D8325D00ADC6C4 /* SpaceDetails */ = {
+			isa = PBXGroup;
+			children = (
+				BB7DF9DA20D832F600ADC6C4 /* RoomCell.swift */,
+				BB7DF9DC20D8334000ADC6C4 /* SpaceDetailsViewController.swift */,
+			);
+			path = SpaceDetails;
+			sourceTree = "<group>";
+		};
+		BB7DF9DE20D8448D00ADC6C4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,6 +445,7 @@
 			files = (
 				0448D4C620C34D0C00D2CE67 /* FavouritesViewController.swift in Sources */,
 				04505F0A20C80863001A7E93 /* NotificationCollectionViewCell.swift in Sources */,
+				BB7DF9DD20D8334000ADC6C4 /* SpaceDetailsViewController.swift in Sources */,
 				0448D4B120C17AA300D2CE67 /* FirstViewController.swift in Sources */,
 				04516B2720D7C2410003F8E2 /* RegisterSecondScreenViewController.swift in Sources */,
 				04505F0420C7E61C001A7E93 /* HomeOwnerViewController.swift in Sources */,
@@ -424,6 +453,7 @@
 				041C099320D54F63003581FB /* AddSpaceFourthViewController.swift in Sources */,
 				0443A73220C40E860003526D /* SpacesTableViewCell.swift in Sources */,
 				0448D4A920C1708900D2CE67 /* URLS.swift in Sources */,
+				BB7DF9DB20D832F600ADC6C4 /* RoomCell.swift in Sources */,
 				0448D4B920C2C7EA00D2CE67 /* HomeUserViewController.swift in Sources */,
 				0491E1E920C4A3AB0060C4BD /* File.swift in Sources */,
 				044E281A20C0B3C30069196D /* RegisterViewController.swift in Sources */,
@@ -439,9 +469,11 @@
 				0448D4C820C34D2600D2CE67 /* AboutViewController.swift in Sources */,
 				049256AA20D5704200E71C88 /* CustomAlertViewController.swift in Sources */,
 				0443A73620C428AC0003526D /* SearchViewController.swift in Sources */,
+				BB7DF9E220D85EB900ADC6C4 /* Addspace.swift in Sources */,
 				045C8AE420CC80DD009B00BB /* AddSpaceSecondScreenViewController.swift in Sources */,
 				04505F0020C6E9B0001A7E93 /* InterestCollectionViewCell.swift in Sources */,
 				049256AE20D5AFFD00E71C88 /* SelectFacilitiesViewController.swift in Sources */,
+				BB7DF9E020D85C0F00ADC6C4 /* Space.swift in Sources */,
 				0448D4AF20C172C100D2CE67 /* Validate.swift in Sources */,
 				0448D4B720C1E2C200D2CE67 /* TextFieldPadding.swift in Sources */,
 				044E281C20C0B3D90069196D /* RestPasswordViewController.swift in Sources */,

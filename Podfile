@@ -15,11 +15,6 @@ target 'Makani' do
   pod 'NVActivityIndicatorView'
   pod "Floaty"
   pod 'DropDown'
-
-
-
-
-
-
+  pod 'JSONModel'
 
 end

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kBk-sA-HdH">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -455,7 +455,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AhE-p3-YiJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1298.4000000000001" y="796.55172413793105"/>
+            <point key="canvasLocation" x="-1623" y="848"/>
         </scene>
         <!--Add Space View Controller-->
         <scene sceneID="gjF-Om-hv2">
@@ -538,10 +538,10 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BNw-B5-BQZ">
-                                                <rect key="frame" x="42.5" y="520" width="290" height="35"/>
+                                                <rect key="frame" x="32.5" y="520" width="310" height="35"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0Y-BL-gMP">
-                                                        <rect key="frame" x="0.0" y="0.0" width="140" height="35"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="35"/>
                                                         <state key="normal" title="PREVIOUS" backgroundImage="border btn">
                                                             <color key="titleColor" red="0.76017767189999996" green="0.80689316990000004" blue="0.87272709609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
@@ -559,7 +559,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4s7-FO-uYy">
-                                                        <rect key="frame" x="150" y="0.0" width="140" height="35"/>
+                                                        <rect key="frame" x="160" y="0.0" width="150" height="35"/>
                                                         <color key="backgroundColor" red="0.10921937969999999" green="0.29392570260000001" blue="0.53896826509999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="NEXT">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -711,7 +711,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8F7-8t-a78" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-634.39999999999998" y="784.85757121439292"/>
+            <point key="canvasLocation" x="-671" y="848"/>
         </scene>
         <!--Add Space Second Screen View Controller-->
         <scene sceneID="Cj1-cL-p8Y">
@@ -911,10 +911,10 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nNP-2d-lC9">
-                                                <rect key="frame" x="42" y="500" width="290" height="35"/>
+                                                <rect key="frame" x="32" y="500" width="310" height="35"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1J-x4-61b">
-                                                        <rect key="frame" x="0.0" y="0.0" width="140" height="35"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="35"/>
                                                         <state key="normal" title="PREVIOUS" backgroundImage="border btn">
                                                             <color key="titleColor" red="0.76017767189999996" green="0.80689316990000004" blue="0.87272709609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
@@ -932,7 +932,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31t-JU-VmN">
-                                                        <rect key="frame" x="150" y="0.0" width="140" height="35"/>
+                                                        <rect key="frame" x="160" y="0.0" width="150" height="35"/>
                                                         <color key="backgroundColor" red="0.10921937969999999" green="0.29392570260000001" blue="0.53896826509999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="NEXT">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1008,7 +1008,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SEx-PM-l3U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="49" y="785"/>
+            <point key="canvasLocation" x="161" y="113"/>
         </scene>
         <!--Add Space Third View Controller-->
         <scene sceneID="eeG-Bs-5sb">
@@ -1260,10 +1260,10 @@
                                                 <state key="normal" title="Add more room" image="plus icon" backgroundImage="border shape add room"/>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oqt-NI-E70">
-                                                <rect key="frame" x="42" y="630" width="290" height="35"/>
+                                                <rect key="frame" x="32" y="630" width="310" height="35"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LsL-fJ-vVU">
-                                                        <rect key="frame" x="0.0" y="0.0" width="140" height="35"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="35"/>
                                                         <state key="normal" title="PREVIOUS" backgroundImage="border btn">
                                                             <color key="titleColor" red="0.76017767189999996" green="0.80689316990000004" blue="0.87272709609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
@@ -1282,7 +1282,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKI-rF-NJ7">
-                                                        <rect key="frame" x="150" y="0.0" width="140" height="35"/>
+                                                        <rect key="frame" x="160" y="0.0" width="150" height="35"/>
                                                         <color key="backgroundColor" red="0.10921937969999999" green="0.29392570260000001" blue="0.53896826509999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="NEXT">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1424,7 +1424,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7vS-Gg-2yS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="774" y="785"/>
+            <point key="canvasLocation" x="161" y="848"/>
         </scene>
         <!--Add Space Fourth View Controller-->
         <scene sceneID="Rxb-ct-CYu">
@@ -1487,10 +1487,10 @@
                                 </userDefinedRuntimeAttributes>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FZh-Ji-Q3p">
-                                <rect key="frame" x="42.5" y="582" width="290" height="35"/>
+                                <rect key="frame" x="32.5" y="582" width="310" height="35"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psK-1U-lcM">
-                                        <rect key="frame" x="0.0" y="0.0" width="140" height="35"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="35"/>
                                         <state key="normal" title="PREVIOUS" backgroundImage="border btn">
                                             <color key="titleColor" red="0.76017767189999996" green="0.80689316990000004" blue="0.87272709609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -1509,7 +1509,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAP-M3-dYB">
-                                        <rect key="frame" x="150" y="0.0" width="140" height="35"/>
+                                        <rect key="frame" x="160" y="0.0" width="150" height="35"/>
                                         <color key="backgroundColor" red="0.10921937969999999" green="0.29392570260000001" blue="0.53896826509999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="SUBMIT">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1548,36 +1548,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7m5-VK-t5n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1673" y="785"/>
-        </scene>
-        <!--Custom Alert View Controller-->
-        <scene sceneID="NEr-rH-6Q2">
-            <objects>
-                <viewController storyboardIdentifier="CustomAlertViewController" id="tZJ-lB-JTq" customClass="CustomAlertViewController" customModule="Makani" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="30c-ip-uYQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3er-sy-2HZ">
-                                <rect key="frame" x="166" y="334" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="IZW-NJ-5GY" firstAttribute="bottom" secondItem="3er-sy-2HZ" secondAttribute="bottom" constant="312" id="IP4-B5-pkf"/>
-                            <constraint firstItem="3er-sy-2HZ" firstAttribute="leading" secondItem="IZW-NJ-5GY" secondAttribute="leading" constant="166" id="geV-1D-iIu"/>
-                            <constraint firstItem="3er-sy-2HZ" firstAttribute="top" secondItem="IZW-NJ-5GY" secondAttribute="top" constant="314" id="lab-6b-zjU"/>
-                            <constraint firstItem="IZW-NJ-5GY" firstAttribute="trailing" secondItem="3er-sy-2HZ" secondAttribute="trailing" constant="167" id="wdl-4p-gDb"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="IZW-NJ-5GY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Pck-su-dFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2838" y="817"/>
+            <point key="canvasLocation" x="1111" y="848"/>
         </scene>
         <!--Notification View Controller-->
         <scene sceneID="j9v-GM-kQx">
@@ -1704,12 +1675,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XoQ-hB-HPH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="218" y="99"/>
+            <point key="canvasLocation" x="161" y="-664"/>
         </scene>
-        <!--View Controller-->
+        <!--Space Details View Controller-->
         <scene sceneID="bG5-3o-wsx">
             <objects>
-                <viewController id="jyl-Mw-VuP" sceneMemberID="viewController">
+                <viewController id="jyl-Mw-VuP" customClass="SpaceDetailsViewController" customModule="Makani" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q4n-eP-xJx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1721,7 +1692,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1480"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mgU-nW-Bdh">
-                                                <rect key="frame" x="10" y="310" width="355" height="338"/>
+                                                <rect key="frame" x="10" y="370" width="355" height="338"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEo-f4-p4y">
                                                         <rect key="frame" x="10" y="10" width="46.5" height="20.5"/>
@@ -1878,7 +1849,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Brq-cq-ps8" customClass="ImageSlideshow" customModule="ImageSlideshow">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                                <rect key="frame" x="0.0" y="60" width="375" height="300"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IJ1-rN-OAq">
@@ -1888,14 +1859,20 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hz-AQ-SYR">
-                                                                <rect key="frame" x="35" y="17.5" width="142.5" height="41"/>
+                                                                <rect key="frame" x="35" y="13" width="142.5" height="50"/>
                                                                 <state key="normal" title="ADD TO FAVORITE" backgroundImage="border btn"/>
+                                                                <connections>
+                                                                    <action selector="addToFavorite:" destination="jyl-Mw-VuP" eventType="touchUpInside" id="nro-9M-VzR"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1x2-bL-Nwm">
-                                                                <rect key="frame" x="197.5" y="16.5" width="142.5" height="41"/>
+                                                                <rect key="frame" x="197.5" y="12" width="142.5" height="50"/>
                                                                 <state key="normal" title="BOOK NOW" backgroundImage="active shape btn">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="bookNow:" destination="jyl-Mw-VuP" eventType="touchUpInside" id="AdX-W8-gJu"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1918,7 +1895,7 @@
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vrr-MW-3Rq">
-                                                <rect key="frame" x="10" y="658" width="355" height="121.5"/>
+                                                <rect key="frame" x="10" y="718" width="355" height="121.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gS3-1R-bE8">
                                                         <rect key="frame" x="10" y="10" width="71.5" height="20.5"/>
@@ -1944,7 +1921,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FPl-ot-BRl">
-                                                <rect key="frame" x="10" y="789.5" width="355" height="91"/>
+                                                <rect key="frame" x="10" y="849.5" width="355" height="91"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="website icon" translatesAutoresizingMaskIntoConstraints="NO" id="ln2-uP-g5s">
                                                         <rect key="frame" x="10" y="20.5" width="10" height="10"/>
@@ -1979,10 +1956,10 @@
                                                 </constraints>
                                             </view>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hsF-f5-PMg">
-                                                <rect key="frame" x="10" y="890.5" width="355" height="504.5"/>
+                                                <rect key="frame" x="10" y="950.5" width="355" height="444.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="92" id="FbX-xe-X8A">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="92" id="FbX-xe-X8A" customClass="RoomCell" customModule="Makani" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="355" height="92"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FbX-xe-X8A" id="xHL-AN-bTb">
@@ -2017,21 +1994,62 @@
                                                                 <constraint firstItem="FZL-Gc-ejE" firstAttribute="leading" secondItem="xHL-AN-bTb" secondAttribute="leadingMargin" constant="10" id="p8k-jZ-6fa"/>
                                                             </constraints>
                                                         </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="roomCapacity" destination="x8y-b7-WaP" id="r56-cq-Neo"/>
+                                                            <outlet property="roomCost" destination="JZu-0W-4Hy" id="uVO-Gm-LVq"/>
+                                                            <outlet property="roomName" destination="FZL-Gc-ejE" id="xie-Mi-kM8"/>
+                                                        </connections>
                                                     </tableViewCell>
                                                 </prototypes>
                                                 <sections/>
                                             </tableView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DOf-H3-yKN">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Space Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2AW-Io-UsE">
+                                                        <rect key="frame" x="112" y="21" width="150" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="31" id="SzB-gL-09p"/>
+                                                            <constraint firstAttribute="width" constant="150" id="vxS-OB-OXJ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTO-vs-ar6">
+                                                        <rect key="frame" x="8" y="25" width="20" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="ZPb-oo-Bhe"/>
+                                                            <constraint firstAttribute="height" constant="20" id="lKV-k7-D6t"/>
+                                                        </constraints>
+                                                        <state key="normal" backgroundImage="back"/>
+                                                        <connections>
+                                                            <action selector="backBtn:" destination="QeI-dx-UWC" eventType="touchUpInside" id="bEm-J7-SCF"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.10921937969999999" green="0.29392570260000001" blue="0.53896826509999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="DTO-vs-ar6" firstAttribute="top" secondItem="DOf-H3-yKN" secondAttribute="top" constant="25" id="7AE-lq-a21"/>
+                                                    <constraint firstItem="2AW-Io-UsE" firstAttribute="centerX" secondItem="DOf-H3-yKN" secondAttribute="centerX" id="DS8-zJ-gD8"/>
+                                                    <constraint firstAttribute="height" constant="60" id="WHa-c9-t5h"/>
+                                                    <constraint firstItem="DTO-vs-ar6" firstAttribute="leading" secondItem="DOf-H3-yKN" secondAttribute="leading" constant="8" id="feg-8Y-W5p"/>
+                                                    <constraint firstItem="2AW-Io-UsE" firstAttribute="top" secondItem="DOf-H3-yKN" secondAttribute="top" constant="21" id="gZP-sI-Xn3"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="FPl-ot-BRl" firstAttribute="top" secondItem="Vrr-MW-3Rq" secondAttribute="bottom" constant="10" id="0U1-Zp-ieV"/>
                                             <constraint firstItem="Vrr-MW-3Rq" firstAttribute="top" secondItem="mgU-nW-Bdh" secondAttribute="bottom" constant="10" id="Dgw-ic-ICO"/>
                                             <constraint firstItem="mgU-nW-Bdh" firstAttribute="leading" secondItem="uCM-dT-gHf" secondAttribute="leading" constant="10" id="FgP-EZ-nyf"/>
-                                            <constraint firstItem="Brq-cq-ps8" firstAttribute="top" secondItem="uCM-dT-gHf" secondAttribute="top" id="NNy-N0-Zbx"/>
+                                            <constraint firstAttribute="trailing" secondItem="DOf-H3-yKN" secondAttribute="trailing" id="Oyo-on-UcO"/>
                                             <constraint firstItem="Vrr-MW-3Rq" firstAttribute="leading" secondItem="uCM-dT-gHf" secondAttribute="leading" constant="10" id="Q6O-4U-VA6"/>
                                             <constraint firstItem="FPl-ot-BRl" firstAttribute="leading" secondItem="uCM-dT-gHf" secondAttribute="leading" constant="10" id="TA2-QT-FbX"/>
                                             <constraint firstAttribute="trailing" secondItem="Vrr-MW-3Rq" secondAttribute="trailing" constant="10" id="UVa-im-lEq"/>
                                             <constraint firstAttribute="trailing" secondItem="Brq-cq-ps8" secondAttribute="trailing" id="WqM-DS-NC2"/>
+                                            <constraint firstItem="DOf-H3-yKN" firstAttribute="top" secondItem="uCM-dT-gHf" secondAttribute="top" id="Xgj-E4-Hje"/>
+                                            <constraint firstItem="Brq-cq-ps8" firstAttribute="top" secondItem="DOf-H3-yKN" secondAttribute="bottom" id="f0v-6X-uI7"/>
                                             <constraint firstAttribute="trailing" secondItem="mgU-nW-Bdh" secondAttribute="trailing" constant="10" id="f8K-lF-oec"/>
                                             <constraint firstItem="Brq-cq-ps8" firstAttribute="leading" secondItem="uCM-dT-gHf" secondAttribute="leading" id="haj-rv-LSx"/>
                                             <constraint firstAttribute="bottom" secondItem="IJ1-rN-OAq" secondAttribute="bottom" id="hcn-7K-xNa"/>
@@ -2039,6 +2057,7 @@
                                             <constraint firstItem="mgU-nW-Bdh" firstAttribute="top" secondItem="Brq-cq-ps8" secondAttribute="bottom" constant="10" id="llg-Or-7NB"/>
                                             <constraint firstAttribute="trailing" secondItem="FPl-ot-BRl" secondAttribute="trailing" constant="10" id="npp-eB-REe"/>
                                             <constraint firstItem="hsF-f5-PMg" firstAttribute="leading" secondItem="uCM-dT-gHf" secondAttribute="leading" constant="10" id="pKR-YJ-XfV"/>
+                                            <constraint firstItem="DOf-H3-yKN" firstAttribute="leading" secondItem="uCM-dT-gHf" secondAttribute="leading" id="pcf-bb-1i7"/>
                                             <constraint firstAttribute="trailing" secondItem="IJ1-rN-OAq" secondAttribute="trailing" id="qRb-AZ-sCX"/>
                                             <constraint firstItem="IJ1-rN-OAq" firstAttribute="top" secondItem="hsF-f5-PMg" secondAttribute="bottom" constant="10" id="sIF-wp-MLe"/>
                                             <constraint firstItem="IJ1-rN-OAq" firstAttribute="leading" secondItem="uCM-dT-gHf" secondAttribute="leading" id="w60-it-bjr"/>
@@ -2069,10 +2088,31 @@
                     </view>
                     <navigationItem key="navigationItem" id="Dd6-rq-zwp"/>
                     <size key="freeformSize" width="375" height="1500"/>
+                    <connections>
+                        <outlet property="aboutView" destination="mgU-nW-Bdh" id="TpL-Lq-r1X"/>
+                        <outlet property="back" destination="DTO-vs-ar6" id="iNB-4D-u67"/>
+                        <outlet property="bookNow" destination="1x2-bL-Nwm" id="oO3-aw-i1M"/>
+                        <outlet property="contactView" destination="FPl-ot-BRl" id="dYm-ZJ-XHM"/>
+                        <outlet property="overviewView" destination="Vrr-MW-3Rq" id="Rlw-p0-uXf"/>
+                        <outlet property="roomsTableView" destination="hsF-f5-PMg" id="qxf-JO-Bg8"/>
+                        <outlet property="spaceAddress" destination="BxR-Np-31q" id="Jyf-pk-FWx"/>
+                        <outlet property="spaceClosingTime" destination="h0c-3P-HKF" id="tr7-X7-F9o"/>
+                        <outlet property="spaceFacebook" destination="SO7-Io-eEJ" id="hjE-4q-JGR"/>
+                        <outlet property="spaceFacilitiesFirstLine" destination="Uno-1T-zD7" id="JsS-yZ-NgG"/>
+                        <outlet property="spaceFacilitiesSecondLine" destination="d5P-6U-cRl" id="Q9K-1k-7eQ"/>
+                        <outlet property="spaceLocationsMap" destination="1rf-IA-UEi" id="gQT-DT-8OF"/>
+                        <outlet property="spaceName" destination="2AW-Io-UsE" id="dpY-jj-FGR"/>
+                        <outlet property="spaceOpeningTime" destination="BhJ-PE-Gbb" id="vKo-DY-s5m"/>
+                        <outlet property="spaceOverview" destination="Q5R-bW-5Hb" id="Odw-La-Zby"/>
+                        <outlet property="spacePics" destination="Brq-cq-ps8" id="7jB-kp-e1r"/>
+                        <outlet property="spaceTel" destination="OUS-of-ufn" id="J0E-37-0k6"/>
+                        <outlet property="spaceWebsite" destination="mVD-s3-4G8" id="ZAM-4e-25a"/>
+                        <outlet property="spaeEmail" destination="8QZ-AD-Yku" id="71O-lZ-7X6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yTl-68-vEh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3445.5999999999999" y="547.82608695652175"/>
+            <point key="canvasLocation" x="1110" y="-290"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="pJt-Ld-8bZ">
@@ -2320,7 +2360,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="glK-kz-5Pu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2436" y="-775.86206896551732"/>
+            <point key="canvasLocation" x="-3279" y="-664"/>
         </scene>
         <!--Home User View Controller-->
         <scene sceneID="wUI-is-og3">
@@ -2481,7 +2521,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uXl-5l-S5N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-374" y="-734"/>
+            <point key="canvasLocation" x="-1623" y="-664"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="6kV-py-Uef">
@@ -2785,7 +2825,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xrU-Zj-WC1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1351" y="84"/>
+            <point key="canvasLocation" x="-1623" y="113"/>
         </scene>
         <!--Edit Profile View Controller-->
         <scene sceneID="wOq-Vh-7Pa">
@@ -2948,7 +2988,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MSs-zi-jrv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-526" y="83"/>
+            <point key="canvasLocation" x="-671" y="113"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="sWl-JT-uIq">
@@ -3135,7 +3175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6eB-yV-cE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="613.60000000000002" y="-734.48275862068976"/>
+            <point key="canvasLocation" x="-670" y="-664"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="LXV-Dw-eBM">
@@ -3254,7 +3294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5a6-qI-6mi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3385" y="-734"/>
+            <point key="canvasLocation" x="-4068" y="-664"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oej-Za-zm7">
@@ -3272,7 +3312,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ECU-OL-r8I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1351" y="-733"/>
+            <point key="canvasLocation" x="-2468" y="-664"/>
         </scene>
         <!--Splash Screen View Controller-->
         <scene sceneID="eeQ-3l-QfH">
@@ -3339,7 +3379,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9UC-uv-B5O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3279" y="805"/>
+            <point key="canvasLocation" x="-3279" y="848"/>
         </scene>
         <!--Menu Owner View Controller-->
         <scene sceneID="KIw-q9-SiW">
@@ -3590,7 +3630,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Jp-Em-g4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2381.5999999999999" y="778.56071964017997"/>
+            <point key="canvasLocation" x="-2468" y="848"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="J8X-cW-ozm">
@@ -3857,7 +3897,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mga-ZY-tax" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5223" y="848"/>
+            <point key="canvasLocation" x="-4807" y="848"/>
         </scene>
         <!--Register Second Screen View Controller-->
         <scene sceneID="CEu-Oc-msx">
@@ -4168,7 +4208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t0B-RP-kZO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4476" y="848"/>
+            <point key="canvasLocation" x="-4103" y="848"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cKW-Se-HA6">
@@ -4396,7 +4436,7 @@
         <image name="background" width="414" height="736"/>
         <image name="bg" width="281" height="737"/>
         <image name="booking history icon" width="14" height="12"/>
-        <image name="border btn" width="140" height="41"/>
+        <image name="border btn" width="150" height="50"/>
         <image name="border shape add room" width="110" height="27"/>
         <image name="btn Shape" width="200" height="50"/>
         <image name="calendar icon1" width="18" height="20"/>

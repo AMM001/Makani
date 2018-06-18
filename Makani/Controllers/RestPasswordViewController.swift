@@ -29,7 +29,7 @@ class RestPasswordViewController: UIViewController {
             return
         }
         
-        guard Vladiate.isValidEmail(testStr: email) == true else{
+        guard Validate.isValidEmail(testStr: email) == true else{
             self.view.makeToast("Enter valid Email", duration: 3.0, position: .bottom)
             
             return

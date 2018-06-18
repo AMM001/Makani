@@ -30,7 +30,6 @@ class FirstViewController: UIViewController {
     
     @IBAction func ownerchecked(_ sender: Any) {
         if(userTF.isChecked == true){
-            
             userTF.isChecked = false
         }
     }
@@ -41,11 +40,9 @@ class FirstViewController: UIViewController {
         }else if(userTF.isChecked == true && owerTF.isChecked == false){
             let homeUservc = storyboard?.instantiateViewController(withIdentifier: "ContainerViewController")as! ContainerViewController
             self.present(homeUservc, animated: true, completion: nil)
-            
         }else if (userTF.isChecked == false && owerTF.isChecked == true){
-        
-            let homeownervc = storyboard?.instantiateViewController(withIdentifier: "ContainerOwnerViewController") as! ContainerOwnerViewController
-            self.present(homeownervc, animated: true, completion: nil)
+            let homeOwnervc = storyboard?.instantiateViewController(withIdentifier: "ContainerOwnerViewController") as! ContainerOwnerViewController
+            self.present(homeOwnervc, animated: true, completion: nil)
         }
     }
     
