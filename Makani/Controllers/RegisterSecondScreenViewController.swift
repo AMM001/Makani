@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Toast_Swift
 
 class RegisterSecondScreenViewController: UIViewController {
     
@@ -151,17 +152,20 @@ class RegisterSecondScreenViewController: UIViewController {
                     
                     self.present(homeUserVc, animated: true, completion: nil)
                     
-                    
-                    
-                }
-                    else{
-                        let homeOnerVC = self.storyboard?.instantiateViewController(withIdentifier: "ContainerOwnerViewController") as! ContainerOwnerViewController
-                        
-                        
-                        self.present(homeOnerVC, animated: true, completion: nil)
-                        
-                        
                     }
+                        else{
+                            let homeOnerVC = self.storyboard?.instantiateViewController(withIdentifier: "ContainerOwnerViewController") as! ContainerOwnerViewController
+                            
+                            
+                            self.present(homeOnerVC, animated: true, completion: nil)
+                            
+                            
+                        }
+                 
+                }
+                else{
+                    
+                self.view.makeToast("error check again", duration: 3.0, position: .bottom)
                 }
             })
             
