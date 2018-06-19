@@ -38,11 +38,16 @@ class FirstViewController: UIViewController {
         if (userTF.isChecked == false && owerTF.isChecked == false){
             self.view.makeToast("you should choice from this !", duration: 3.0, position: .bottom)
         }else if(userTF.isChecked == true && owerTF.isChecked == false){
-            let homeUservc = storyboard?.instantiateViewController(withIdentifier: "ContainerViewController")as! ContainerViewController
-            self.present(homeUservc, animated: true, completion: nil)
+            
+            let loginUserVc = storyboard?.instantiateViewController(withIdentifier: "LoginViewController")as! LoginViewController
+            loginUserVc.checkOwner = false
+            self.present(loginUserVc, animated: true, completion: nil)
         }else if (userTF.isChecked == false && owerTF.isChecked == true){
-            let homeOwnervc = storyboard?.instantiateViewController(withIdentifier: "ContainerOwnerViewController") as! ContainerOwnerViewController
-            self.present(homeOwnervc, animated: true, completion: nil)
+            
+            let LoginOwnervc = storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+            LoginOwnervc.checkOwner = true
+            
+            self.present(LoginOwnervc, animated: true, completion: nil)
         }
     }
     

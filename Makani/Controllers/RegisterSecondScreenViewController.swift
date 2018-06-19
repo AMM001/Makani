@@ -20,12 +20,27 @@ class RegisterSecondScreenViewController: UIViewController {
     @IBOutlet weak var sportT: ChangeImage!
     @IBOutlet weak var photographyT: ChangeImage!
     @IBOutlet weak var medicineT: ChangeImage!
+    @IBOutlet weak var interestLabel: UILabel!
     
     var name:String? , email:String? , password:String? , country:String? , phone:String?
     var design:Bool? , reading:Bool? , development:Bool? , sport:Bool? , photoghraphy:Bool? , medecine:Bool?
 
+    var checkOwner:Bool?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if checkOwner == true {
+            
+            designT.isHidden = true
+            readingT.isHidden = true
+            developmentT.isHidden = true
+            sportT.isHidden = true
+            photographyT.isHidden = true
+            medicineT.isHidden = true
+            interestLabel.isHidden = true
+            
+        }
 
     }
 
@@ -45,6 +60,7 @@ class RegisterSecondScreenViewController: UIViewController {
     
     @IBAction func registerBtn(_ sender: Any) {
         
+        if checkOwner == false {
         
         if ( designT.isChecked == true && readingT.isChecked == true && developmentT.isChecked == true && sportT.isChecked == true && photographyT.isChecked == true && medicineT.isChecked == true){
             
@@ -53,7 +69,7 @@ class RegisterSecondScreenViewController: UIViewController {
             development    =  true
             sport          =  true
             photoghraphy   =  true
-            medecine       = true
+            medecine       =  true
             
         }else{
             
@@ -91,6 +107,9 @@ class RegisterSecondScreenViewController: UIViewController {
             }
         }
         
+    }
+        
+        
         guard let government = governmentTF.text, !government.isEmpty else{
             
             self.view.makeToast("enter your government", duration: 3.0, position: .bottom)
@@ -121,7 +140,31 @@ class RegisterSecondScreenViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
             
             
-            print("Done")
+            
+            Authontication.RegisterUser(email: self.email!, password: self.password!, phone: self.phone!, country: self.country!, government: government, gender: gender, birthdate: birthdate, photo: "", job: "", intrests: ["sport"], owner: self.checkOwner!, skills: [""], userEvent: [], spaces: [], events: [], completion: { (error, result) in
+                
+                if error == nil {
+                    if self.checkOwner == true {
+                    
+                    let homeUserVc = self.storyboard?.instantiateViewController(withIdentifier: "ContainerViewController") as! ContainerViewController
+                    
+                    
+                    self.present(homeUserVc, animated: true, completion: nil)
+                    
+                    
+                    
+                }
+                    else{
+                        let homeOnerVC = self.storyboard?.instantiateViewController(withIdentifier: "ContainerOwnerViewController") as! ContainerOwnerViewController
+                        
+                        
+                        self.present(homeOnerVC, animated: true, completion: nil)
+                        
+                        
+                    }
+                }
+            })
+            
             
         }))
         
@@ -132,6 +175,8 @@ class RegisterSecondScreenViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
         
         
+        
+    
         
         
     }

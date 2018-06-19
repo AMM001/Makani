@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kBk-sA-HdH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kBk-sA-HdH">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -538,10 +538,10 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BNw-B5-BQZ">
-                                                <rect key="frame" x="32.5" y="520" width="310" height="35"/>
+                                                <rect key="frame" x="42.5" y="520" width="290" height="35"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0Y-BL-gMP">
-                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="35"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="140" height="35"/>
                                                         <state key="normal" title="PREVIOUS" backgroundImage="border btn">
                                                             <color key="titleColor" red="0.76017767189999996" green="0.80689316990000004" blue="0.87272709609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
@@ -559,7 +559,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4s7-FO-uYy">
-                                                        <rect key="frame" x="160" y="0.0" width="150" height="35"/>
+                                                        <rect key="frame" x="150" y="0.0" width="140" height="35"/>
                                                         <color key="backgroundColor" red="0.10921937969999999" green="0.29392570260000001" blue="0.53896826509999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="NEXT">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -911,10 +911,10 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nNP-2d-lC9">
-                                                <rect key="frame" x="32" y="500" width="310" height="35"/>
+                                                <rect key="frame" x="42" y="500" width="290" height="35"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1J-x4-61b">
-                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="35"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="140" height="35"/>
                                                         <state key="normal" title="PREVIOUS" backgroundImage="border btn">
                                                             <color key="titleColor" red="0.76017767189999996" green="0.80689316990000004" blue="0.87272709609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
@@ -932,7 +932,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31t-JU-VmN">
-                                                        <rect key="frame" x="160" y="0.0" width="150" height="35"/>
+                                                        <rect key="frame" x="150" y="0.0" width="140" height="35"/>
                                                         <color key="backgroundColor" red="0.10921937969999999" green="0.29392570260000001" blue="0.53896826509999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="NEXT">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1260,10 +1260,10 @@
                                                 <state key="normal" title="Add more room" image="plus icon" backgroundImage="border shape add room"/>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oqt-NI-E70">
-                                                <rect key="frame" x="32" y="630" width="310" height="35"/>
+                                                <rect key="frame" x="42" y="630" width="290" height="35"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LsL-fJ-vVU">
-                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="35"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="140" height="35"/>
                                                         <state key="normal" title="PREVIOUS" backgroundImage="border btn">
                                                             <color key="titleColor" red="0.76017767189999996" green="0.80689316990000004" blue="0.87272709609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
@@ -1282,7 +1282,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKI-rF-NJ7">
-                                                        <rect key="frame" x="160" y="0.0" width="150" height="35"/>
+                                                        <rect key="frame" x="150" y="0.0" width="140" height="35"/>
                                                         <color key="backgroundColor" red="0.10921937969999999" green="0.29392570260000001" blue="0.53896826509999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="NEXT">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1487,10 +1487,10 @@
                                 </userDefinedRuntimeAttributes>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FZh-Ji-Q3p">
-                                <rect key="frame" x="32.5" y="582" width="310" height="35"/>
+                                <rect key="frame" x="42.5" y="582" width="290" height="35"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psK-1U-lcM">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="35"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="35"/>
                                         <state key="normal" title="PREVIOUS" backgroundImage="border btn">
                                             <color key="titleColor" red="0.76017767189999996" green="0.80689316990000004" blue="0.87272709609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -1509,7 +1509,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAP-M3-dYB">
-                                        <rect key="frame" x="160" y="0.0" width="150" height="35"/>
+                                        <rect key="frame" x="150" y="0.0" width="140" height="35"/>
                                         <color key="backgroundColor" red="0.10921937969999999" green="0.29392570260000001" blue="0.53896826509999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="SUBMIT">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1859,14 +1859,14 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hz-AQ-SYR">
-                                                                <rect key="frame" x="35" y="13" width="142.5" height="50"/>
+                                                                <rect key="frame" x="35" y="17.5" width="142.5" height="41"/>
                                                                 <state key="normal" title="ADD TO FAVORITE" backgroundImage="border btn"/>
                                                                 <connections>
                                                                     <action selector="addToFavorite:" destination="jyl-Mw-VuP" eventType="touchUpInside" id="nro-9M-VzR"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1x2-bL-Nwm">
-                                                                <rect key="frame" x="197.5" y="12" width="142.5" height="50"/>
+                                                                <rect key="frame" x="197.5" y="16.5" width="142.5" height="41"/>
                                                                 <state key="normal" title="BOOK NOW" backgroundImage="active shape btn">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
@@ -4049,7 +4049,7 @@
                                                         <state key="normal" title="Design" image="design icon" backgroundImage="border btn"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXa-21-YtF" customClass="ChangeImage" customModule="Makani" customModuleProvider="target">
-                                                        <rect key="frame" x="133" y="446" width="109" height="76"/>
+                                                        <rect key="frame" x="133" y="446.5" width="109" height="76"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="76" id="JKh-F1-RW6"/>
                                                         </constraints>
@@ -4069,7 +4069,7 @@
                                                         <state key="normal" title="Development" image="development icon" backgroundImage="border btn"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Px-rX-gQQ" customClass="ChangeImage" customModule="Makani" customModuleProvider="target">
-                                                        <rect key="frame" x="133" y="335" width="109" height="78"/>
+                                                        <rect key="frame" x="133" y="335.5" width="109" height="78"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="78" id="rM3-SC-Cq3"/>
                                                         </constraints>
@@ -4200,6 +4200,7 @@
                         <outlet property="developmentT" destination="Ua0-Ly-BcI" id="5WB-WI-hbB"/>
                         <outlet property="genderTF" destination="DuG-hd-5ZU" id="5Fj-uo-F4u"/>
                         <outlet property="governmentTF" destination="MBg-id-uXl" id="VgL-bP-Raf"/>
+                        <outlet property="interestLabel" destination="GMx-Qv-KHf" id="LWQ-OE-kr5"/>
                         <outlet property="medicineT" destination="0P9-BK-8bl" id="3QQ-8e-ktI"/>
                         <outlet property="photographyT" destination="TXa-21-YtF" id="VUx-NM-USm"/>
                         <outlet property="readingT" destination="6Px-rX-gQQ" id="L6j-rb-Wrr"/>
@@ -4420,7 +4421,7 @@
         <image name="Event icon" width="110" height="122"/>
         <image name="Food icon" width="17" height="19"/>
         <image name="LOGO" width="50" height="50"/>
-        <image name="Search" width="15" height="15"/>
+        <image name="Search" width="18" height="18"/>
         <image name="Select shape" width="350" height="55"/>
         <image name="Timer icon" width="16" height="16"/>
         <image name="Wifi icon" width="22" height="22"/>
@@ -4436,7 +4437,7 @@
         <image name="background" width="414" height="736"/>
         <image name="bg" width="281" height="737"/>
         <image name="booking history icon" width="14" height="12"/>
-        <image name="border btn" width="150" height="50"/>
+        <image name="border btn" width="140" height="41"/>
         <image name="border shape add room" width="110" height="27"/>
         <image name="btn Shape" width="200" height="50"/>
         <image name="calendar icon1" width="18" height="20"/>
@@ -4479,7 +4480,7 @@
         <image name="select shape add photo" width="67" height="50"/>
         <image name="select shape photo" width="170" height="85"/>
         <image name="settings icon" width="11" height="12"/>
-        <image name="shape" width="350" height="55"/>
+        <image name="shape" width="34" height="34"/>
         <image name="sport icon" width="29" height="25"/>
         <image name="stars" width="62" height="11"/>
         <image name="text area input" width="350" height="140"/>

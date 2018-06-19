@@ -16,5 +16,7 @@ target 'Makani' do
   pod "Floaty"
   pod 'DropDown'
   pod 'JSONModel'
+  pod 'RealmSwift'
+
 
 end

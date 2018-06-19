@@ -18,7 +18,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var countryTF: TextField!
     @IBOutlet weak var phoneNubmerTF: TextField!
     
-    
+    var checkOwner:Bool?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,6 +70,9 @@ class RegisterViewController: UIViewController {
         
         
         let secondRegisterVc = storyboard?.instantiateViewController(withIdentifier: "RegisterSecondScreenViewController") as! RegisterSecondScreenViewController
+        
+            secondRegisterVc.checkOwner = checkOwner
+        
             secondRegisterVc.name  = name
             secondRegisterVc.email = email
             secondRegisterVc.password = password
