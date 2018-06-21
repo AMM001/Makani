@@ -7,7 +7,30 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class Addspace: NSObject {
-
+    
+    static func addSpace(space:Space,completion:@escaping (_ error:String?,_ result:Any?)->Void){
+        let url = URL.addSpace + space.ownerId
+        let paramaters = space.toJSON()  as [String : Any]
+        Alamofire.request(url, method: .post, parameters: paramaters, encoding: JSONEncoding.default, headers: nil)
+            .responseJSON { response in
+                switch response.result{
+                case .failure:
+                    completion(response.error?.localizedDescription,false)
+                case .success:
+                    let json = JSON(response.value!)
+                    let status = json["errorDesc"].string
+                    if status == "Success" {
+                        let loggedUser = User()
+                        completion(nil,loggedUser)
+                    }else{
+                        let errorMessage = json["errorDesc"].string
+                        completion(errorMessage,nil)
+                    }
+                }
+        }
+    }
 }

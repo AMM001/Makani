@@ -11,15 +11,16 @@ import ImageSlideshow
 import MapKit
 
 class SpaceDetailsViewController: UIViewController {
+    @IBAction func back(_ sender: Any) {
+    }
     
     @IBOutlet weak var spaceName: UILabel!
-    @IBOutlet weak var back: UIButton!
     @IBOutlet weak var spacePics: ImageSlideshow!
     @IBOutlet weak var spaceLocationsMap: MKMapView!
     @IBOutlet weak var spaceClosingTime: UILabel!
     @IBOutlet weak var spaceOpeningTime: UILabel!
     @IBOutlet weak var spaceAddress: UILabel!
-    @IBOutlet weak var spaeEmail: UILabel!
+    @IBOutlet weak var spaceEmail: UILabel!
     @IBOutlet weak var spaceTel: UILabel!
     @IBOutlet weak var spaceFacilitiesFirstLine: UILabel!
     @IBOutlet weak var spaceFacebook: UILabel!
@@ -30,6 +31,7 @@ class SpaceDetailsViewController: UIViewController {
     @IBOutlet weak var overviewView: UIView!
     @IBOutlet weak var aboutView: UIView!
     @IBOutlet weak var spaceFacilitiesSecondLine: UILabel!
+    var  images = Array<SDWebImageSource>()
     @IBAction func bookNow(_ sender: Any) {
         
     }
@@ -37,10 +39,57 @@ class SpaceDetailsViewController: UIViewController {
     @IBAction func addToFavorite(_ sender: Any) {
         
     }
+    var space:Space?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        for image in (space?.pictures)! {
+            images.append(SDWebImageSource(urlString: image)!)
+        }
+        spaceName.text = space?.name
+        for tel in (space?.contacts)! {
+            if tel == space?.contacts.last {
+                spaceTel.text?.append(tel)
+            }
+            spaceTel.text?.append(tel+" - ")
+        }
+        spaceOpeningTime.text = (space?.openingTime)!
+        spaceClosingTime.text = (space?.closingTime)!
+        for address in (space?.locations)! {
+            spaceAddress.text = address.address + address.government + address.country
+            let annoutation = LocationAnnoutation(title: address.address, locationName: (space?.name)!, coordinate: CLLocationCoordinate2D(latitude: CLLocationDegrees(Double(address.latitude)!),longitude: CLLocationDegrees(Double( address.longitude)!)))
+            spaceLocationsMap.addAnnotation(annoutation)
+            
+        }
+        spaceEmail.text = space?.email
+        spaceOverview.text=space?.overview
+        spaceFacebook.text=space?.facebook
+        spaceWebsite.text=space?.website
+        spaceEmail.text=space?.email
+        if(space?.facilities.airConditioner==true){
+            spaceFacilitiesFirstLine.text="Air Condition - "
+        }
+        if(space?.facilities.internet==true){
+            spaceFacilitiesFirstLine.text?.append("Internet - ")
+            spaceFacilitiesFirstLine.text?.append(String(format: "%f",(space?.facilities.internetSpeed)!))
+            
+        }
+        if(space?.facilities.foodDrinks==true){
+            spaceFacilitiesSecondLine.text="foodDrinks"
+        }
+        
+        if(space?.facilities.laptops==true){
+            spaceFacilitiesSecondLine.text="Laptops"
+        }
+        if(space?.facilities.projector==true){
+            spaceFacilitiesSecondLine.text="Projectors"
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -59,4 +108,77 @@ class SpaceDetailsViewController: UIViewController {
      }
      */
     
+}
+
+extension SpaceDetailsViewController:UITableViewDelegate, UITableViewDataSource{
+
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return (space?.rooms.count)!
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell:RoomCell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as!RoomCell
+     
+     // Configure the cell...
+        cell.roomName.text = space?.rooms[indexPath.row].name
+        cell.roomCapacity.text = space?.rooms[indexPath.row].capacity
+        cell.roomCost.text = String(format: "%f", (space?.rooms[indexPath.row].cost)!)
+     return cell
+     }
+    
+    
+    /*
+     // Override to support conditional editing of the table view.
+     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+     // Return false if you do not want the specified item to be editable.
+     return true
+     }
+     */
+    
+    /*
+     // Override to support editing the table view.
+     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+     if editingStyle == .delete {
+     // Delete the row from the data source
+     tableView.deleteRows(at: [indexPath], with: .fade)
+     } else if editingStyle == .insert {
+     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+     }
+     }
+     */
+    
+    /*
+     // Override to support rearranging the table view.
+     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+     
+     }
+     */
+    
+    /*
+     // Override to support conditional rearranging of the table view.
+     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+     // Return false if you do not want the item to be re-orderable.
+     return true
+     }
+     */
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+
+
 }

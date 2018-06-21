@@ -11,120 +11,74 @@ import UIKit
 class AddSpaceSecondScreenViewController: UIViewController {
     
     @IBOutlet weak var openingTF: AddSpaceTextField!
-    
     @IBOutlet weak var closingTF: AddSpaceTextField!
-    
     @IBOutlet weak var facebookLinkTF: AddSpaceTextField!
-    
     @IBOutlet weak var laptops: ChangeImage!
     @IBOutlet weak var airConditions: ChangeImage!
-    
     @IBOutlet weak var projectors: ChangeImage!
-    
     @IBOutlet weak var allowedFood: ChangeImage!
-    
-    @IBOutlet weak var internet: ChangeImage! 
-    
-    var spaceName:String? , numberPhone:String? , country:String? , government:String? , spaceAddress:String? , email:String? , website:String?
-    
-    var laptopsT:Bool? , airConditionsT:Bool? , projectorsT:Bool? , allowedFoodT:Bool? , internetT:Bool?
-    
-   
-    
+    @IBOutlet weak var internet: ChangeImage!
+    var space:Space?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       
-  
     }
-
-  
+    
     @IBAction func nextBtn(_ sender: Any) {
-        
-        if ( laptops.isChecked == true && airConditions.isChecked == true && projectors.isChecked == true && allowedFood.isChecked == true && internet.isChecked == true){
-            
-            laptopsT       =  true
-            airConditionsT =  true
-            projectorsT    =  true
-            allowedFoodT   =  true
-            internetT      =  true
-            
+        if (laptops.isChecked == true){
+            space?.facilities.laptops = true
         }else{
-            
-            if (laptops.isChecked == true){
-                
-                laptopsT = true
-            }else{
-                laptopsT = false
-            }
-            if(airConditions.isChecked == true){
-                airConditionsT = true
-            }else{
-                airConditionsT = false
-            }
-            if(projectors.isChecked == true){
-                projectorsT = true
-            }else {
-                projectorsT = false
-            }
-            if(allowedFood.isChecked == true){
-                allowedFoodT = true
-            }else{
-                allowedFoodT = false
-            }
-            if(internet.isChecked == true){
-                internetT = true
-            }else{
-                internetT = false
-            }
+            space?.facilities.laptops = false
+        }
+        if(airConditions.isChecked == true){
+            space?.facilities.airConditioner = true
+        }else{
+            space?.facilities.airConditioner = false
+        }
+        if(projectors.isChecked == true){
+            space?.facilities.projector = true
+        }else {
+            space?.facilities.projector = false
+        }
+        if(allowedFood.isChecked == true){
+            space?.facilities.foodDrinks = true
+        }else{
+            space?.facilities.foodDrinks = false
+        }
+        if(internet.isChecked == true){
+            space?.facilities.internet = true
+        }else{
+            space?.facilities.internet = false
         }
         
-        
-        
-        
         guard let openening = openingTF.text, !openening.isEmpty else{
-            
             self.view.makeToast("enter open Time", duration: 3.0, position: .bottom)
             return
         }
         guard let closing = closingTF.text, !closing.isEmpty else{
-            
             self.view.makeToast("enter close Time", duration: 3.0, position: .bottom)
             return
         }
-        
         guard let facebook = facebookLinkTF.text, !facebook.isEmpty else{
-            
             self.view.makeToast("enter facebook link", duration: 3.0, position: .bottom)
             return
         }
         
-        
         let addspacethirdVc = storyboard?.instantiateViewController(withIdentifier: "AddSpaceThirdViewController") as! AddSpaceThirdViewController
-        
-        addspacethirdVc.opening             = openening
-        addspacethirdVc.closing             = closing
-        addspacethirdVc.facebbolLink        = facebook
-        addspacethirdVc.laptops             = laptopsT
-        addspacethirdVc.airConditions       = airConditionsT
-        addspacethirdVc.projectors          = projectorsT
-        addspacethirdVc.allowedFood         = allowedFoodT
-        addspacethirdVc.internet            = internetT
-        
+        space?.openingTime = openening
+        space?.closingTime = closing
+        space?.facebook = facebook
+        addspacethirdVc.space = space
         self.present(addspacethirdVc, animated: true, completion: nil)
     }
     
     @IBAction func backBtn(_ sender: Any) {
         dismiss(animated: true, completion: nil)
-
     }
     
     
-    @IBAction func previousBtn(_ sender: Any) {
-        
+    @IBAction func previousBtn(_ sender: Any) {        
         dismiss(animated: true, completion: nil)
     }
-    
-    
+   
 }

@@ -9,19 +9,41 @@
 import Foundation
 
 class User: NSObject {
-
-    var id:Int?
-    var name:String?
-    var email:String?
-    var phone:String?
-    var password:String?
-    var country:String?
-    var government:String?
-    var gender:String?
-    var birthdate:String?
-    var photo:String?
-    var job:String?
-    var owner:Bool?
-    var interests:Array<String>?
     
+    @objc dynamic var id = 0
+    @objc dynamic var name = ""
+    @objc dynamic var email = ""
+    @objc dynamic var phone = ""
+    @objc dynamic var country = ""
+    @objc dynamic var government = ""
+    @objc dynamic var gender = ""
+    @objc dynamic var birthdate = ""
+    @objc dynamic var photo = ""
+    @objc dynamic var job = ""
+    @objc dynamic var owner = false
+    var interests = Array<Interest>()
+    
+    func toJSON() -> [String: Any] {
+        
+        var interestsJson = Array<[String:Any]>()
+        
+        for interest in interests{
+            interestsJson.append(interest.toJSON())
+        }
+        
+        return [
+            "name":name as Any,
+            "email":email as Any,
+            "phone":phone as Any,
+            "country":country as Any,
+            "government":government as Any,
+            "gender":gender as Any,
+            "birthdate":birthdate as Any,
+            "photo":photo as Any,
+            "job":job as Any,
+            "owner":owner as Any,
+            "interests":interestsJson,
+            "skills":[]
+        ]
+    }
 }

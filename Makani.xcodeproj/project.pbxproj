@@ -55,6 +55,12 @@
 		BB7DF9DD20D8334000ADC6C4 /* SpaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DF9DC20D8334000ADC6C4 /* SpaceDetailsViewController.swift */; };
 		BB7DF9E020D85C0F00ADC6C4 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DF9DF20D85C0F00ADC6C4 /* Space.swift */; };
 		BB7DF9E220D85EB900ADC6C4 /* Addspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DF9E120D85EB900ADC6C4 /* Addspace.swift */; };
+		BB7DF9E420D8710F00ADC6C4 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DF9E320D8710F00ADC6C4 /* Location.swift */; };
+		BB7DF9E620D8732C00ADC6C4 /* LocationAnnoutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DF9E520D8732C00ADC6C4 /* LocationAnnoutation.swift */; };
+		BB7DF9E820D8778A00ADC6C4 /* Facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DF9E720D8778A00ADC6C4 /* Facility.swift */; };
+		BB7DF9EA20D87CE800ADC6C4 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DF9E920D87CE800ADC6C4 /* Room.swift */; };
+		BB7DF9F020DB1A6900ADC6C4 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DF9EF20DB1A6900ADC6C4 /* Skill.swift */; };
+		BB7DF9F220DB1A8300ADC6C4 /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DF9F120DB1A8300ADC6C4 /* Interest.swift */; };
 		FFE460DE4BBEBA286FD6CA89 /* Pods_Makani.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB18CF28C474596F24DFE861 /* Pods_Makani.framework */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +125,12 @@
 		BB7DF9DC20D8334000ADC6C4 /* SpaceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceDetailsViewController.swift; sourceTree = "<group>"; };
 		BB7DF9DF20D85C0F00ADC6C4 /* Space.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
 		BB7DF9E120D85EB900ADC6C4 /* Addspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Addspace.swift; sourceTree = "<group>"; };
+		BB7DF9E320D8710F00ADC6C4 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		BB7DF9E520D8732C00ADC6C4 /* LocationAnnoutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAnnoutation.swift; sourceTree = "<group>"; };
+		BB7DF9E720D8778A00ADC6C4 /* Facility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facility.swift; sourceTree = "<group>"; };
+		BB7DF9E920D87CE800ADC6C4 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		BB7DF9EF20DB1A6900ADC6C4 /* Skill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skill.swift; sourceTree = "<group>"; };
+		BB7DF9F120DB1A8300ADC6C4 /* Interest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +208,11 @@
 			children = (
 				0448D4AC20C171A300D2CE67 /* User.swift */,
 				BB7DF9DF20D85C0F00ADC6C4 /* Space.swift */,
+				BB7DF9E320D8710F00ADC6C4 /* Location.swift */,
+				BB7DF9E720D8778A00ADC6C4 /* Facility.swift */,
+				BB7DF9E920D87CE800ADC6C4 /* Room.swift */,
+				BB7DF9EF20DB1A6900ADC6C4 /* Skill.swift */,
+				BB7DF9F120DB1A8300ADC6C4 /* Interest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -307,6 +324,7 @@
 		BB7DF9DE20D8448D00ADC6C4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				BB7DF9E520D8732C00ADC6C4 /* LocationAnnoutation.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -394,6 +412,7 @@
 				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
 				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
 				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
@@ -407,6 +426,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
@@ -443,13 +463,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB7DF9F020DB1A6900ADC6C4 /* Skill.swift in Sources */,
 				0448D4C620C34D0C00D2CE67 /* FavouritesViewController.swift in Sources */,
 				04505F0A20C80863001A7E93 /* NotificationCollectionViewCell.swift in Sources */,
+				BB7DF9EA20D87CE800ADC6C4 /* Room.swift in Sources */,
 				BB7DF9DD20D8334000ADC6C4 /* SpaceDetailsViewController.swift in Sources */,
 				0448D4B120C17AA300D2CE67 /* FirstViewController.swift in Sources */,
 				04516B2720D7C2410003F8E2 /* RegisterSecondScreenViewController.swift in Sources */,
 				04505F0420C7E61C001A7E93 /* HomeOwnerViewController.swift in Sources */,
 				0443A73420C41D100003526D /* SplashScreenViewController.swift in Sources */,
+				BB7DF9F220DB1A8300ADC6C4 /* Interest.swift in Sources */,
 				041C099320D54F63003581FB /* AddSpaceFourthViewController.swift in Sources */,
 				0443A73220C40E860003526D /* SpacesTableViewCell.swift in Sources */,
 				0448D4A920C1708900D2CE67 /* URLS.swift in Sources */,
@@ -465,7 +488,9 @@
 				044E281820C0B3B30069196D /* LoginViewController.swift in Sources */,
 				0448D4C420C33DC300D2CE67 /* ContainerViewController.swift in Sources */,
 				045C8AE220CC221B009B00BB /* AddSpaceTextField.swift in Sources */,
+				BB7DF9E420D8710F00ADC6C4 /* Location.swift in Sources */,
 				04505F0620C7E7D6001A7E93 /* MenuOwnerViewController.swift in Sources */,
+				BB7DF9E820D8778A00ADC6C4 /* Facility.swift in Sources */,
 				0448D4C820C34D2600D2CE67 /* AboutViewController.swift in Sources */,
 				049256AA20D5704200E71C88 /* CustomAlertViewController.swift in Sources */,
 				0443A73620C428AC0003526D /* SearchViewController.swift in Sources */,
@@ -481,6 +506,7 @@
 				0448D4C220C3387900D2CE67 /* menuViewController.swift in Sources */,
 				045C8AE020CC155E009B00BB /* AddSpaceViewController.swift in Sources */,
 				0448D4AB20C1711200D2CE67 /* Authontication.swift in Sources */,
+				BB7DF9E620D8732C00ADC6C4 /* LocationAnnoutation.swift in Sources */,
 				0448D4AD20C171A300D2CE67 /* User.swift in Sources */,
 				049256AC20D5755A00E71C88 /* PopUpViewController.swift in Sources */,
 				0484E84120D2923C00EB94B5 /* OpenCloseTF.swift in Sources */,

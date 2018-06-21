@@ -9,6 +9,7 @@
 import UIKit
 import SlideMenuControllerSwift
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -18,7 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.lightContent, animated: true)
-
+        
+//        // Configure InstantSearch
+//        InstantSearch.shared.configure(appID: "latency", apiKey: "1f6fd3a6fb973cb08419fe7d288fa4db", index: "bestbuy_promo")
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         

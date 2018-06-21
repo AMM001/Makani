@@ -11,8 +11,19 @@ import UIKit
 class AddSpaceFourthViewController: UIViewController {
     
     @IBOutlet weak var textview: UITextView!
-    
+   
+    var space:Space?
 
+    @IBAction func submit(_ sender: Any) {
+        Addspace.addSpace(space: space!) { (error, result) in
+            if error == nil {
+                self.view.makeToast("Space Added Successfuly", duration: 3.0, position: .bottom)
+            }else{
+                
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

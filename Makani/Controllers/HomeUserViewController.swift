@@ -50,8 +50,8 @@ class HomeUserViewController: UIViewController {
 
   
     @IBAction func openMenuBtn(_ sender: Any) {
+        
         self.slideMenuController()?.openLeft()
-
     }
     
     @IBAction func notificationBtn(_ sender: Any) {

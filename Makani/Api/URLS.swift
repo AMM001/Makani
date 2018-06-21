@@ -13,5 +13,5 @@ class URL:NSObject {
     static var baseUrl  =  "http://10.0.1.1:8084/MakanyAPI/"
     static var loginUrl = baseUrl + "user/login"
     static var register = baseUrl + ""
-    
+    static var addSpace = baseUrl + "space/registerspace?ownerId="
 }
