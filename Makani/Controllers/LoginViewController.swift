@@ -51,7 +51,7 @@ class LoginViewController: UIViewController {
              
                self.present(homeUserVc, animated: true, completion: nil)
                 //  self.navigationController?.pushViewController(homeUserVc, animated: true)
-                 print(user.email!)
+                print(user.email)
                 
                 
                 

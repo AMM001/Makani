@@ -51,12 +51,11 @@ class User: NSObject {
         
     }
     
-   init(id:String , name:String , email:String , phone:String ,password:String , country:String ,government:String ,gender: String ,birthdate:String ,photo :String ,job :String ,owner:Bool ,interests:Array<String> )  {
+   init(id:Int , name:String , email:String , phone:String, country:String ,government:String ,gender: String ,birthdate:String ,photo :String ,job :String ,owner:Bool ,interests:Array<String> )  {
         self.id = id
         self.name = name
         self.phone = phone
         self.email = email
-        self.password = password
         self.country = country
         self.gender = gender
         self.government = government

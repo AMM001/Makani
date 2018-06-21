@@ -82,7 +82,7 @@ class Authontication:NSObject {
 
     
     static func RegisterUser(email:String,password:String,phone:String,country:String,government:String,gender:String,birthdate:String,photo:String ,job:String,intrests:Array<String>,owner:Bool,skills:Array<String>,userEvent:Array<String>,spaces:Array<String>,events:Array<String>,completion:@escaping (_ error:String?,_ result:Any?)->Void){
-        let url = URL.register
+        let url = URLS.register
         let paramaters = ["id":idGenerator ,"email":email ,"password":password ,"phone":phone,"country":country,"government":government,"gender":gender,"birthdate":birthdate,"photo":photo ,"job":job, "intrests":intrests,"owner":owner,"skills":skills,"userEvent":userEvent,"spaces":spaces,"events":events] as [String : Any]
         Alamofire.request(url, method: .post, parameters: paramaters, encoding: JSONEncoding.default, headers: nil)
             .responseJSON { response in
