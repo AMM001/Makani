@@ -22,6 +22,7 @@ class ProfileViewController: UIViewController  , UIImagePickerControllerDelegate
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var user = User()
     
     
     let picker = UIImagePickerController()
@@ -31,6 +32,8 @@ class ProfileViewController: UIViewController  , UIImagePickerControllerDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+      //  print("ddddddddddddd\(user.email!)")
         
         imageview.layer.cornerRadius = imageview.frame.height/2
         imageview.clipsToBounds = true

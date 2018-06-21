@@ -14,4 +14,6 @@ class URL:NSObject {
     static var loginUrl = baseUrl + "user/login"
     static var register = baseUrl + ""
     static var addSpace = baseUrl + "space/registerspace?ownerId="
+    static var register = baseUrl + "user/registeruser"
+    
 }

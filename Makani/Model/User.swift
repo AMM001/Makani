@@ -46,4 +46,24 @@ class User: NSObject {
             "skills":[]
         ]
     }
+    
+    override init(){
+        
+    }
+    
+   init(id:String , name:String , email:String , phone:String ,password:String , country:String ,government:String ,gender: String ,birthdate:String ,photo :String ,job :String ,owner:Bool ,interests:Array<String> )  {
+        self.id = id
+        self.name = name
+        self.phone = phone
+        self.email = email
+        self.password = password
+        self.country = country
+        self.gender = gender
+        self.government = government
+        self.birthdate = birthdate
+        self.photo = photo
+        self.job = job
+        self.owner = owner
+        self.interests = interests
+    }
 }

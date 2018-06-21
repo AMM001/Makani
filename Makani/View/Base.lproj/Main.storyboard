@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kBk-sA-HdH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kBk-sA-HdH">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -4052,7 +4052,7 @@
                                                         <state key="normal" title="Design" image="design icon" backgroundImage="border btn"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXa-21-YtF" customClass="ChangeImage" customModule="Makani" customModuleProvider="target">
-                                                        <rect key="frame" x="133" y="446" width="109" height="76"/>
+                                                        <rect key="frame" x="133" y="446.5" width="109" height="76"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="76" id="JKh-F1-RW6"/>
                                                         </constraints>
@@ -4072,7 +4072,7 @@
                                                         <state key="normal" title="Development" image="development icon" backgroundImage="border btn"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Px-rX-gQQ" customClass="ChangeImage" customModule="Makani" customModuleProvider="target">
-                                                        <rect key="frame" x="133" y="335" width="109" height="78"/>
+                                                        <rect key="frame" x="133" y="335.5" width="109" height="78"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="78" id="rM3-SC-Cq3"/>
                                                         </constraints>
@@ -4203,6 +4203,7 @@
                         <outlet property="developmentT" destination="Ua0-Ly-BcI" id="5WB-WI-hbB"/>
                         <outlet property="genderTF" destination="DuG-hd-5ZU" id="5Fj-uo-F4u"/>
                         <outlet property="governmentTF" destination="MBg-id-uXl" id="VgL-bP-Raf"/>
+                        <outlet property="interestLabel" destination="GMx-Qv-KHf" id="LWQ-OE-kr5"/>
                         <outlet property="medicineT" destination="0P9-BK-8bl" id="3QQ-8e-ktI"/>
                         <outlet property="photographyT" destination="TXa-21-YtF" id="VUx-NM-USm"/>
                         <outlet property="readingT" destination="6Px-rX-gQQ" id="L6j-rb-Wrr"/>
@@ -4423,7 +4424,7 @@
         <image name="Event icon" width="110" height="122"/>
         <image name="Food icon" width="17" height="19"/>
         <image name="LOGO" width="50" height="50"/>
-        <image name="Search" width="15" height="15"/>
+        <image name="Search" width="18" height="18"/>
         <image name="Select shape" width="350" height="55"/>
         <image name="Timer icon" width="16" height="16"/>
         <image name="Wifi icon" width="22" height="22"/>
@@ -4595,7 +4596,7 @@ iRibGJ4YowAAAAAAAAIBAAAAAAAAAFkAAAAAAAAAAAAAAAAAABilA
         <image name="select shape add photo" width="67" height="50"/>
         <image name="select shape photo" width="170" height="85"/>
         <image name="settings icon" width="11" height="12"/>
-        <image name="shape" width="350" height="55"/>
+        <image name="shape" width="34" height="34"/>
         <image name="sport icon" width="29" height="25"/>
         <image name="stars" width="62" height="11"/>
         <image name="text area input" width="350" height="140"/>

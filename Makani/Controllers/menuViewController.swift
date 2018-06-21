@@ -12,7 +12,8 @@ class MenuViewController: UIViewController {
     
     @IBOutlet weak var imageview: UIImageView!
     
-
+    // var user = User()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
