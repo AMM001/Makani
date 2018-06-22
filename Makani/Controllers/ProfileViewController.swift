@@ -23,37 +23,28 @@ class ProfileViewController: UIViewController  , UIImagePickerControllerDelegate
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-   // var user = User()
+    var user:User?
     
     
     let picker = UIImagePickerController()
     let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
 
-    var interset_Array:Array = ["1","2","3" ]
+    var intersetArray = Array<Interest>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         let realm = try! Realm()
-        
-        let allpeople = realm.objects(UserSaving.self)
-        
+
+        let allpeople = realm.objects(User.self)
+
         let byname = allpeople.sorted(byKeyPath: "name", ascending: false)
-        
+
         for person in byname{
-        
-            nameTF.text = person.name
-            genderTF.text = person.gender
-            countryTF.text = person.country
-            phoneTF.text = person.phone
-            governmentTF.text = person.government
-            
-            
+            user = person
         }
-      //  realm.delete(allpeople)
-        
-        
-        
+        realm.delete(allpeople)
+
         imageview.layer.cornerRadius = imageview.frame.height/2
         imageview.clipsToBounds = true
         imageview.layer.borderWidth = 1.0
@@ -70,19 +61,27 @@ class ProfileViewController: UIViewController  , UIImagePickerControllerDelegate
        layout.minimumInteritemSpacing = 2
        collectionView!.collectionViewLayout = layout
        
-        if interset_Array.count >= 3 {
+        if intersetArray.count >= 3 {
             
             self.containerview.frame = CGRect(x: 38, y: 297, width: self.containerview.frame.width, height: 140)
         }else{
             
             self.containerview.frame = CGRect(x: 38, y: 297, width: self.containerview.frame.width, height: self.containerview.frame.height )
-
-            
         }
 
 
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        nameTF.text = user?.name
+        genderTF.text = user?.gender
+        countryTF.text = user?.country
+        ageTF.text = user?.birthdate
+        phoneTF.text = user?.phone
+        governmentTF.text = user?.government
+        intersetArray = (user?.interests)!
+    }
     @IBAction func editProfileBtn(_ sender: Any) {
         
         let editVc = storyboard?.instantiateViewController(withIdentifier: "EditProfileViewController") as! EditProfileViewController
@@ -138,21 +137,16 @@ extension ProfileViewController:UICollectionViewDelegate , UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return interset_Array.count
+        return intersetArray.count
     }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "interestCell", for: indexPath) as!
          InterestCollectionViewCell
-        
+        cell.name.text = intersetArray[indexPath.row].name
         return cell
-    }
-    
-
-    
-    
-    
+    }   
 }
 
 

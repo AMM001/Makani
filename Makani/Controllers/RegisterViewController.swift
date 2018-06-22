@@ -58,8 +58,7 @@ class RegisterViewController: UIViewController {
             return
         }
         
-        let secondRegisterVc = storyboard?.instantiateViewController(withIdentifier: "RegisterSecondScreenViewController") as! RegisterSecondScreenViewController
-        secondRegisterVc.checkOwner = checkOwner
+        let secondRegisterVc = storyboard?.instantiateViewController(withIdentifier: "RegisterSecondScreenViewController") as! RegisterSecondScreenViewController        
         user?.name  = name
         user?.email = email
         user?.password = password

@@ -47,10 +47,22 @@ class Authontication:NSObject {
                         interest.id = interestObject["id"].intValue
                         interestArray.append(interest)
                     }
-                    
-                    
-                    let loggedUser = User(id:id, name: name, email: email, password: password, phone: phone, country: country, government: government, gender: gender, birthdate: birthdate, photo: photo, job: job, owner: owner, interests: interestArray as Array<Interest>)
-                    
+
+                    let loggedUser = User()
+//                        id:id, name: name, email: email, password: password, phone: phone, country: country, government: government, gender: gender, birthdate: birthdate, photo: photo, job: job, owner: owner, interests: interestArray as Array<Interest>)
+                    loggedUser.id = id
+                    loggedUser.name = name
+                    loggedUser.email = email
+                    loggedUser.password = password
+                    loggedUser.phone = phone
+                    loggedUser.country = country
+                    loggedUser.government = government
+                    loggedUser.gender = gender
+                    loggedUser.birthdate = birthdate
+                    loggedUser.photo = photo
+                    loggedUser.job = job
+                    loggedUser.owner = owner
+                    loggedUser.interests = interestArray as Array<Interest>
                     completion(nil,loggedUser)
                     // }else{
                     // let errorMessage = json["errorDesc"].string
@@ -69,6 +81,7 @@ class Authontication:NSObject {
                         completion(response.error?.localizedDescription,false)
                     case .success:
                         let json = JSON(response.value!)
+                        print(json)
                         let status = json["statusCode"].int
                         if status == 1 {
                             //  i = i + 4

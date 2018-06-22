@@ -36,6 +36,7 @@ class User: Object {
         
         return [
             "name":name as Any,
+            "password":password as Any,
             "email":email as Any,
             "phone":phone as Any,
             "country":country as Any,
@@ -46,37 +47,40 @@ class User: Object {
             "job":job as Any,
             "owner":owner as Any,
             "interests":interestsJson,
-            "skills":[]
+            "skills":[],
+            "userEvents":[],
+            "spaces":[],
+            "events":[]
         ]
     }
     
-    
-    init(id:Int , name:String , email:String ,password:String ,phone:String, country:String ,government:String ,gender: String ,birthdate:String ,photo :String ,job :String ,owner:Bool ,interests:Array<Interest> )  {
-        super.init()
-        self.id = id
-        self.name = name
-        self.password = password
-        self.phone = phone
-        self.email = email
-        self.country = country
-        self.gender = gender
-        self.government = government
-        self.birthdate = birthdate
-        self.photo = photo
-        self.job = job
-        self.owner = owner
-        self.interests = interests
-    }
-    
-    required init(realm: RLMRealm, schema: RLMObjectSchema) {
-        fatalError("init(realm:schema:) has not been implemented")
-    }
-    
-    required init(value: Any, schema: RLMSchema) {
-        fatalError("init(value:schema:) has not been implemented")
-    }
-    
-    required init() {
-        fatalError("init() has not been implemented")
-    }
+//
+//    init(id:Int , name:String , email:String ,password:String ,phone:String, country:String ,government:String ,gender: String ,birthdate:String ,photo :String ,job :String ,owner:Bool ,interests:Array<Interest> )  {
+//        super.init()
+//        self.id = id
+//        self.name = name
+//        self.password = password
+//        self.phone = phone
+//        self.email = email
+//        self.country = country
+//        self.gender = gender
+//        self.government = government
+//        self.birthdate = birthdate
+//        self.photo = photo
+//        self.job = job
+//        self.owner = owner
+//        self.interests = interests
+//    }
+//
+//    required init(realm: RLMRealm, schema: RLMObjectSchema) {
+//        fatalError("init(realm:schema:) has not been implemented")
+//    }
+//
+//    required init(value: Any, schema: RLMSchema) {
+//        fatalError("init(value:schema:) has not been implemented")
+//    }
+//
+//    required init() {
+//        fatalError("init() has not been implemented")
+//    }
 }

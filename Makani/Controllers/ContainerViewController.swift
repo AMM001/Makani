@@ -20,11 +20,11 @@ class ContainerViewController:SlideMenuController {
     
     override func awakeFromNib() {
         if let controller = self.storyboard?.instantiateViewController(withIdentifier: "Home") {
-            let homeUserVC = controller as! HomeUserViewController
-            homeUserVC.user = user
-            self.mainViewController = homeUserVC
+            self.mainViewController = controller
         }
         if let sideController = self.storyboard?.instantiateViewController(withIdentifier: "MenuViewController") {
+            let controller = sideController as! MenuViewController
+            controller.user = user!
             self.leftViewController = sideController
         }
         super.awakeFromNib()

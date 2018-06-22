@@ -10,7 +10,7 @@ import Foundation
 
 class URLS:NSObject {
     
-    static var baseUrl       =  "http://10.0.1.64:8084/MakanyAPI/"
+    static var baseUrl       =  "http://10.10.10.56:8084/MakanyAPI/"
     static var loginUrl      = baseUrl + "user/login"
     static var register      = baseUrl + "user/registeruser"
     static var topRatedSpace = baseUrl + "space/getTopSpaces?"

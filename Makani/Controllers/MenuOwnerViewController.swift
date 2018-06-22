@@ -11,7 +11,7 @@ import UIKit
 class MenuOwnerViewController: UIViewController {
     
     @IBOutlet weak var imageview: UIImageView!
-
+    var user:User?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +33,7 @@ class MenuOwnerViewController: UIViewController {
     @IBAction func profileBtn(_ sender: Any) {
         
         let profileVc = storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
+        profileVc.user = user!
         self.present(profileVc, animated: true, completion: nil)
         
     }

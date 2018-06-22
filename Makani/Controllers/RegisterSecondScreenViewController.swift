@@ -23,12 +23,11 @@ class RegisterSecondScreenViewController: UIViewController {
     @IBOutlet weak var interestLabel: UILabel!
     var user:User?
     var interestsArray = Array<Interest>()
-    var checkOwner:Bool?
-    let interest = Interest()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if checkOwner == true {
+        if user?.owner == true {
             designT.isHidden = true
             readingT.isHidden = true
             developmentT.isHidden = true
@@ -51,31 +50,37 @@ class RegisterSecondScreenViewController: UIViewController {
     
     @IBAction func registerBtn(_ sender: Any) {
         if (designT.isChecked == true){
+            let interest = Interest()
             interest.id = 1
             interest.name = "Design"
             interestsArray.append(interest)
         }
         if(readingT.isChecked == true){
+            let interest = Interest()
             interest.id = 2
             interest.name = "Reading"
             interestsArray.append(interest)
         }
         if(developmentT.isChecked == true){
+            let interest = Interest()
             interest.id = 3
             interest.name = "Development"
             interestsArray.append(interest)
         }
         if(sportT.isChecked == true){
+            let interest = Interest()
             interest.id = 4
             interest.name = "Sport"
             interestsArray.append(interest)
         }
         if(photographyT.isChecked == true){
+            let interest = Interest()
             interest.id = 5
             interest.name = "Photography"
             interestsArray.append(interest)
         }
         if(medicineT.isChecked == true){
+            let interest = Interest()
             interest.id = 6
             interest.name = "Medicine"
             interestsArray.append(interest)
@@ -93,21 +98,32 @@ class RegisterSecondScreenViewController: UIViewController {
             self.view.makeToast("enter your birthdate", duration: 3.0, position: .bottom)
             return
         }
+        user?.birthdate = birthdate
+        user?.gender = gender
+        user?.government = government
+        user?.interests = interestsArray
+        
         let alert = UIAlertController(title: "", message: "Confirm Registeration ?", preferredStyle: UIAlertControllerStyle.alert)
         let subview = (alert.view.subviews.first?.subviews.first?.subviews.first!)! as UIView
         subview.backgroundColor = UIColor(red: (86/255.0), green: (204/255.0), blue: (242/255.0), alpha: 1.0)
         alert.view.tintColor = UIColor.white
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
             print(self.interestsArray.count)
+            
+            
+           
             Authontication.RegisterUser(user: self.user!, completion: { (error, result) in
                 if error == nil {
-                    if self.checkOwner == false {
+                    if self.user?.owner == false {
                         let homeUserVc = self.storyboard?.instantiateViewController(withIdentifier: "ContainerViewController") as! ContainerViewController
+                        homeUserVc.user = self.user!
                         self.present(homeUserVc, animated: true, completion: nil)
                     }
                     else{
                         let homeOnerVC = self.storyboard?.instantiateViewController(withIdentifier: "ContainerOwnerViewController") as! ContainerOwnerViewController
+                        homeOnerVC.user = self.user!
                         self.present(homeOnerVC, animated: true, completion: nil)
+                         print(self.user)
                     }
                     
                 }

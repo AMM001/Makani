@@ -14,7 +14,7 @@ import SDWebImage
 
 class HomeUserViewController: UIViewController {
     
-    let items = ["Cairo", "Alexandria", "ismailia", "Damnhour", "Tanta"]
+    let items = ["Cairo", "Alexandria", "Ismailia", "Damnhour", "Tanta"]
     var user:User?
     var menuView: BTNavigationDropdownMenu!
     
@@ -38,17 +38,9 @@ class HomeUserViewController: UIViewController {
         
         TopRatedByGovernment.topRatedSpace(government: "cairo") { (error, result) in
             if(error == nil){
-                
                 self.spaces_Array = result as! [Space]
-                
-                
             }
         }
-
-        
-        
-    
-        
     }
     
     @objc func didTapImage() {

@@ -10,6 +10,8 @@
 		04037CF220DBA64F0077E106 /* TopRatedByGovernment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04037CF120DBA64F0077E106 /* TopRatedByGovernment.swift */; };
 		04037CF520DBB2280077E106 /* UserSaving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04037CF420DBB2280077E106 /* UserSaving.swift */; };
 		04037CF720DD3B410077E106 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04037CF620DD3B410077E106 /* Owner.swift */; };
+		04037CF920DD5BB80077E106 /* ObjectPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04037CF820DD5BB80077E106 /* ObjectPool.swift */; };
+		04037CFB20DD65C80077E106 /* pool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04037CFA20DD65C80077E106 /* pool.swift */; };
 		041C099320D54F63003581FB /* AddSpaceFourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C099220D54F63003581FB /* AddSpaceFourthViewController.swift */; };
 		0443A73220C40E860003526D /* SpacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443A73120C40E860003526D /* SpacesTableViewCell.swift */; };
 		0443A73420C41D100003526D /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443A73320C41D100003526D /* SplashScreenViewController.swift */; };
@@ -72,6 +74,8 @@
 		04037CF120DBA64F0077E106 /* TopRatedByGovernment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedByGovernment.swift; sourceTree = "<group>"; };
 		04037CF420DBB2280077E106 /* UserSaving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSaving.swift; sourceTree = "<group>"; };
 		04037CF620DD3B410077E106 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		04037CF820DD5BB80077E106 /* ObjectPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectPool.swift; sourceTree = "<group>"; };
+		04037CFA20DD65C80077E106 /* pool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pool.swift; sourceTree = "<group>"; };
 		041C099220D54F63003581FB /* AddSpaceFourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpaceFourthViewController.swift; sourceTree = "<group>"; };
 		0443A72B20C3F7480003526D /* Tale of Hawks.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tale of Hawks.ttf"; sourceTree = "<group>"; };
 		0443A72C20C3F8450003526D /* PG_Roof Runners_active_bold-it.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PG_Roof Runners_active_bold-it.ttf"; sourceTree = "<group>"; };
@@ -292,6 +296,8 @@
 				045C8AE120CC221B009B00BB /* AddSpaceTextField.swift */,
 				0484E84020D2923B00EB94B5 /* OpenCloseTF.swift */,
 				049256AD20D5AFFD00E71C88 /* SelectFacilitiesViewController.swift */,
+				04037CF820DD5BB80077E106 /* ObjectPool.swift */,
+				04037CFA20DD65C80077E106 /* pool.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -518,6 +524,7 @@
 				0448D4C820C34D2600D2CE67 /* AboutViewController.swift in Sources */,
 				04037CF520DBB2280077E106 /* UserSaving.swift in Sources */,
 				049256AA20D5704200E71C88 /* CustomAlertViewController.swift in Sources */,
+				04037CFB20DD65C80077E106 /* pool.swift in Sources */,
 				04037CF720DD3B410077E106 /* Owner.swift in Sources */,
 				0443A73620C428AC0003526D /* SearchViewController.swift in Sources */,
 				BB7DF9E220D85EB900ADC6C4 /* Addspace.swift in Sources */,
@@ -540,6 +547,7 @@
 				04505F0820C8052D001A7E93 /* NotificationViewController.swift in Sources */,
 				0448D4CA20C34D3900D2CE67 /* SettingsViewController.swift in Sources */,
 				0448D4CC20C34D5000D2CE67 /* BookingHistoryViewController.swift in Sources */,
+				04037CF920DD5BB80077E106 /* ObjectPool.swift in Sources */,
 				BB2B947A20DC8291003D0BD5 /* Freelancer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

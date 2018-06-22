@@ -25,7 +25,7 @@ class FirstViewController: UIViewController {
     
     @IBAction func userChecked(_ sender: Any) {
         if(owerTF.isChecked == true){
-            owerTF.isChecked = false
+            owerTF.isChecked = false            
         }
     }
     
@@ -47,7 +47,7 @@ class FirstViewController: UIViewController {
         }else if (userTF.isChecked == false && owerTF.isChecked == true){
             
             let LoginOwnervc = storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-            user.owner = false
+            user.owner = true
             LoginOwnervc.user = user
             self.present(LoginOwnervc, animated: true, completion: nil)
         }

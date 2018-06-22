@@ -10,7 +10,6 @@ import UIKit
 
 class InterestCollectionViewCell: UICollectionViewCell {
     
-    
-    
-    
+    @IBOutlet weak var name: UILabel!
+
 }
