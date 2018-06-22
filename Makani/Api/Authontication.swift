@@ -29,24 +29,25 @@ class Authontication:NSObject {
                   //  if status == "Success" {
                   
                     
-                      let id     =  json["id"].string
-                      let name   = json["name"].string
-                      let email  = json["email"].string
-                      let phone   = json["phone"].string
-                      let password   = json["password"].string
-                      let country   = json["country"].string
-                      let government   = json["government"].string
-                      let gender   = json["gender"].string
+                      let id          = json["id"].string
+                      let name        = json["name"].string
+                      let email       = json["email"].string
+                      let phone       = json["phone"].string
+                      let password    = json["password"].string
+                      let country     = json["country"].string
+                      let government  = json["government"].string
+                      let gender      = json["gender"].string
                       let birthdate   = json["birthdate"].string
-                      let job = json["job"].string
-                      let owner   = json["owner"].bool
-                      let photo   = json["photo"].string
+                      let job         = json["job"].string
+                      let owner       = json["owner"].bool
+                      let photo       = json["photo"].string
                       let interests   = json["interests"].array
                     
                     for nameInterest in interests!{
                        let interestName = nameInterest["name"].string
                         
-                        interestArray.append(interestName)
+                        interestArray.append(interestName!)
+                       print(interestName!)
                     }
                     
                 
@@ -59,31 +60,12 @@ class Authontication:NSObject {
                     }
                 }
         }
-    
-    
-//
-//    "id":"x1",
-//    "name":"ahmed",
-//    "email":"xy",
-//    "password":"123454",
-//    "phone":"",
-//    "country":"egypt",
-//    "government":"",
-//    "gender":"",
-//    "birthdate":"",
-//    "photo":"",
-//    "job":"",
-//    "interests":[],
-//    "owner":false,
-//    "skills":[],
-//    "userEvents": [],
-//    "spaces": [],
-//    "events": []
-
-    
-    static func RegisterUser(email:String,password:String,phone:String,country:String,government:String,gender:String,birthdate:String,photo:String ,job:String,intrests:Array<String>,owner:Bool,skills:Array<String>,userEvent:Array<String>,spaces:Array<String>,events:Array<String>,completion:@escaping (_ error:String?,_ result:Any?)->Void){
+ 
+    static func RegisterUser(name:String,email:String,password:String,phone:String,country:String,government:String,gender:String,birthdate:String,photo:String ,job:String,intrests:Array<Any>,owner:Bool,skills:Array<Any>,userEvent:Array<Any>,spaces:Array<Any>,events:Array<Any>,completion:@escaping (_ error:String?,_ result:Any?)->Void){
         let url = URL.register
-        let paramaters = ["id":idGenerator ,"email":email ,"password":password ,"phone":phone,"country":country,"government":government,"gender":gender,"birthdate":birthdate,"photo":photo ,"job":job, "intrests":intrests,"owner":owner,"skills":skills,"userEvent":userEvent,"spaces":spaces,"events":events] as [String : Any]
+        let paramaters = ["id":"asfcfr", "name":name ,"email":email ,"password":password ,"phone":phone,"country":country,"government":government,"gender":gender,"birthdate":birthdate,"photo":photo ,"job":job, "interests":intrests,"owner":owner,"skills":skills,"userEvents":userEvent,"spaces":spaces,"events":events] as [String : Any]
+            i = i + 4
+
         Alamofire.request(url, method: .post, parameters: paramaters, encoding: JSONEncoding.default, headers: nil)
             .responseJSON { response in
                 switch response.result{
@@ -93,7 +75,8 @@ class Authontication:NSObject {
                     let json = JSON(response.value!)
                     let status = json["statusCode"].int
                     if status == 1 {
-                         i = i + 1
+                       //  i = i + 4
+                        print(idGenerator)
                         completion(nil,status)
                     }else{
                         let statusMessage = json["statusMessage"].string

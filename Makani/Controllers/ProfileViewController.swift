@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ProfileViewController: UIViewController  , UIImagePickerControllerDelegate , UINavigationControllerDelegate{
     
@@ -22,7 +23,7 @@ class ProfileViewController: UIViewController  , UIImagePickerControllerDelegate
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var user = User()
+   // var user = User()
     
     
     let picker = UIImagePickerController()
@@ -33,7 +34,25 @@ class ProfileViewController: UIViewController  , UIImagePickerControllerDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         
-      //  print("ddddddddddddd\(user.email!)")
+        let realm = try! Realm()
+        
+        let allpeople = realm.objects(UserSaving.self)
+        
+        let byname = allpeople.sorted(byKeyPath: "name", ascending: false)
+        
+        for person in byname{
+        
+            nameTF.text = person.name
+            genderTF.text = person.gender
+            countryTF.text = person.country
+            phoneTF.text = person.phone
+            governmentTF.text = person.government
+            
+            
+        }
+      //  realm.delete(allpeople)
+        
+        
         
         imageview.layer.cornerRadius = imageview.frame.height/2
         imageview.clipsToBounds = true

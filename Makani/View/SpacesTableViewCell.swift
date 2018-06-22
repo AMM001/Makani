@@ -11,6 +11,11 @@ import UIKit
 class SpacesTableViewCell: UITableViewCell {
     
     
+    @IBOutlet weak var imageSpace: UIImageView!
+    @IBOutlet weak var spaceName: UILabel!
+    @IBOutlet weak var spaceAddress: UILabel!
+    
+    
     
 
     override func awakeFromNib() {

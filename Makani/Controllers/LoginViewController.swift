@@ -44,20 +44,49 @@ class LoginViewController: UIViewController {
             if(error == nil){
            
                 let user = result as! User
+                let saveUser = UserSaving()
+                saveUser.name       = user.name
+                saveUser.email      = user.email
+                saveUser.country    = user.country
+                saveUser.government = user.government
+                saveUser.gender     = user.gender
+                saveUser.birthdate  = user.birthdate
+                saveUser.phone      = user.phone
+               // saveUser.interests  = user.interests
                 
+                let realm = try! Realm()
+                try! realm.write {
+                    realm.deleteAll()
+                    realm.add(saveUser)
+                }
                 
+                if(self.checkOwner == false ){
+                    if(user.owner == false){
+                 
                 let homeUserVc = self.storyboard?.instantiateViewController(withIdentifier: "ContainerViewController") as! ContainerViewController
-               
-             
                self.present(homeUserVc, animated: true, completion: nil)
-                //  self.navigationController?.pushViewController(homeUserVc, animated: true)
-                 print(user.email!)
+                        
+                    }else if(user.owner == true){
+                        self.view.makeToast("user not found ", duration: 3.0, position: .bottom)
+                    }
+                }else if(self.checkOwner == true ) {
+                    if(user.owner == true){
+                        
+                        let homeownerVc = self.storyboard?.instantiateViewController(withIdentifier: "ContainerOwnerViewController") as! ContainerOwnerViewController
+                        self.present(homeownerVc, animated: true, completion: nil)
+                        
+                    }else if(user.owner == false){
+                        
+                        self.view.makeToast("owner not found ", duration: 3.0, position: .bottom)
+
+                    }
                 
-                
-                
+                }
+            
             }else {
                 
                 print(error!.description)
+                self.view.makeToast("email or password is not valid ", duration: 3.0, position: .bottom)
             }
             
             

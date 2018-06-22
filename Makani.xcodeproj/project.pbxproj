@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04037CF220DBA64F0077E106 /* TopRatedByGovernment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04037CF120DBA64F0077E106 /* TopRatedByGovernment.swift */; };
+		04037CF520DBB2280077E106 /* UserSaving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04037CF420DBB2280077E106 /* UserSaving.swift */; };
 		041C099320D54F63003581FB /* AddSpaceFourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C099220D54F63003581FB /* AddSpaceFourthViewController.swift */; };
 		0443A73220C40E860003526D /* SpacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443A73120C40E860003526D /* SpacesTableViewCell.swift */; };
 		0443A73420C41D100003526D /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443A73320C41D100003526D /* SplashScreenViewController.swift */; };
@@ -59,6 +61,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04037CF120DBA64F0077E106 /* TopRatedByGovernment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedByGovernment.swift; sourceTree = "<group>"; };
+		04037CF420DBB2280077E106 /* UserSaving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSaving.swift; sourceTree = "<group>"; };
 		041C099220D54F63003581FB /* AddSpaceFourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpaceFourthViewController.swift; sourceTree = "<group>"; };
 		0443A72B20C3F7480003526D /* Tale of Hawks.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tale of Hawks.ttf"; sourceTree = "<group>"; };
 		0443A72C20C3F8450003526D /* PG_Roof Runners_active_bold-it.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PG_Roof Runners_active_bold-it.ttf"; sourceTree = "<group>"; };
@@ -133,6 +137,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04037CF320DBB1FB0077E106 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				04037CF420DBB2280077E106 /* UserSaving.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
 		041C099420D55B7A003581FB /* AddCo-Working Spaces */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +206,7 @@
 		044E281220C0B3180069196D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				04037CF320DBB1FB0077E106 /* Realm */,
 				0448D4AC20C171A300D2CE67 /* User.swift */,
 				BB7DF9DF20D85C0F00ADC6C4 /* Space.swift */,
 			);
@@ -266,6 +279,7 @@
 				0448D4A820C1708900D2CE67 /* URLS.swift */,
 				0448D4AA20C1711200D2CE67 /* Authontication.swift */,
 				BB7DF9E120D85EB900ADC6C4 /* Addspace.swift */,
+				04037CF120DBA64F0077E106 /* TopRatedByGovernment.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -473,6 +487,7 @@
 				045C8AE220CC221B009B00BB /* AddSpaceTextField.swift in Sources */,
 				04505F0620C7E7D6001A7E93 /* MenuOwnerViewController.swift in Sources */,
 				0448D4C820C34D2600D2CE67 /* AboutViewController.swift in Sources */,
+				04037CF520DBB2280077E106 /* UserSaving.swift in Sources */,
 				049256AA20D5704200E71C88 /* CustomAlertViewController.swift in Sources */,
 				0443A73620C428AC0003526D /* SearchViewController.swift in Sources */,
 				BB7DF9E220D85EB900ADC6C4 /* Addspace.swift in Sources */,
@@ -487,6 +502,7 @@
 				0448D4C220C3387900D2CE67 /* menuViewController.swift in Sources */,
 				045C8AE020CC155E009B00BB /* AddSpaceViewController.swift in Sources */,
 				0448D4AB20C1711200D2CE67 /* Authontication.swift in Sources */,
+				04037CF220DBA64F0077E106 /* TopRatedByGovernment.swift in Sources */,
 				0448D4AD20C171A300D2CE67 /* User.swift in Sources */,
 				049256AC20D5755A00E71C88 /* PopUpViewController.swift in Sources */,
 				0484E84120D2923C00EB94B5 /* OpenCloseTF.swift in Sources */,

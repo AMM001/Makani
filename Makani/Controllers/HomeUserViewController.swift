@@ -21,9 +21,9 @@ class HomeUserViewController: UIViewController {
     @IBOutlet weak var slideshow: ImageSlideshow!
     @IBOutlet weak var tableview: UITableView!
     
- 
+    var spaces_Array = [Space]()
     
-    let localSource = [ImageSource(imageString: "img1")!, ImageSource(imageString: "img2")!, ImageSource(imageString: "img3")!, ImageSource(imageString: "img4")!]
+    let localSource = [ImageSource(imageString: "event1")!, ImageSource(imageString: "event2")!, ImageSource(imageString: "event3")!, ImageSource(imageString: "event4")!]
     
     let sdWebImageSource = [SDWebImageSource(urlString: "https://images.unsplash.com/photo-1432679963831-2dab49187847?w=1080")!, SDWebImageSource(urlString: "https://images.unsplash.com/photo-1447746249824-4be4e1b76d66?w=1080")!, SDWebImageSource(urlString: "https://images.unsplash.com/photo-1463595373836-6e0b0a8ee322?w=1080")!]
     
@@ -35,7 +35,17 @@ class HomeUserViewController: UIViewController {
         custimzeSlideImage()
         tableview.delegate   = self
         tableview.dataSource = self
+        
+        TopRatedByGovernment.topRatedSpace(government: "cairo") { (error, result) in
+            if(error == nil){
+                
+                self.spaces_Array = result as! [Space]
+                
+                
+            }
+        }
 
+        
         
     
         
@@ -77,13 +87,14 @@ extension HomeUserViewController : UITableViewDelegate  , UITableViewDataSource 
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 6
+        return spaces_Array.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableview.dequeueReusableCell(withIdentifier: "spaceCell", for: indexPath) as! SpacesTableViewCell
-        
+        cell.spaceName.text    =  spaces_Array[indexPath.row].name
+//        cell.spaceAddress = spaces_Array[indexPath.row].
         
         
         return cell
@@ -91,21 +102,11 @@ extension HomeUserViewController : UITableViewDelegate  , UITableViewDataSource 
     }
    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        
+         let detailsVc = storyboard?.instantiateViewController(withIdentifier: "SpaceDetailsViewController") as! SpaceDetailsViewController
+        self.present(detailsVc, animated: true, completion: nil)
     }
-    
-    
-    
+  
 }
-
-
-
-
-
-
-
-
 
 
 extension HomeUserViewController {
@@ -114,7 +115,6 @@ extension HomeUserViewController {
     func custimzeMenu() {
         
         self.navigationController?.navigationBar.isTranslucent = false
-        
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.0/255.0, green:180/255.0, blue:220/255.0, alpha: 1.0)
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         
@@ -132,8 +132,11 @@ extension HomeUserViewController {
         menuView.animationDuration = 0.5
         menuView.maskBackgroundColor = UIColor.black
         menuView.maskBackgroundOpacity = 0.3
+        
         menuView.didSelectItemAtIndexHandler = {(indexPath: Int) -> Void in
             print("Did select item at index: \(indexPath)")
+            
+            
         }
         
         self.navigationItem.titleView = menuView

@@ -1680,7 +1680,7 @@
         <!--Space Details View Controller-->
         <scene sceneID="bG5-3o-wsx">
             <objects>
-                <viewController id="jyl-Mw-VuP" customClass="SpaceDetailsViewController" customModule="Makani" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SpaceDetailsViewController" id="jyl-Mw-VuP" customClass="SpaceDetailsViewController" customModule="Makani" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q4n-eP-xJx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2473,6 +2473,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="imageSpace" destination="vtB-Oh-wkd" id="bYA-dM-umI"/>
+                                            <outlet property="spaceAddress" destination="bxG-X0-2go" id="sD3-GU-7Jn"/>
+                                            <outlet property="spaceName" destination="sar-H9-ymV" id="c0X-5N-jpa"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -4480,7 +4485,7 @@
         <image name="select shape add photo" width="67" height="50"/>
         <image name="select shape photo" width="170" height="85"/>
         <image name="settings icon" width="11" height="12"/>
-        <image name="shape" width="34" height="34"/>
+        <image name="shape" width="350" height="55"/>
         <image name="sport icon" width="29" height="25"/>
         <image name="stars" width="62" height="11"/>
         <image name="text area input" width="350" height="140"/>
