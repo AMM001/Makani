@@ -13,8 +13,8 @@ import SwiftyJSON
 class Addspace: NSObject {
     
     static func addSpace(space:Space,completion:@escaping (_ error:String?,_ result:Any?)->Void){
-        let url = URL.addSpace + space.ownerId
-        let paramaters = space.toJSON()  as [String : Any]
+        let url = URLS.addSpace + String(space.ownerId)
+        let paramaters = space.toJSON()
         Alamofire.request(url, method: .post, parameters: paramaters, encoding: JSONEncoding.default, headers: nil)
             .responseJSON { response in
                 switch response.result{

@@ -65,6 +65,7 @@ class AddSpaceSecondScreenViewController: UIViewController {
         }
         
         let addspacethirdVc = storyboard?.instantiateViewController(withIdentifier: "AddSpaceThirdViewController") as! AddSpaceThirdViewController
+        print(openening)
         space?.openingTime = openening
         space?.closingTime = closing
         space?.facebook = facebook

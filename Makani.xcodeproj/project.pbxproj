@@ -51,6 +51,7 @@
 		049256AC20D5755A00E71C88 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049256AB20D5755A00E71C88 /* PopUpViewController.swift */; };
 		049256AE20D5AFFD00E71C88 /* SelectFacilitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049256AD20D5AFFD00E71C88 /* SelectFacilitiesViewController.swift */; };
 		BB2B942C20D2943D003D0BD5 /* Stars.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2B942B20D2943D003D0BD5 /* Stars.xib */; };
+		BB2B947A20DC8291003D0BD5 /* Freelancer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2B947920DC8291003D0BD5 /* Freelancer.swift */; };
 		BB7DF9DB20D832F600ADC6C4 /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DF9DA20D832F600ADC6C4 /* RoomCell.swift */; };
 		BB7DF9DD20D8334000ADC6C4 /* SpaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DF9DC20D8334000ADC6C4 /* SpaceDetailsViewController.swift */; };
 		BB7DF9E020D85C0F00ADC6C4 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DF9DF20D85C0F00ADC6C4 /* Space.swift */; };
@@ -121,6 +122,7 @@
 		74BF757181DCAFC1FFBD30B0 /* Pods-Makani.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makani.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makani/Pods-Makani.release.xcconfig"; sourceTree = "<group>"; };
 		BB18CF28C474596F24DFE861 /* Pods_Makani.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makani.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2B942B20D2943D003D0BD5 /* Stars.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Stars.xib; sourceTree = "<group>"; };
+		BB2B947920DC8291003D0BD5 /* Freelancer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Freelancer.swift; sourceTree = "<group>"; };
 		BB7DF9DA20D832F600ADC6C4 /* RoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCell.swift; sourceTree = "<group>"; };
 		BB7DF9DC20D8334000ADC6C4 /* SpaceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceDetailsViewController.swift; sourceTree = "<group>"; };
 		BB7DF9DF20D85C0F00ADC6C4 /* Space.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				BB7DF9E920D87CE800ADC6C4 /* Room.swift */,
 				BB7DF9EF20DB1A6900ADC6C4 /* Skill.swift */,
 				BB7DF9F120DB1A8300ADC6C4 /* Interest.swift */,
+				BB2B947920DC8291003D0BD5 /* Freelancer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 				04505F0820C8052D001A7E93 /* NotificationViewController.swift in Sources */,
 				0448D4CA20C34D3900D2CE67 /* SettingsViewController.swift in Sources */,
 				0448D4CC20C34D5000D2CE67 /* BookingHistoryViewController.swift in Sources */,
+				BB2B947A20DC8291003D0BD5 /* Freelancer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

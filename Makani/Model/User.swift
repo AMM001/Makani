@@ -12,6 +12,7 @@ class User: NSObject {
     
     @objc dynamic var id = 0
     @objc dynamic var name = ""
+    @objc dynamic var password = ""
     @objc dynamic var email = ""
     @objc dynamic var phone = ""
     @objc dynamic var country = ""
@@ -51,9 +52,10 @@ class User: NSObject {
         
     }
     
-   init(id:Int , name:String , email:String , phone:String, country:String ,government:String ,gender: String ,birthdate:String ,photo :String ,job :String ,owner:Bool ,interests:Array<String> )  {
+    init(id:Int , name:String , email:String ,password:String ,phone:String, country:String ,government:String ,gender: String ,birthdate:String ,photo :String ,job :String ,owner:Bool ,interests:Array<Interest> )  {
         self.id = id
         self.name = name
+        self.password = password
         self.phone = phone
         self.email = email
         self.country = country

@@ -14,9 +14,9 @@ class Authontication:NSObject {
    static var i = 2
    static var idGenerator = "x\(i)"
     static func login(email:String,password:String,completion:@escaping (_ error:String?,_ result:Any?)->Void){
-        let url = URL.loginUrl
+        let url = URLS.loginUrl
         
-        var interestArray:Array<Any> = []
+        var interestArray:Array<Interest> = []
         let paramaters = ["email":email ,"password":password] as [String : Any]
         Alamofire.request(url, method: .post, parameters: paramaters, encoding: JSONEncoding.default, headers: nil)
             .responseJSON { response in
@@ -29,28 +29,29 @@ class Authontication:NSObject {
                   //  if status == "Success" {
                   
                     
-                      let id     =  json["id"].string
-                      let name   = json["name"].string
-                      let email  = json["email"].string
-                      let phone   = json["phone"].string
-                      let password   = json["password"].string
-                      let country   = json["country"].string
-                      let government   = json["government"].string
-                      let gender   = json["gender"].string
-                      let birthdate   = json["birthdate"].string
-                      let job = json["job"].string
-                      let owner   = json["owner"].bool
-                      let photo   = json["photo"].string
-                      let interests   = json["interests"].array
+                      let id     =  json["id"].intValue
+                      let name   = json["name"].stringValue
+                      let email  = json["email"].stringValue
+                      let phone   = json["phone"].stringValue
+                      let password   = json["password"].stringValue
+                      let country   = json["country"].stringValue
+                      let government   = json["government"].stringValue
+                      let gender   = json["gender"].stringValue
+                      let birthdate   = json["birthdate"].stringValue
+                      let job = json["job"].stringValue
+                      let owner   = json["owner"].boolValue
+                      let photo   = json["photo"].stringValue
+                      let interests   = json["interests"].arrayValue
                     
-                    for nameInterest in interests!{
-                       let interestName = nameInterest["name"].string
-                        
-                        interestArray.append(interestName)
+                    for interestObject in interests{
+                        let interest = Interest()
+                        interest.name = interestObject["name"].stringValue
+                        interest.id = interestObject["id"].intValue
+                        interestArray.append(interest)
                     }
                     
                 
-                    let loggedUser = User(id: id!, name: name!, email: email!, phone: phone!, password: password!, country: country!, government: government!, gender: gender!, birthdate: birthdate!, photo: photo!, job: job!, owner: owner!, interests: interestArray as! Array<String>)
+                    let loggedUser = User(id:id, name: name, email: email, password: password, phone: phone, country: country, government: government, gender: gender, birthdate: birthdate, photo: photo, job: job, owner: owner, interests: interestArray as Array<Interest>)
                     
                         completion(nil,loggedUser)
                    // }else{

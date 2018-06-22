@@ -11,9 +11,13 @@ import ImageSlideshow
 import MapKit
 
 class SpaceDetailsViewController: UIViewController {
+    
     @IBAction func back(_ sender: Any) {
+        
     }
     
+    @IBOutlet weak var superViewHeight: NSLayoutConstraint!
+    @IBOutlet weak var roomsTableHeight: NSLayoutConstraint!
     @IBOutlet weak var spaceName: UILabel!
     @IBOutlet weak var spacePics: ImageSlideshow!
     @IBOutlet weak var spaceLocationsMap: MKMapView!
@@ -32,6 +36,7 @@ class SpaceDetailsViewController: UIViewController {
     @IBOutlet weak var aboutView: UIView!
     @IBOutlet weak var spaceFacilitiesSecondLine: UILabel!
     var  images = Array<SDWebImageSource>()
+    
     @IBAction func bookNow(_ sender: Any) {
         
     }
@@ -39,57 +44,71 @@ class SpaceDetailsViewController: UIViewController {
     @IBAction func addToFavorite(_ sender: Any) {
         
     }
+    
     var space:Space?
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
+        super.viewDidLoad()        
+        self.aboutView.layer.cornerRadius = 5
+        roomsTableView.delegate = self
+        roomsTableView.dataSource = self
+        //        self.aboutView.layer.borderColor = UIColor(named: "black")?.cgColor
         // Do any additional setup after loading the view.
+    }
+    
+    override func updateViewConstraints() {
+        super.updateViewConstraints()
+        print("view height before update ")
+        print(superViewHeight)
+        superViewHeight.constant = superViewHeight.constant - roomsTableHeight.constant + roomsTableView.contentSize.height
+        print("view height after update ")
+        print(superViewHeight)
+        roomsTableHeight.constant = roomsTableView.contentSize.height
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        for image in (space?.pictures)! {
-            images.append(SDWebImageSource(urlString: image)!)
-        }
-        spaceName.text = space?.name
-        for tel in (space?.contacts)! {
-            if tel == space?.contacts.last {
-                spaceTel.text?.append(tel)
-            }
-            spaceTel.text?.append(tel+" - ")
-        }
-        spaceOpeningTime.text = (space?.openingTime)!
-        spaceClosingTime.text = (space?.closingTime)!
-        for address in (space?.locations)! {
-            spaceAddress.text = address.address + address.government + address.country
-            let annoutation = LocationAnnoutation(title: address.address, locationName: (space?.name)!, coordinate: CLLocationCoordinate2D(latitude: CLLocationDegrees(Double(address.latitude)!),longitude: CLLocationDegrees(Double( address.longitude)!)))
-            spaceLocationsMap.addAnnotation(annoutation)
-            
-        }
-        spaceEmail.text = space?.email
-        spaceOverview.text=space?.overview
-        spaceFacebook.text=space?.facebook
-        spaceWebsite.text=space?.website
-        spaceEmail.text=space?.email
-        if(space?.facilities.airConditioner==true){
-            spaceFacilitiesFirstLine.text="Air Condition - "
-        }
-        if(space?.facilities.internet==true){
-            spaceFacilitiesFirstLine.text?.append("Internet - ")
-            spaceFacilitiesFirstLine.text?.append(String(format: "%f",(space?.facilities.internetSpeed)!))
-            
-        }
-        if(space?.facilities.foodDrinks==true){
-            spaceFacilitiesSecondLine.text="foodDrinks"
-        }
-        
-        if(space?.facilities.laptops==true){
-            spaceFacilitiesSecondLine.text="Laptops"
-        }
-        if(space?.facilities.projector==true){
-            spaceFacilitiesSecondLine.text="Projectors"
-        }
+        //        for image in (space?.pictures)! {
+        //            images.append(SDWebImageSource(urlString: image)!)
+        //        }
+        //        spaceName.text = space?.name
+        //        for tel in (space?.contacts)! {
+        //            if tel == space?.contacts.last {
+        //                spaceTel.text?.append(tel)
+        //            }
+        //            spaceTel.text?.append(tel+" - ")
+        //        }
+        //        spaceOpeningTime.text = (space?.openingTime)!
+        //        spaceClosingTime.text = (space?.closingTime)!
+        //        for address in (space?.locations)! {
+        //            spaceAddress.text = address.address + address.government + address.country
+        //            let annoutation = LocationAnnoutation(title: address.address, locationName: (space?.name)!, coordinate: CLLocationCoordinate2D(latitude: CLLocationDegrees(Double(address.latitude)!),longitude: CLLocationDegrees(Double( address.longitude)!)))
+        //            spaceLocationsMap.addAnnotation(annoutation)
+        //
+        //        }
+        //        spaceEmail.text = space?.email
+        //        spaceOverview.text=space?.overview
+        //        spaceFacebook.text=space?.facebook
+        //        spaceWebsite.text=space?.website
+        //        spaceEmail.text=space?.email
+        //        if(space?.facilities.airConditioner==true){
+        //            spaceFacilitiesFirstLine.text="Air Condition - "
+        //        }
+        //        if(space?.facilities.internet==true){
+        //            spaceFacilitiesFirstLine.text?.append("Internet - ")
+        //            spaceFacilitiesFirstLine.text?.append(String(format: "%f",(space?.facilities.internetSpeed)!))
+        //
+        //        }
+        //        if(space?.facilities.foodDrinks==true){
+        //            spaceFacilitiesSecondLine.text="foodDrinks"
+        //        }
+        //
+        //        if(space?.facilities.laptops==true){
+        //            spaceFacilitiesSecondLine.text="Laptops"
+        //        }
+        //        if(space?.facilities.projector==true){
+        //            spaceFacilitiesSecondLine.text="Projectors"
+        //        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -111,7 +130,7 @@ class SpaceDetailsViewController: UIViewController {
 }
 
 extension SpaceDetailsViewController:UITableViewDelegate, UITableViewDataSource{
-
+    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -120,19 +139,22 @@ extension SpaceDetailsViewController:UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return (space?.rooms.count)!
+//        return (space?.rooms.count)!
+        return 6
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:RoomCell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as!RoomCell
-     
-     // Configure the cell...
-        cell.roomName.text = space?.rooms[indexPath.row].name
-        cell.roomCapacity.text = space?.rooms[indexPath.row].capacity
-        cell.roomCost.text = String(format: "%f", (space?.rooms[indexPath.row].cost)!)
-     return cell
-     }
+        let cell:RoomCell = tableView.dequeueReusableCell(withIdentifier: "detailsRoomCell", for: indexPath) as!RoomCell
+        // Configure the cell...
+        //        cell.roomName.text = space?.rooms[indexPath.row].name
+        //        cell.roomCapacity.text = space?.rooms[indexPath.row].capacity
+        //        cell.roomCost.text = String(format: "%f", (space?.rooms[indexPath.row].cost)!)
+        cell.roomName.text = "Big Room"
+        cell.roomCapacity.text = "30 Person"
+        cell.roomCost.text = "30$"
+        return cell
+    }
     
     
     /*
@@ -179,6 +201,6 @@ extension SpaceDetailsViewController:UITableViewDelegate, UITableViewDataSource{
      // Pass the selected object to the new view controller.
      }
      */
-
-
+    
+    
 }

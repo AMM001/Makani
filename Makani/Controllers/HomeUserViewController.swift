@@ -76,7 +76,6 @@ extension HomeUserViewController : UITableViewDelegate  , UITableViewDataSource 
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return 6
     }
     
@@ -91,12 +90,9 @@ extension HomeUserViewController : UITableViewDelegate  , UITableViewDataSource 
     }
    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        
+        let spaceDetail = self.storyboard?.instantiateViewController(withIdentifier: "spaceDetail") as! SpaceDetailsViewController
+        self.present(spaceDetail, animated: true, completion: nil)
     }
-    
-    
-    
 }
 
 
