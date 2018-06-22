@@ -15,8 +15,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     var iconClick : Bool!
-    var checkOwner:Bool?
-
+    var user:User?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         iconClick = true
@@ -31,60 +31,63 @@ class LoginViewController: UIViewController {
             self.view.makeToast("Enter your email", duration: 3.0, position: .bottom)
             return
         }
-//        guard Validate.isValidEmail(testStr: email) == true else{
-//            self.view.makeToast("Enter valid Email", duration: 3.0, position: .bottom)
-//            return
-//        }
+        guard Validate.isValidEmail(testStr: email) == true else{
+            self.view.makeToast("Enter valid Email", duration: 3.0, position: .bottom)
+            return
+        }
         guard let password = passwordTF.text , !password.isEmpty else{
             self.view.makeToast("Enter your password", duration: 3.0, position: .bottom)
             return
         }
         Authontication.login(email: emailTF.text!, password: passwordTF.text!, completion:{
-           (error,result) in
+            (error,result) in
             if(error == nil){
-           
-                let user = result as! User
-                let saveUser = UserSaving()
-                saveUser.name       = user.name
-                saveUser.email      = user.email
-                saveUser.country    = user.country
-                saveUser.government = user.government
-                saveUser.gender     = user.gender
-                saveUser.birthdate  = user.birthdate
-                saveUser.phone      = user.phone
-               // saveUser.interests  = user.interests
+                
+                self.user = result as? User
+//                let saveUser = UserSaving()
+//                saveUser.name       = self.user?.name
+//                saveUser.email      = self.user?.email
+//                saveUser.country    = self.user?.country
+//                saveUser.government = self.user?.government
+//                saveUser.gender     = self.user?.gender
+//                saveUser.birthdate  = self.user?.birthdate
+//                saveUser.phone      = self.user?.phone
+//                saveUser.interests  = (self.user?.interests)!
                 
                 let realm = try! Realm()
                 try! realm.write {
                     realm.deleteAll()
-                    realm.add(saveUser)
+                    realm.add(self.user!)
                 }
                 
-                if(self.checkOwner == false ){
-                    if(user.owner == false){
-                 
-                let homeUserVc = self.storyboard?.instantiateViewController(withIdentifier: "ContainerViewController") as! ContainerViewController
-               self.present(homeUserVc, animated: true, completion: nil)
-                        
-                    }else if(user.owner == true){
-                        self.view.makeToast("user not found ", duration: 3.0, position: .bottom)
-                    }
-                }else if(self.checkOwner == true ) {
-                    if(user.owner == true){
-                        
-                        let homeownerVc = self.storyboard?.instantiateViewController(withIdentifier: "ContainerOwnerViewController") as! ContainerOwnerViewController
-                        self.present(homeownerVc, animated: true, completion: nil)
-                        
-                    }else if(user.owner == false){
-                        
-                        self.view.makeToast("owner not found ", duration: 3.0, position: .bottom)
-
-                    }
-                
+                if (self.user?.owner)! {
+                    let homeOwnerVc = self.storyboard?.instantiateViewController(withIdentifier: "ContainerOwnerViewController") as! ContainerOwnerViewController
+                    homeOwnerVc.user = self.user
+                    self.present(homeOwnerVc, animated: true, completion: nil)
+                }else{
+                    let homeUserVc = self.storyboard?.instantiateViewController(withIdentifier: "ContainerViewController") as! ContainerViewController
+                    homeUserVc.user = self.user
+                    self.present(homeUserVc, animated: true, completion: nil)
                 }
-            
+                //                if(self.user?.owner == false ){
+                //                    if(user.owner == false){
+                //
+                //                let homeUserVc = self.storyboard?.instantiateViewController(withIdentifier: "ContainerViewController") as! ContainerViewController
+                //               self.present(homeUserVc, animated: true, completion: nil)
+                //
+                //                    }else if(user.owner == true){
+                //                        self.view.makeToast("user not found ", duration: 3.0, position: .bottom)
+                //                    }
+                //                }else if(self.checkOwner == true ) {
+                //                    if(user.owner == true){
+                //
+                //                        let homeownerVc = self.storyboard?.instantiateViewController(withIdentifier: "ContainerOwnerViewController") as! ContainerOwnerViewController
+                //                        self.present(homeownerVc, animated: true, completion: nil)
+                //                    }else if(user.owner == false){
+                //                        self.view.makeToast("owner not found ", duration: 3.0, position: .bottom)
+                //                    }
+                //                }
             }else {
-                
                 print(error!.description)
                 self.view.makeToast("email or password is not valid ", duration: 3.0, position: .bottom)
             }
@@ -98,8 +101,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func registerBtn(_ sender: Any) {
         let registerVc = storyboard?.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
-         registerVc.checkOwner = checkOwner
-        
+        registerVc.user = user
         self.present(registerVc, animated: true, completion: nil)
     }
     
@@ -113,8 +115,8 @@ class LoginViewController: UIViewController {
         }
     }
     
-//    var loginResult = { (error ,result) in
-//
-//    }
+    //    var loginResult = { (error ,result) in
+    //
+    //    }
     
 }

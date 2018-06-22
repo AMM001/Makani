@@ -13,6 +13,9 @@ class RoomCell: UITableViewCell {
     @IBOutlet weak var roomCost: UILabel!
     @IBOutlet weak var roomCapacity: UILabel!
     @IBOutlet weak var roomName: UILabel!
+    
+    @IBAction func edit(_ sender: Any) {
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

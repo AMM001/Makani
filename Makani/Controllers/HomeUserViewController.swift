@@ -15,7 +15,7 @@ import SDWebImage
 class HomeUserViewController: UIViewController {
     
     let items = ["Cairo", "Alexandria", "ismailia", "Damnhour", "Tanta"]
-
+    var user:User?
     var menuView: BTNavigationDropdownMenu!
     
     @IBOutlet weak var slideshow: ImageSlideshow!
@@ -61,8 +61,8 @@ class HomeUserViewController: UIViewController {
 
   
     @IBAction func openMenuBtn(_ sender: Any) {
+        
         self.slideMenuController()?.openLeft()
-
     }
     
     @IBAction func notificationBtn(_ sender: Any) {
@@ -85,8 +85,7 @@ extension HomeUserViewController : UITableViewDelegate  , UITableViewDataSource 
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {        
         return spaces_Array.count
     }
     
@@ -102,10 +101,9 @@ extension HomeUserViewController : UITableViewDelegate  , UITableViewDataSource 
     }
    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-         let detailsVc = storyboard?.instantiateViewController(withIdentifier: "SpaceDetailsViewController") as! SpaceDetailsViewController
-        self.present(detailsVc, animated: true, completion: nil)
+        let spaceDetail = self.storyboard?.instantiateViewController(withIdentifier: "spaceDetail") as! SpaceDetailsViewController
+        self.present(spaceDetail, animated: true, completion: nil)
     }
-  
 }
 
 

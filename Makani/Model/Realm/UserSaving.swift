@@ -18,9 +18,7 @@ class UserSaving: Object {
     @objc dynamic  var government:String?
     @objc dynamic  var gender:String?
     @objc dynamic  var birthdate:String?
-   // @objc  dynamic var interests:Array<String>?
-    
-    
-    
+    var interests = Array<Interest>()
+
 }
 

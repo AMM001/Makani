@@ -8,11 +8,13 @@
 
 import Foundation
 
-class URL:NSObject {
+class URLS:NSObject {
     
     static var baseUrl       =  "http://10.0.1.64:8084/MakanyAPI/"
     static var loginUrl      = baseUrl + "user/login"
     static var register      = baseUrl + "user/registeruser"
     static var topRatedSpace = baseUrl + "space/getTopSpaces?"
+    static var addSpace = baseUrl + "space/registerspace?ownerId="
+
 }
 

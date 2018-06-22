@@ -10,7 +10,9 @@ import UIKit
 import SlideMenuControllerSwift
 
 class ContainerOwnerViewController: SlideMenuController{
-
+    
+    var user:User?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,7 +22,9 @@ class ContainerOwnerViewController: SlideMenuController{
     
     override func awakeFromNib() {
         if let controller = self.storyboard?.instantiateViewController(withIdentifier: "HomeOwnerViewController") {
-            self.mainViewController = controller
+            let homeOwnerVC = controller as! HomeOwnerViewController
+            homeOwnerVC.user = user
+            self.mainViewController = homeOwnerVC
         }
         if let controller = self.storyboard?.instantiateViewController(withIdentifier: "MenuOwnerViewController") {
             self.leftViewController = controller

@@ -13,7 +13,8 @@ class FirstViewController: UIViewController {
     
     @IBOutlet weak var userTF:ChangeImage!
     @IBOutlet weak var owerTF:ChangeImage!
-
+    var user = User()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         UILabel.appearance().font = UIFont(name: "Tale of Hawks.ttf", size: 50)
@@ -40,13 +41,14 @@ class FirstViewController: UIViewController {
         }else if(userTF.isChecked == true && owerTF.isChecked == false){
             
             let loginUserVc = storyboard?.instantiateViewController(withIdentifier: "LoginViewController")as! LoginViewController
-            loginUserVc.checkOwner = false
+            user.owner = false
+            loginUserVc.user = user
             self.present(loginUserVc, animated: true, completion: nil)
         }else if (userTF.isChecked == false && owerTF.isChecked == true){
             
             let LoginOwnervc = storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-            LoginOwnervc.checkOwner = true
-            
+            user.owner = false
+            LoginOwnervc.user = user
             self.present(LoginOwnervc, animated: true, completion: nil)
         }
     }

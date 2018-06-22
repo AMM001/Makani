@@ -17,6 +17,7 @@ class HomeOwnerViewController: UIViewController {
     let floaty = Floaty()
     let item1 = FloatyItem()
     let item2 = FloatyItem()
+    var user:User?
     
     override func viewDidLoad() {
         super.viewDidLoad()

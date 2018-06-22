@@ -17,15 +17,12 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var confirmTF: TextField!
     @IBOutlet weak var countryTF: TextField!
     @IBOutlet weak var phoneNubmerTF: TextField!
+    var user:User?
     
-    var checkOwner:Bool?
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
     }
-
+    
     @IBAction func backBtn(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
@@ -33,58 +30,43 @@ class RegisterViewController: UIViewController {
     @IBAction func nextBtn(_ sender: Any) {
         
         guard let name = nameTF.text, !name.isEmpty else{
-            
             self.view.makeToast("enter your Name", duration: 3.0, position: .bottom)
             return
         }
         guard let email = emailTF.text, !email.isEmpty else{
-            
             self.view.makeToast("enter your Email", duration: 3.0, position: .bottom)
             return
         }
         
         guard let password = passwordTF.text, !password.isEmpty else{
-            
             self.view.makeToast("enter your password", duration: 3.0, position: .bottom)
             return
         }
         
         guard let confirmpassword = confirmTF.text , confirmpassword == password  else{
-            
             self.view.makeToast("password not matched", duration: 3.0, position: .bottom)
-            
-           return
+            return
         }
-            
-            guard let country = countryTF.text, !country.isEmpty else{
-                
-                self.view.makeToast("enter your country", duration: 3.0, position: .bottom)
-                return
-            }
-            
-            guard let phone = phoneNubmerTF.text, !phone.isEmpty else{
-                
-                self.view.makeToast("enter your phone number", duration: 3.0, position: .bottom)
-                return
-            }
         
+        guard let country = countryTF.text, !country.isEmpty else{
+            self.view.makeToast("enter your country", duration: 3.0, position: .bottom)
+            return
+        }
+        
+        guard let phone = phoneNubmerTF.text, !phone.isEmpty else{
+            self.view.makeToast("enter your phone number", duration: 3.0, position: .bottom)
+            return
+        }
         
         let secondRegisterVc = storyboard?.instantiateViewController(withIdentifier: "RegisterSecondScreenViewController") as! RegisterSecondScreenViewController
-        
-            secondRegisterVc.checkOwner = checkOwner
-        
-            secondRegisterVc.name  = name
-            secondRegisterVc.email = email
-            secondRegisterVc.password = password
-            secondRegisterVc.country = country
-            secondRegisterVc.phone   = phone
-        
+        secondRegisterVc.checkOwner = checkOwner
+        user?.name  = name
+        user?.email = email
+        user?.password = password
+        user?.country = country
+        user?.phone   = phone
+        secondRegisterVc.user = user
         self.present(secondRegisterVc, animated: true, completion: nil)
-        
     }
     
-    
-    
-
- 
 }

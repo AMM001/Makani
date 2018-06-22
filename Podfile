@@ -16,7 +16,7 @@ target 'Makani' do
   pod "Floaty"
   pod 'DropDown'
   pod 'JSONModel'
+  # pod 'InstantSearch-Core-Swift', '~> 1.0'
   pod 'RealmSwift'
-
 
 end
