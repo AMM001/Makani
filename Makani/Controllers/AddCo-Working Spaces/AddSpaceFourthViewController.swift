@@ -9,20 +9,24 @@
 import UIKit
 
 class AddSpaceFourthViewController: UIViewController {
-    
+    private var objectCach = ObjectCach.getInstance()
     @IBOutlet weak var overview: UITextView!
     var space:Space?
-
+    private var user:User?
+    
     @IBAction func submit(_ sender: Any) {
         space?.overview = overview.text
         space?.ownerId = 1
         Addspace.addSpace(space: space!) { (error, result) in
             if error == nil {
-                
+                let homeOnwerVc = self.storyboard?.instantiateViewController(withIdentifier: "ContainerOwnerViewController") as! ContainerOwnerViewController
+                self.user?.spaces.append(self.space!)
+                self.present(homeOnwerVc, animated: true, completion: nil)
             }else{
-                self.view.makeToast("Space Added Successfuly", duration: 3.0, position: .bottom)
+                self.view.makeToast("Space Adding Failed", duration: 3.0, position: .bottom)
             }
         }
+        
     }
     
     override func viewDidLoad() {
@@ -34,6 +38,7 @@ class AddSpaceFourthViewController: UIViewController {
         overview.text = "OverView"
         overview.autocapitalizationType = .words
         overview.isScrollEnabled = false
+        user = objectCach.lookup(key: "User") as? User
     }
     
     func textViewDidBeginEditing (textView: UITextView) {

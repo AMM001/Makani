@@ -14,8 +14,7 @@ import SDWebImage
 
 class HomeUserViewController: UIViewController {
     
-    let items = ["Cairo", "Alexandria", "Ismailia", "Damnhour", "Tanta"]
-    var user:User?
+    let items = ["Cairo", "Alexandria", "Ismailia", "Damnhour", "Tanta"]    
     var menuView: BTNavigationDropdownMenu!
     
     @IBOutlet weak var slideshow: ImageSlideshow!
@@ -30,7 +29,7 @@ class HomeUserViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        
         custimzeMenu()
         custimzeSlideImage()
         tableview.delegate   = self
@@ -39,6 +38,7 @@ class HomeUserViewController: UIViewController {
         TopRatedByGovernment.topRatedSpace(government: "cairo") { (error, result) in
             if(error == nil){
                 self.spaces_Array = result as! [Space]
+                self.tableview.reloadData()
             }
         }
     }
@@ -48,10 +48,10 @@ class HomeUserViewController: UIViewController {
         // set the activity indicator for full screen controller (skipping the line will show no activity indicator)
         fullScreenController.slideshow.activityIndicator = DefaultActivityIndicator(style: .white, color: nil)
     }
-   
     
-
-  
+    
+    
+    
     @IBAction func openMenuBtn(_ sender: Any) {
         
         self.slideMenuController()?.openLeft()
@@ -85,15 +85,16 @@ extension HomeUserViewController : UITableViewDelegate  , UITableViewDataSource 
         
         let cell = tableview.dequeueReusableCell(withIdentifier: "spaceCell", for: indexPath) as! SpacesTableViewCell
         cell.spaceName.text    =  spaces_Array[indexPath.row].name
-//        cell.spaceAddress = spaces_Array[indexPath.row].
+        //        cell.spaceAddress = spaces_Array[indexPath.row].
         
         
         return cell
         
     }
-   
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let spaceDetail = self.storyboard?.instantiateViewController(withIdentifier: "spaceDetail") as! SpaceDetailsViewController
+        spaceDetail.space = spaces_Array[indexPath.row]
         self.present(spaceDetail, animated: true, completion: nil)
     }
 }
@@ -108,7 +109,7 @@ extension HomeUserViewController {
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.0/255.0, green:180/255.0, blue:220/255.0, alpha: 1.0)
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         
-        menuView = BTNavigationDropdownMenu(navigationController: self.navigationController, containerView: self.navigationController!.view, title: BTTitle.index(2), items: items)
+        menuView = BTNavigationDropdownMenu(navigationController: self.navigationController, containerView: self.navigationController!.view, title: BTTitle.index(0), items: items)
         
         
         menuView.cellHeight = 50
@@ -124,9 +125,62 @@ extension HomeUserViewController {
         menuView.maskBackgroundOpacity = 0.3
         
         menuView.didSelectItemAtIndexHandler = {(indexPath: Int) -> Void in
-            print("Did select item at index: \(indexPath)")
-            
-            
+            switch indexPath {
+            case 0:
+                self.spaces_Array.removeAll()
+                print("cairo")
+                TopRatedByGovernment.topRatedSpace(government: "cairo") { (error, result) in
+                    if(error == nil){
+                        self.spaces_Array = result as! [Space]
+                        self.tableview.reloadData()
+                    }
+                }
+            case 1:
+                self.spaces_Array.removeAll()
+                print("alex")
+                TopRatedByGovernment.topRatedSpace(government: "alexandria") { (error, result) in
+                    if(error == nil){
+                        self.spaces_Array = result as! [Space]
+                        self.tableview.reloadData()
+                    }
+                }
+            case 2:
+                self.spaces_Array.removeAll()
+                print("ismailia")
+                TopRatedByGovernment.topRatedSpace(government: "ismailia") { (error, result) in
+                    if(error == nil){
+                        self.spaces_Array = result as! [Space]
+                        self.tableview.reloadData()
+                    }
+                }
+            case 3:
+                self.spaces_Array.removeAll()
+                print("damnhour")
+                TopRatedByGovernment.topRatedSpace(government: "damnhour") { (error, result) in
+                    if(error == nil){
+                        self.spaces_Array = result as! [Space]
+                        self.tableview.reloadData()
+                    }
+                }
+            case 4:
+                self.spaces_Array.removeAll()
+                print("tanta")
+                TopRatedByGovernment.topRatedSpace(government: "tanta") { (error, result) in
+                    if(error == nil){
+                        self.spaces_Array = result as! [Space]
+                        self.tableview.reloadData()
+                    }
+                }
+            default:
+                self.spaces_Array.removeAll()
+                print("cairo")
+                TopRatedByGovernment.topRatedSpace(government: "cairo") { (error, result) in
+                    if(error == nil){
+                        self.spaces_Array = result as! [Space]
+                        self.tableview.reloadData()
+                    }
+                }
+            }
         }
         
         self.navigationItem.titleView = menuView

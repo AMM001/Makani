@@ -10,7 +10,7 @@ import UIKit
 import Toast_Swift
 
 class RegisterSecondScreenViewController: UIViewController {
-    
+    private var objectCach = ObjectCach.getInstance()
     @IBOutlet weak var governmentTF: TextField!
     @IBOutlet weak var genderTF: TextField!
     @IBOutlet weak var birthdateTF: TextField!
@@ -21,9 +21,8 @@ class RegisterSecondScreenViewController: UIViewController {
     @IBOutlet weak var photographyT: ChangeImage!
     @IBOutlet weak var medicineT: ChangeImage!
     @IBOutlet weak var interestLabel: UILabel!
-    var user:User?
+    private var user:User?
     var interestsArray = Array<Interest>()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,8 +34,8 @@ class RegisterSecondScreenViewController: UIViewController {
             photographyT.isHidden = true
             medicineT.isHidden = true
             interestLabel.isHidden = true
-            
         }
+        user = objectCach.lookup(key: "User") as! User
     }
     
     @IBAction func backBtn(_ sender: Any) {
@@ -102,28 +101,22 @@ class RegisterSecondScreenViewController: UIViewController {
         user?.gender = gender
         user?.government = government
         user?.interests = interestsArray
-        
+print(user)
         let alert = UIAlertController(title: "", message: "Confirm Registeration ?", preferredStyle: UIAlertControllerStyle.alert)
         let subview = (alert.view.subviews.first?.subviews.first?.subviews.first!)! as UIView
         subview.backgroundColor = UIColor(red: (86/255.0), green: (204/255.0), blue: (242/255.0), alpha: 1.0)
         alert.view.tintColor = UIColor.white
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
             print(self.interestsArray.count)
-            
-            
-           
             Authontication.RegisterUser(user: self.user!, completion: { (error, result) in
                 if error == nil {
                     if self.user?.owner == false {
-                        let homeUserVc = self.storyboard?.instantiateViewController(withIdentifier: "ContainerViewController") as! ContainerViewController
-                        homeUserVc.user = self.user!
+                        let homeUserVc = self.storyboard?.instantiateViewController(withIdentifier: "ContainerViewController") as! ContainerViewController                        
                         self.present(homeUserVc, animated: true, completion: nil)
                     }
                     else{
                         let homeOnerVC = self.storyboard?.instantiateViewController(withIdentifier: "ContainerOwnerViewController") as! ContainerOwnerViewController
-                        homeOnerVC.user = self.user!
                         self.present(homeOnerVC, animated: true, completion: nil)
-                         print(self.user)
                     }
                     
                 }

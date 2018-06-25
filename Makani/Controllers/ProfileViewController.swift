@@ -22,7 +22,7 @@ class ProfileViewController: UIViewController  , UIImagePickerControllerDelegate
     
     
     @IBOutlet weak var collectionView: UICollectionView!
-    
+    private var objectCach = ObjectCach.getInstance()
     var user:User?
     
     
@@ -33,17 +33,17 @@ class ProfileViewController: UIViewController  , UIImagePickerControllerDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let realm = try! Realm()
-
-        let allpeople = realm.objects(User.self)
-
-        let byname = allpeople.sorted(byKeyPath: "name", ascending: false)
-
-        for person in byname{
-            user = person
-        }
-        realm.delete(allpeople)
+        user = objectCach.lookup(key: "User") as? User
+//        let realm = try! Realm()
+//
+//        let allpeople = realm.objects(User.self)
+//
+//        let byname = allpeople.sorted(byKeyPath: "name", ascending: false)
+//
+//        for person in byname{
+//            user = person
+//        }
+//        realm.delete(allpeople)
 
         imageview.layer.cornerRadius = imageview.frame.height/2
         imageview.clipsToBounds = true

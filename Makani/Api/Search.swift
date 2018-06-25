@@ -1,19 +1,18 @@
 //
-//  TopRatedByGovernment.swift
+//  Search.swift
 //  Makani
 //
-//  Created by mac on 6/21/18.
+//  Created by Ahmed Osman on 6/26/18.
 //  Copyright © 2018 mac. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import Alamofire
 import SwiftyJSON
 
-class TopRatedByGovernment:NSObject{
-    
-    static func topRatedSpace(government:String,completion:@escaping (_ error:String?,_ result:Any?)->Void){
-        let url = URLS.topRatedSpace + "government=\(government)"
+class Search: NSObject {
+    static func search(keyword:String,completion:@escaping (_ error:String?,_ result:Any?)->Void){
+        let url = URLS.searchSpace + "\(keyword)"
         print(url)
         var spacesArray = [Space]()
         
@@ -96,13 +95,3 @@ class TopRatedByGovernment:NSObject{
         }
     }
 }
-
-
-
-
-
-
-
-
-
-

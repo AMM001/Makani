@@ -8,7 +8,7 @@
 
 import UIKit
 import SlideMenuControllerSwift
-
+import AlgoliaSearch
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -28,8 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let mainViewController = storyboard.instantiateViewController(withIdentifier: "SplashViewController") as!  SplashScreenViewController
         let sideMvc = storyboard.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
         
-        let slideMenuController = SlideMenuController(mainViewController: mainViewController, leftMenuViewController: sideMvc)
-        
+        let slideMenuController = SlideMenuController(mainViewController: mainViewController, leftMenuViewController: sideMvc)        
         self.window?.rootViewController = slideMenuController
         self.window?.makeKeyAndVisible()
         

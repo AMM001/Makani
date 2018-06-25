@@ -11,15 +11,16 @@ import Toast_Swift
 import RealmSwift
 
 class LoginViewController: UIViewController {
-    
+    private var objectCach = ObjectCach.getInstance()
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     var iconClick : Bool!
-    var user:User?
+    private var user:User?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         iconClick = true
+        user = objectCach.lookup(key: "User") as? User
     }
     
     @IBAction func backBtn(_ sender: Any) {
@@ -42,31 +43,17 @@ class LoginViewController: UIViewController {
         Authontication.login(email: emailTF.text!, password: passwordTF.text!, completion:{
             (error,result) in
             if(error == nil){
-                
                 self.user = result as? User
-//                let saveUser = UserSaving()
-//                saveUser.name       = self.user?.name
-//                saveUser.email      = self.user?.email
-//                saveUser.country    = self.user?.country
-//                saveUser.government = self.user?.government
-//                saveUser.gender     = self.user?.gender
-//                saveUser.birthdate  = self.user?.birthdate
-//                saveUser.phone      = self.user?.phone
-//                saveUser.interests  = (self.user?.interests)!
-                
-                let realm = try! Realm()
-                try! realm.write {
-                    realm.deleteAll()
-                    realm.add(self.user!)
-                }
-                
+                //                let realm = try! Realm()
+                //                try! realm.write {
+                //                    realm.deleteAll()
+                //                    realm.add(self.user!)
+                //                }
                 if (self.user?.owner)! {
                     let homeOwnerVc = self.storyboard?.instantiateViewController(withIdentifier: "ContainerOwnerViewController") as! ContainerOwnerViewController
-                    homeOwnerVc.user = self.user
                     self.present(homeOwnerVc, animated: true, completion: nil)
                 }else{
-                    let homeUserVc = self.storyboard?.instantiateViewController(withIdentifier: "ContainerViewController") as! ContainerViewController
-                    homeUserVc.user = self.user
+                    let homeUserVc = self.storyboard?.instantiateViewController(withIdentifier: "ContainerViewController") as! ContainerViewController                    
                     self.present(homeUserVc, animated: true, completion: nil)
                 }
                 //                if(self.user?.owner == false ){
@@ -100,8 +87,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func registerBtn(_ sender: Any) {
-        let registerVc = storyboard?.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
-        registerVc.user = user
+        let registerVc = storyboard?.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController        
         self.present(registerVc, animated: true, completion: nil)
     }
     

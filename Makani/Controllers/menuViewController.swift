@@ -12,8 +12,6 @@ class MenuViewController: UIViewController {
     
     @IBOutlet weak var imageview: UIImageView!
     
-    var user:User?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,7 +27,6 @@ class MenuViewController: UIViewController {
     @IBAction func profileBtn(_ sender: Any) {
         
         let profileVc = storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
-        profileVc.user = user!
         self.present(profileVc, animated: true, completion: nil)
         
     }

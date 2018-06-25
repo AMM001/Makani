@@ -10,16 +10,15 @@ import UIKit
 import Toast_Swift
 
 class FirstViewController: UIViewController {
-    
+    var objectCach = ObjectCach.getInstance()
     @IBOutlet weak var userTF:ChangeImage!
     @IBOutlet weak var owerTF:ChangeImage!
-    var user = User()
+    private var user:User?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         UILabel.appearance().font = UIFont(name: "Tale of Hawks.ttf", size: 50)
-
-
+        user = objectCach.lookup(key: "User") as! User
     }
     
     
@@ -39,16 +38,12 @@ class FirstViewController: UIViewController {
         if (userTF.isChecked == false && owerTF.isChecked == false){
             self.view.makeToast("you should choice from this !", duration: 3.0, position: .bottom)
         }else if(userTF.isChecked == true && owerTF.isChecked == false){
-            
             let loginUserVc = storyboard?.instantiateViewController(withIdentifier: "LoginViewController")as! LoginViewController
-            user.owner = false
-            loginUserVc.user = user
+            user?.owner = false
             self.present(loginUserVc, animated: true, completion: nil)
-        }else if (userTF.isChecked == false && owerTF.isChecked == true){
-            
+        }else if (userTF.isChecked == false && owerTF.isChecked == true){            
             let LoginOwnervc = storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-            user.owner = true
-            LoginOwnervc.user = user
+            user?.owner = true
             self.present(LoginOwnervc, animated: true, completion: nil)
         }
     }

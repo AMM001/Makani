@@ -10,17 +10,18 @@ import UIKit
 import Toast_Swift
 
 class RegisterViewController: UIViewController {
-    
+    private var objectCach = ObjectCach.getInstance()
     @IBOutlet weak var nameTF: TextField!
     @IBOutlet weak var emailTF: TextField!
     @IBOutlet weak var passwordTF: TextField!
     @IBOutlet weak var confirmTF: TextField!
     @IBOutlet weak var countryTF: TextField!
     @IBOutlet weak var phoneNubmerTF: TextField!
-    var user:User?
+    private var user:User?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        user = objectCach.lookup(key: "User") as! User
     }
     
     @IBAction func backBtn(_ sender: Any) {
@@ -63,8 +64,7 @@ class RegisterViewController: UIViewController {
         user?.email = email
         user?.password = password
         user?.country = country
-        user?.phone   = phone
-        secondRegisterVc.user = user
+        user?.phone   = phone        
         self.present(secondRegisterVc, animated: true, completion: nil)
     }
     

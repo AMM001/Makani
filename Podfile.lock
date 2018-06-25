@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.7.2)
+  - AlgoliaSearch-Client-Swift (5.1.7)
   - BTNavigationDropdownMenu (0.4.1)
   - DropDown (2.3.2)
   - Floaty (4.0.1)
@@ -27,6 +28,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - AlgoliaSearch-Client-Swift
   - BTNavigationDropdownMenu (from `https://github.com/zkrige/BTNavigationDropdownMenu.git`)
   - DropDown
   - Floaty
@@ -42,6 +44,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - AlgoliaSearch-Client-Swift
     - DropDown
     - Floaty
     - ImageSlideshow
@@ -65,6 +68,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  AlgoliaSearch-Client-Swift: 13f8abe012615ed3ccc35dc61ce0401a191be0ff
   BTNavigationDropdownMenu: 4a88996ad514f2feff98481eb2d6a5cb7520f76c
   DropDown: 7f87abecc28f9b4edad810fe1211c5c018c257e5
   Floaty: 82854e1a5ef4fa208281ebd4da2f3d1e51ba67a6
@@ -78,6 +82,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
   Toast-Swift: ba0b01b095aada709d915f9beb1d38184a2721c3
 
-PODFILE CHECKSUM: f19f0c3e2dd5fc474c255f9f4e4d0c8585fd719c
+PODFILE CHECKSUM: a5c4130f002021528d2783d71876e28599d105e0
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.5.3

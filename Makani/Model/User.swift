@@ -10,7 +10,7 @@ import Foundation
 import RealmSwift
 import Realm
 
-class User: Object {
+class User: Object,Pool {
     
     @objc dynamic var id = 0
     @objc dynamic var name = ""
@@ -25,6 +25,7 @@ class User: Object {
     @objc dynamic var job = ""
     @objc dynamic var owner = false
     var interests = Array<Interest>()
+    var spaces = Array<Space>()
     
     func toJSON() -> [String: Any] {
         

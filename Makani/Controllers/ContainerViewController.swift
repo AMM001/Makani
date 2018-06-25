@@ -11,11 +11,8 @@ import SlideMenuControllerSwift
 
 class ContainerViewController:SlideMenuController {
 
-    var user:User?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     override func awakeFromNib() {
@@ -23,8 +20,6 @@ class ContainerViewController:SlideMenuController {
             self.mainViewController = controller
         }
         if let sideController = self.storyboard?.instantiateViewController(withIdentifier: "MenuViewController") {
-            let controller = sideController as! MenuViewController
-            controller.user = user!
             self.leftViewController = sideController
         }
         super.awakeFromNib()

@@ -33,7 +33,7 @@ class MenuOwnerViewController: UIViewController {
     @IBAction func profileBtn(_ sender: Any) {
         
         let profileVc = storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
-        profileVc.user = user!
+        //profileVc.user = user!
         self.present(profileVc, animated: true, completion: nil)
         
     }
